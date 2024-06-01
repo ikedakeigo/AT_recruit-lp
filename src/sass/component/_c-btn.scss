@@ -1,0 +1,19 @@
+@use '../foundation' as *;
+
+.c-btn {
+  padding: prem(14) prem(60);
+  display: inline-block;
+  font-size: prem(15);
+  line-height: 1;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border: 1px solid #000;
+  border-radius: prem(50);
+  background-color: #fff;
+}
+
+// Modifier
+.c-btn.c-btn--black {
+  color: #fff;
+  background-color: #000;
+}
