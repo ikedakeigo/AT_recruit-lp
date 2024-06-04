@@ -1,0 +1,82 @@
+@use '../foundation/' as *;
+
+.p-value {
+
+}
+
+
+
+.p-value__inner {
+
+}
+
+.p-value__title-wrap {
+  margin-bottom: rem(30);
+  @include mq(md){
+    margin-bottom: rem(30);
+  }
+}
+
+.p-value__title {
+
+}
+
+.main-title {
+
+}
+
+.p-value__wrap {
+
+  margin-bottom: rem(45);
+}
+
+.p-value__items {
+  background-color: $color-white;
+  border-radius:  rem(35);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: rem(30);
+  @include mq(md){
+    padding: rem(30);
+  }
+}
+
+.p-value__item {
+  width: per(480, 1030);
+  margin-bottom: rem(45);
+  &:nth-of-type(n+5){
+    margin-bottom: 0;
+  }
+}
+
+.p-value__head {
+  display: flex;
+  align-items: center;
+  margin-bottom: rem(10);
+  img {
+    width:  rem(60);
+    aspect-ratio: 60/60;
+    object-fit: cover;
+    height: auto;
+  }
+}
+
+.p-value__head-title {
+  background-image: linear-gradient(rgba(0, 0, 0, 0) 70%, rgb(255, 255, 148) 70%);
+  @include mq(md){
+    font-size:  rem(22);
+  }
+}
+
+.p-value__text {
+
+}
+
+.p-value__image {
+
+}
+
+.p-value__bottom {
+  text-align: center;
+}

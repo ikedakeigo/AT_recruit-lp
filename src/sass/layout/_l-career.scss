@@ -1,0 +1,10 @@
+@use '../foundation/' as *;
+
+.l-career {
+
+  margin-bottom: rem(100);
+  @include mq(md){
+    padding:  rem(70);
+    margin-bottom: rem(120);
+  }
+}

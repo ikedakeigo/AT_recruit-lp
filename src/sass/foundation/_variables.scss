@@ -31,6 +31,15 @@ $padding-sp: 20px; // スマホ用余白設定
 
 // フォント
 $font-family-base: 'Noto Sans JP', sans-serif; // ベースフォント設定
+$font-family-yu: 'Yu Gothic', '游ゴシック体', 'YuGothic', sans-serif;
+$font-family-hiragino: 'Hiragino Mincho ProN', 'ヒラギノ明朝 ProN', 'Hiragino Mincho Pro', serif;
+
+.gothic {
+    font-family: $font-family-yu;
+}
+.hiragino {
+    font-family: $font-family-hiragino;
+}
 
 $regular: 400;
 $medium: 500;

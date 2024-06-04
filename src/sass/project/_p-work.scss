@@ -1,0 +1,156 @@
+@use '../foundation' as *;
+
+.p-work {
+
+}
+
+
+
+.p-work__inner {
+
+}
+
+.inner {
+
+}
+
+.p-work__title-wrap {
+  margin-bottom: rem(40);
+  @include mq(md){
+    margin-bottom: rem(50);
+  }
+}
+
+.p-work__title {
+
+}
+
+.main-title {
+
+}
+
+.p-work__first-info {
+  text-align: center;
+  margin-bottom: rem(30);
+  @include mq(md){
+    margin-bottom: rem(40);
+  }
+}
+
+.p-work__wrap {
+  position: relative;
+  width: 100%;
+  padding:  rem(50) 0;
+  &::before {
+    content: "";
+    background: linear-gradient(
+      90deg,
+      transparent 0%,
+      transparent 70%,
+      $color-blue 25%
+    );
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 100%;
+    z-index: -1;
+  }
+}
+
+.p-work__item {
+  @include mq(md){
+    display: flex;
+    justify-content: space-between;
+  }
+  &:nth-of-type(even){
+    flex-direction: row-reverse;
+    .p-work__text{
+    margin-right: rem(70);
+    margin-left: rem(0);
+    }
+  }
+
+  &:not(:last-child){
+    margin-bottom: rem(40);
+    @include mq(md){
+      margin-bottom: rem(50);
+    }
+  }
+}
+
+.p-work__img {
+  width: 100%;
+  @include mq(md){
+      max-width: rem(600);
+  }
+  img {
+    width: 100%;
+    aspect-ratio: 460/330;
+    object-fit: cover;
+  }
+}
+
+.p-work__text {
+  @include mq(md){
+    margin-left: rem(70);
+    margin-right: rem(0);
+  }
+}
+
+.p-work__item-title {
+  font-size:  rem(24);
+  padding-left:  rem(70);
+  position: relative;
+  margin-bottom: rem(20);
+  @include mq(md){
+    font-size:  rem(30);
+    margin-bottom: rem(30);
+  }
+  &::before{
+  content: "";
+  position: absolute;
+  display: block;
+  // background-image: url("../../../assets/img/icon/number_2.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width:  rem(90);
+  height:  rem(80);
+  left: -3%;
+  top: 25%;
+  transform: translateY(-50%);
+  }
+}
+
+.title1::before {
+  background-image: url("../../../assets/img/icon/number_1.png");
+}
+
+.title2::before {
+  background-image: url("../../../assets/img/icon/number_2.png");
+}
+
+.title3::before {
+  background-image: url("../../../assets/img/icon/number_3.png");
+}
+
+.title4::before {
+  background-image: url("../../../assets/img/icon/number_4.png");
+}
+
+.title5::before {
+  background-image: url("../../../assets/img/icon/number_5.png");
+}
+
+.title6::before {
+  background-image: url("../../../assets/img/icon/number_6.png");
+}
+
+
+
+.listMark-grid {
+
+}

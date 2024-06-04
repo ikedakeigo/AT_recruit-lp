@@ -1,0 +1,53 @@
+@use '../foundation/' as *;
+
+.p-faq__title-wrap{
+  margin-bottom: rem(35);
+  @include mq(md){
+    margin-bottom: rem(45);
+  }
+}
+
+.p-faq-list__item{
+  background-color: $color-blue;
+  padding:  rem(30)  rem(40);
+}
+
+.p-faq-list__item + .p-faq-list__item {
+  margin-top: rem(45);
+  @include mq(md){
+  margin-top: rem(50);
+  }
+}
+
+.p-faq-list__item-question {
+  padding-left: rem(28);
+  position: relative;
+  text-indent: rem(-14);
+  color: $color-text-blue;
+  @include mq(md){
+      font-size: rem(18);
+  }
+}
+
+.p-faq-list__item-question span {
+  margin-right: rem(10);
+  display: inline-block;
+  color: $color-text-blue;
+  font-size:  rem(28);
+}
+
+.p-faq-list__item-answer {
+  margin-top: rem(15);
+  padding-left: rem(40);
+  text-indent: -1em;
+  @include mq(md){
+      font-size: rem(18);
+  }
+}
+
+.p-faq-list__item-answer span {
+  margin-right: rem(10);
+  display: inline-block;
+  color: $color-black;
+  font-size:  rem(28);
+}

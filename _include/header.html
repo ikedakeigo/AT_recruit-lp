@@ -18,80 +18,63 @@
     <link rel="”icon”" href="" />
     <link rel="apple-touch-icon" href="" />
     <!-- CSS -->
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <header class="header l-header">
-      <div class="header__inner">
-        <!-- ロゴ部分 -->
-        <div class="header__wrap">
-          <h1 class="header__logo">
-            <a href="#">
-              <span>ロゴ</span>
-            </a>
-          </h1>
-          <!-- ナビゲーションメニュー -->
-          <nav class="header__nav">
-            <ul class="header__nav-items">
-              <li class="header__nav-item active">
-                <a href="/">私の会社で働く6つの理由</a>
+    <header class="p-header l-header">
+      <div class="p-header__inner">
+        <h1 class="p-header__logo">
+          <a href="#">
+            <img src="/assets/img/common/logo.svg" alt="LOGO">
+          </a>
+        </h1>
+        <nav class="p-header__nav">
+          <ul class="p-header__nav-list">
+            <li class="p-header__nav-item">
+              <a href="#">私の会社で働く6つの理由</a>
+            </li>
+            <li class="p-header__nav-item">
+              <a href="#">代表挨拶</a>
+            </li>
+            <li class="p-header__nav-item">
+              <a href="#">私たちのお仕事</a>
+            </li>
+            <li class="p-header__nav-item">
+              <a href="#">募集要項</a>
+            </li>
+            <li class="p-header__nav-item">
+              <a href="#">会社概要</a>
+            </li>
+            <li class="p-header__nav-item p-header__nav-item--contact">
+              <a href="#" target="_blank" rel="noopener">エントリーはこちら</a>
+            </li>
+          </ul>
+        </nav>
+        <button class="p-header__hamburger js-hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="p-header__drawer js-drawer">
+          <nav class="p-header__drawer-nav">
+            <ul class="p-header__drawer-list">
+              <li class="p-header__drawer-item">
+                <a href="#">私の会社で働く6つの理由</a>
               </li>
-              <li class="header__nav-item">
-                <a href="facilities.html">代表挨拶</a>
+              <li class="p-header__drawer-item">
+                <a href="#">代表挨拶</a>
               </li>
-              <li class="header__nav-item">
-                <a href="price.html">私たちのお仕事</a>
+              <li class="p-header__drawer-item">
+                <a href="#">私たちのお仕事</a>
               </li>
-              <li class="header__nav-item">
-                <a href="flow.html">募集要項</a>
+              <li class="p-header__drawer-item">
+                <a href="#">募集要項</a>
               </li>
-              <li class="header__nav-item">
-                <a href="staff.html">会社概要</a>
+              <li class="p-header__drawer-item">
+                <a href="#">会社概要</a>
               </li>
-              <li class="header__nav-item">
-                <a href="faq.html">エントリーはこちら</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-        <div class="mask" id="mask"></div>
-        <div class="header__sp-menu">
-          <h1 class="header__logo">
-            <a href="/">
-              <span>ロゴ</span>
-            </a>
-          </h1>
-          <!-- キャッチコピー -->
-          <p class="header__catch">キャッチコピー</p>
-          <!-- ハンバーガーメニューボタン -->
-          <button class="header__hamburger js-hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </button>
-        </div>
-        <!-- ドロワーメニュー -->
-        <div class="header__drawer js-drawer">
-          <h2 class="header__drawer-title">メニュー</h2>
-          <nav class="header__drawer-nav">
-            <ul class="header__drawer-items">
-              <li class="header__drawer-item">
-                <a href="/">私の会社で働く6つの理由</a>
-              </li>
-              <li class="header__drawer-item">
-                <a href="facilities.html">代表挨拶</a>
-              </li>
-              <li class="header__drawer-item">
-                <a href="price.html">私たちのお仕事</a>
-              </li>
-              <li class="header__drawer-item">
-                <a href="flow.html">募集要項</a>
-              </li>
-              <li class="header__drawer-item">
-                <a href="staff.html">会社概要</a>
-              </li>
-              <li class="header__drawer-item">
-                <a href="faq.html">エントリーはこちら</a>
+              <li class="p-header__drawer-item p-header__drawer-item--contact">
+                <a href="#" target="_blank" rel="noopener">エントリーはこちら</a>
               </li>
             </ul>
           </nav>

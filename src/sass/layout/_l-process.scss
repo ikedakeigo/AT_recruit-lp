@@ -1,0 +1,8 @@
+@use '../foundation/' as *;
+
+.l-process {
+  margin-bottom: rem(100);
+  @include mq(md){
+    margin-bottom: rem(100);
+  }
+}

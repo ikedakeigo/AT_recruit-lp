@@ -32,3 +32,13 @@
 @function vw($screen-size, $pixels) {
   @return math.div($pixels , $screen-size) * 100vw;
 }
+
+// アスペクト比の計算
+@function per($number, $size) {
+  @return math.div($number, $size) * 100%;
+}
+
+// アスペクト比
+@function aspect($width, $height) {
+  @return math.div($height, $width) * 100%;
+}

@@ -43,8 +43,8 @@ html {
 }
 
 body {
-  font-family: $font-family-base;
-  font-weight: $regular;
+  font-family: $font-family-yu;
+  font-weight: $semi-bold;
   color: $color-black;
 }
 
@@ -64,4 +64,92 @@ a:hover {
       opacity: 1;
     }
   }
+}
+
+/*===================================
+ * カラー
+===================================*/
+$color-red: #e60012;
+$color-white: #fff;
+$color-black: #000000;
+$color-blue: #e5f5ff;
+$color-text-blue: #0098ee;
+$color-orange: #ff9648;
+
+/*===================================
+ * フォント
+===================================*/
+
+/*===================================
+ * PC/SP表示切り替え
+===================================*/
+
+.pc-only {
+    display: block;
+
+    @media screen and (max-width: 768px) {
+        display: none;
+    }
+}
+
+.sp-only {
+    display: none;
+
+    @media screen and (max-width: 768px) {
+        display: block;
+    }
+}
+
+/*===================================
+ * 余白
+===================================*/
+.inner {
+    max-width: rem(1080);
+    padding: 0 rem(25);
+    width: 100%;
+    margin: 0 auto;
+    @include mq(md) {
+        padding: 0 rem(25);
+    }
+}
+
+
+/*===================================
+ * 共通パーツ
+===================================*/
+
+.main-title {
+  position: relative;
+  line-height: 1;
+  font-family: $font-family-hiragino;
+  @include mq(md){
+    font-size:  rem(33);
+  }
+
+  &::before{
+    content: attr(data-title);
+    position: absolute;
+    z-index: -1;
+    bottom: -25%;
+    left: -5%;
+    color: $color-blue;
+    font-size: rem(150);
+    width: 100vw;
+    @include mq(md){
+        font-size: rem(120);
+    }
+  }
+}
+
+.small-text{
+  line-height: 2;
+}
+
+
+.listMark-grid{
+  font-size: rem(18);
+}
+
+.text-center {
+  text-align: center;
 }

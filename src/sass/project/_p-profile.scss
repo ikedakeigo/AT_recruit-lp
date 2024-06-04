@@ -1,0 +1,87 @@
+@use '../foundation/' as *;
+.p-profile {
+
+}
+
+
+
+.p-profile__inner {
+
+}
+
+.p-profile__title-wrap {
+  margin-bottom: rem(60);
+@include mq(md){
+  margin-bottom: rem(70);
+}
+}
+
+.p-profile__title {
+
+}
+
+.main-title {
+
+}
+
+.p-profile__wrap {
+  p {
+    text-align: center;
+  }
+}
+
+.p-profile-item__title {
+  font-size:  rem(30);
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  border-bottom: 2px solid $color-black;
+  border-top: 2px solid $color-black;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: rem(10);
+  @include mq(md){
+    font-size:  rem(35);
+    padding:  rem(10) 0;
+    margin-bottom: rem(15);
+  }
+  // span {
+  //   &::before{
+  //     content: '';
+  //     display: block;
+  //     width: 100%;
+  //     height: rem(2);
+  //     background-color: $color-black;
+  //     margin-bottom: rem(10);
+
+  //   }
+
+  // }
+}
+
+.p-profile__items {
+  margin-bottom: rem(50);
+  @include mq(md){
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: rem(70);
+  }
+
+
+}
+
+.p-profile__item {
+
+}
+
+.p-profile__img {
+
+}
+
+.p-profile__text {
+
+}
+
+.p-profile__item-title {
+
+}

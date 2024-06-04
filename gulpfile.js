@@ -36,7 +36,7 @@ const browserSyncOption = {
 }
 const browserSyncFunc = () => {
     browserSync.init(browserSyncOption);
-} 
+}
 const browserSyncReload = (done) => {
     browserSync.reload();
     done();
@@ -74,12 +74,25 @@ const cssSass = () => {
             outputStyle: 'expanded'
         }))
         .pipe(postcss([cssnext(browsers)]))
-        .pipe(sourcemaps.write('./'))
+        // .pipe(sourcemaps.write('./'))
+        .pipe(sass({ outputStyle: "expanded", sourceMap: false }))
         .pipe(dest(destPath.css))
         .pipe(notify({
             message: 'コンパイル出来たよ！',//文字は好きなものに変更してね！
             onLast: true
         }))
+}
+
+// JSファイルの結合と圧縮
+const uglify = require("gulp-uglify");
+const concat = require("gulp-concat");
+const jsMin = () => {
+    return src(srcPath.js)
+        .pipe(concat('script.js'))
+        .pipe(dest(destPath.js))
+        .pipe(uglify())
+        .pipe(rename({extname: '.min.js'}))
+        .pipe(dest(destPath.js))
 }
 
 // 画像圧縮
@@ -103,6 +116,8 @@ const imgImagemin = () => {
 
 // ファイルの変更を検知
 const watchFiles = () => {
+    // jsファイルの変更を検知
+    watch(srcPath.js, series(jsMin, browserSyncReload))
     watch(srcPath.css, series(cssSass, browserSyncReload))
     watch(srcPath.img, series(imgImagemin, browserSyncReload))
     watch(srcPath.html, series(browserSyncReload))
@@ -136,7 +151,7 @@ const clean = (done) => {
 
 
 // npx gulpで出力する内容
-exports.default = series(series(clean, cssSass, imgImagemin), parallel(watchFiles, browserSyncFunc));
+exports.default = series(series(clean, cssSass,jsMin, imgImagemin), parallel(watchFiles, browserSyncFunc));
 
 
 // npx gulp del → 画像最適化（重複を削除）

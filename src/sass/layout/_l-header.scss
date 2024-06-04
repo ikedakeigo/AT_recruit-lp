@@ -1,0 +1,9 @@
+@use '../foundation' as *;
+
+.l-header {
+    position: sticky;
+    z-index: 900;
+    top: 0;
+    right: 0;
+    left: 0;
+}

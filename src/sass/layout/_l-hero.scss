@@ -1,0 +1,8 @@
+@use "../foundation" as *;
+
+.l-hero {
+  margin-bottom: rem(200);
+  @include mq(md) {
+    margin-bottom: rem(210);
+  }
+}
