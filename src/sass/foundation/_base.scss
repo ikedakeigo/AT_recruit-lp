@@ -46,6 +46,8 @@ body {
   font-family: $font-family-yu;
   font-weight: $semi-bold;
   color: $color-black;
+  // スムーススクロール
+  scroll-behavior: smooth;
 }
 
 a {
@@ -104,7 +106,7 @@ $color-orange: #ff9648;
 ===================================*/
 .inner {
   max-width: rem(1080);
-  padding: 0 rem(25);
+  padding: 0 rem(15);
   width: 100%;
   margin: 0 auto;
   @include mq(md) {
@@ -120,7 +122,7 @@ $color-orange: #ff9648;
   position: relative;
   line-height: 1;
   font-family: $font-family-hiragino;
-  font-size:  rem(28);
+  font-size: rem(28);
   @include mq(md) {
     font-size: rem(33);
   }
@@ -134,14 +136,121 @@ $color-orange: #ff9648;
     color: $color-blue;
     font-size: clamp(rem(45), 10vw, rem(90));
     // width: 100vw;
-    @include mq(md){
+    @include mq(md) {
       bottom: -25%;
     }
   }
+  &.vision-title {
+    &::before {
+      font-size: rem(80);
+      bottom: 10%;
+      @include mq(md) {
+        font-size: rem(150);
+      }
+    }
+  }
+  &.work-title {
+    &::before {
+      font-size: rem(43);
+      bottom: 80%;
+      @include mq(md) {
+        bottom: 0;
+        font-size: rem(100);
+      }
+    }
+  }
+  &.message-title {
+    &::before {
+      font-size: rem(80);
+      bottom: 0;
+      @include mq(md) {
+        font-size: rem(150);
+      }
+    }
+  }
+  &.schedule-title {
+    &::before {
+      font-size: rem(80);
+      bottom: 0;
+      @include mq(md) {
+        font-size: rem(150);
+      }
+    }
+  }
+  &.about-title {
+    &::before {
+      font-size: rem(60);
+      bottom: 0;
+      @include mq(md) {
+        font-size: rem(150);
+      }
+    }
+  }
+  &.profile-title {
+    &::before {
+      font-size: rem(44);
+      bottom: 80%;
+      @include mq(md) {
+        bottom: 20%;
+        font-size: rem(110);
+      }
+    }
+  }
+
   &.value-title {
     &::before {
+      font-size: rem(80);
       color: $color-white;
-      bottom: 60%;
+      bottom: 0;
+      @include mq(md) {
+        font-size: rem(150);
+      }
+    }
+  }
+  &.career-title {
+    &::before {
+      font-size: rem(45);
+      bottom: 30%;
+      @include mq(md) {
+        bottom: 0;
+        font-size: rem(90);
+      }
+    }
+  }
+  &.data-title {
+    &::before {
+      font-size: rem(80);
+      bottom: 0;
+      @include mq(md) {
+        font-size: rem(150);
+      }
+    }
+  }
+  &.guidelines-title {
+    &::before {
+      font-size: rem(55);
+      bottom: 0;
+      @include mq(md) {
+        font-size: rem(90);
+      }
+    }
+  }
+  &.process-title {
+    &::before {
+      font-size: rem(80);
+      bottom: 0;
+      @include mq(md) {
+        font-size: rem(150);
+      }
+    }
+  }
+  &.faq-title {
+    &::before {
+      font-size: rem(80);
+      bottom: 0;
+      @include mq(md) {
+        font-size: rem(150);
+      }
     }
   }
 }

@@ -117,13 +117,13 @@
     margin-bottom: rem(30);
   }
   &:nth-last-of-type(1) {
-    // margin-left:  rem(-50);
+
   }
   &:nth-last-of-type(2) {
-    margin-left:   rem(-50);
+    margin-left: rem(-50);
   }
   &:nth-last-of-type(3) {
-    // margin-left:  rem(-50);
+    margin-top: rem(30);
   }
   img {
     aspect-ratio: 300/200;
@@ -151,15 +151,16 @@
   // display: flex;
   align-items: center;
   position: relative;
-  max-width: 500px;
+
   height: fit-content;
-  margin-left: 15px;
   padding: 0.8em 1.2em;
   border-radius: rem(15);
   background-color: #fff2c4;
   color: $color-black;
   @include mq(md) {
+    max-width: 500px;
     padding: rem(40);
+    margin-left: 15px;
   }
 
   &::before {

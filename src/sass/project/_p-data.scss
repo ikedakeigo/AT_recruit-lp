@@ -51,6 +51,9 @@
     &:nth-child(2n) {
       margin-left: rem(130);
     }
+    &:nth-of-type(4) {
+      margin-top: rem(0);
+    }
     width: per(305, 1030);
 
   }

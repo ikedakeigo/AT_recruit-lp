@@ -25,9 +25,10 @@
 
 .p-value__items {
   background-color: $color-white;
-  border-radius: rem(35);
-  padding: rem(30);
+  border-radius: rem(15);
+  padding:  rem(5)  rem(10)  rem(20)  rem(10);
   @include mq(md) {
+    border-radius: rem(35);
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;

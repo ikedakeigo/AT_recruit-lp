@@ -32,8 +32,12 @@
 
 .p-hero__title-wrap {
   position: absolute;
-  bottom: -12%;
-  left: 0;
+  bottom: -25%;
+  left: 25px;
+  @include mq(md){
+    left: 0;
+    bottom: -12%;
+  }
 }
 
 .p-hero__title {

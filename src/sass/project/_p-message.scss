@@ -72,21 +72,32 @@
   }
 }
 
+.end-text-sp {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: rem(30);
+  @include mq(md){
+    display: none;
+  }
+}
+
 .p-message__bottom {
 }
 
 .p-message__bottom-list {
-  margin: 0 auto;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
   background-image: url("../../../assets/img/message/message-text__bg-sp.png");
   background-repeat: no-repeat;
-  background-size: 150%;
+  background-size: contain;
   overflow: hidden;
   background-position: center;
   padding: rem(60) rem(20);
-  width: 100%;
+  // width: 100%;
   display: grid;
   justify-content: center;
   @include mq(md){
+    margin: 0 auto;
     background-size: contain;
     background-image: url("../../../assets/img/message/message-text__bg.svg");
   }

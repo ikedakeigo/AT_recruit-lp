@@ -1,32 +1,25 @@
-@use '../foundation/' as *;
+@use "../foundation/" as *;
 
 .p-career {
-
 }
 
-
-
 .p-career__inner {
-
 }
 
 .inner {
-
 }
 
 .p-career__title-wrap {
   margin-bottom: rem(30);
-  @include mq(md){
+  @include mq(md) {
     margin-bottom: rem(80);
   }
 }
 
 .p-career__title {
-
 }
 
 .main-title {
-
 }
 
 .p-career__wrap.top {
@@ -35,7 +28,7 @@
 
 .p-career__item-text {
   margin-bottom: rem(30);
-  @include mq(md){
+  @include mq(md) {
     text-align: center;
     margin-bottom: rem(50);
   }
@@ -47,31 +40,36 @@
 
 .p-career__item-image__title {
   display: inline-block;
-  background-image: linear-gradient(rgba(0, 0, 0, 0) 70%, rgb(146, 205, 238) 70%);
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0) 70%,
+    rgb(146, 205, 238) 70%
+  );
 }
 
 .listMark-grid {
-
 }
 
 .p-career__box {
-
 }
 
 .p-career__box-title {
-  font-size:  rem(24);
+  font-size: rem(24);
   color: $color-text-blue;
   border-bottom: 2px solid $color-blue;
-  padding-bottom: rem(25);
-@include mq(md){
-  font-size:  rem(27);
-}
+  padding-bottom: rem(20);
+  @include mq(md) {
+    padding-bottom: rem(25);
+    font-size: rem(27);
+  }
 }
 
 .p-career__box-text {
-  padding:  rem(25) 0;
+  padding: rem(20) 0;
   border-bottom: 2px solid $color-blue;
   margin-bottom: rem(25);
+  @include mq(md){
+    padding:  rem(25)0;
+  }
 }
 
 .p-career__box + .p-career__box .p-career__box-text {
