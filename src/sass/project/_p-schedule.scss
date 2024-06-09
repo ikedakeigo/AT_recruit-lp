@@ -1,6 +1,24 @@
 @use "../foundation/" as *;
 
 .p-schedule {
+  position: relative;
+}
+
+.p-schedule__bg {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  top: 80px;
+  left: 0;
+  background: linear-gradient(
+    -90deg,
+    transparent 0%,
+    transparent 25%,
+    $color-blue 25%
+  );
+
+  @include mq(md) {
+  }
 }
 
 .p-schedule__inner {
@@ -23,29 +41,15 @@
 }
 
 .p-schedule__wrap {
-  display: flex;
+  @include mq(md) {
+    display: flex;
+  }
 }
 
 .p-schedule__items {
   position: relative;
   width: 100%;
-  &::before {
-    content: "";
-    background: linear-gradient(
-      -90deg,
-      transparent 0%,
-      transparent 25%,
-      $color-blue 25%
-    );
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 100%;
-    z-index: -1;
-  }
+  padding: rem(50) rem(20);
   @include mq(md) {
     padding: rem(100) rem(20);
   }
@@ -54,23 +58,31 @@
 .p-schedule__item {
   display: flex;
   position: relative;
+  padding-bottom: rem(30);
+  &:not(:last-child) {
+    margin-bottom: rem(35);
+  }
   @include mq(md) {
-    padding-bottom: rem(30);
+    padding-bottom: rem(60);
 
     &:not(:last-child) {
-      margin-bottom: rem(35);
+      margin-bottom: rem(65);
     }
   }
   &::before {
     content: "";
     position: absolute;
-    width: rem(500);
     height: rem(2);
     background-color: $color-black;
     bottom: 0;
     left: 0;
+    width: 100%;
+    @include mq(md) {
+      width: rem(500);
+    }
   }
   dd {
+    margin-left: rem(20);
     @include mq(md) {
       margin-left: rem(20);
     }
@@ -78,12 +90,14 @@
 }
 
 .p-schedule__item-time {
+  font-size: rem(23);
   @include mq(md) {
     font-size: rem(26);
   }
 }
 
 .p-schedule__item-title {
+  font-size: rem(23);
   @include mq(md) {
     font-size: rem(26);
   }
@@ -93,18 +107,23 @@
 }
 
 .p-schedule__images {
-  width: 30%;
+  // width: 30%;
+  position: relative;
 }
 
 .p-schedule__image {
-  &:nth-last-of-type(1){
-    margin-left:  rem(-50);
+  width: 300px;
+  &:not(:last-child) {
+    margin-bottom: rem(30);
   }
-  &:nth-last-of-type(2){
-    margin-left:  rem(-50);
+  &:nth-last-of-type(1) {
+    // margin-left:  rem(-50);
   }
-  &:nth-last-of-type(3){
-    margin-left:  rem(-50);
+  &:nth-last-of-type(2) {
+    margin-left:   rem(-50);
+  }
+  &:nth-last-of-type(3) {
+    // margin-left:  rem(-50);
   }
   img {
     aspect-ratio: 300/200;
@@ -114,6 +133,13 @@
 }
 
 .p-schedule-bottom__img {
+  display: flex;
+  justify-content: center;
+  margin-bottom: rem(30);
+  @include mq(md) {
+    margin-bottom: rem(0);
+    display: inherit;
+  }
   img {
     aspect-ratio: 280/370;
     object-fit: cover;
@@ -128,42 +154,43 @@
   max-width: 500px;
   height: fit-content;
   margin-left: 15px;
-  padding: .8em 1.2em;
-  border-radius:  rem(15);
+  padding: 0.8em 1.2em;
+  border-radius: rem(15);
   background-color: #fff2c4;
   color: $color-black;
-  @include mq(md){
-    padding:  rem(40);
+  @include mq(md) {
+    padding: rem(40);
   }
 
-  &::before{
-    position: absolute;
-    left: -15px;
-    width: 15px;
-    height: 30px;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: #fff2c4;
-    clip-path: polygon(0 50%, 100% 0, 100% 100%);
-    content: '';
+  &::before {
+    @include mq(md) {
+      position: absolute;
+      left: -15px;
+      width: 15px;
+      height: 30px;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: #fff2c4;
+      content: "";
+      clip-path: polygon(0 50%, 100% 0, 100% 100%);
+    }
   }
 }
 
 .p-schedule-bottom__title {
-  font-size:  rem(24);
-  @include mq(md){
-    font-size:  rem(28);
+  font-size: rem(24);
+  @include mq(md) {
+    font-size: rem(28);
   }
 }
 
 .p-schedule__wrap.top {
   margin-bottom: rem(50);
-  @include mq(md){
+  @include mq(md) {
     margin-bottom: rem(70);
   }
 }
 .p-schedule__wrap.bottom {
   align-items: center;
   justify-content: center;
-
 }

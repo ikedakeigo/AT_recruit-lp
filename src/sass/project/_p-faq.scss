@@ -9,7 +9,10 @@
 
 .p-faq-list__item{
   background-color: $color-blue;
-  padding:  rem(30)  rem(40);
+  padding:  rem(10)  rem(20);
+  @include mq(md){
+    padding:  rem(30)  rem(40);
+  }
 }
 
 .p-faq-list__item + .p-faq-list__item {
@@ -22,9 +25,10 @@
 .p-faq-list__item-question {
   padding-left: rem(28);
   position: relative;
-  text-indent: rem(-14);
   color: $color-text-blue;
+  text-indent: -13px;
   @include mq(md){
+    text-indent: rem(-14);
       font-size: rem(18);
   }
 }
@@ -38,9 +42,11 @@
 
 .p-faq-list__item-answer {
   margin-top: rem(15);
-  padding-left: rem(40);
-  text-indent: -1em;
+  padding-left: rem(30);
+  text-indent: -13px;
   @include mq(md){
+    padding-left: rem(40);
+    text-indent: -1em;
       font-size: rem(18);
   }
 }

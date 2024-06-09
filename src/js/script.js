@@ -27,7 +27,7 @@ jQuery(function ($) { // $はjQueryを表す
 
         // resizeイベント
         $(window).on('resize', function() {
-            if(window.matchMedia("(min-width: 768px)").matches) {
+            if(window.matchMedia("(min-width: 800px)").matches) {
                 $(".js-hamburger").removeClass('is-open');
                 $('.js-drawer').removeClass('is-open');
             }

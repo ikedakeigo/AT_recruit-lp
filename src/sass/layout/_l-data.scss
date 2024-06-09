@@ -1,9 +1,8 @@
 @use '../foundation/' as *;
 
 .l-data {
-  margin-bottom: rem(100);
+  margin-bottom: rem(150);
   @include mq(md){
-    padding:  rem(70);
     margin-bottom: rem(120);
   }
 }

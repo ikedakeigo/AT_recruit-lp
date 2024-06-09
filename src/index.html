@@ -1,16 +1,98 @@
 <!--#include virtual="../_include/header.html"-->
 
+<script>
+  window.onload = function () {
+    var element = document.querySelector('[data-title="Value"]');
+    if (element && element.getAttribute("data-title") === "Value") {
+      element.classList.add("value-title");
+    }
+    console.log(element);
+
+    const worksElement = document.querySelector(".p-work__wrap");
+    const targetElement = document.querySelector(".p-work__bg");
+
+    if (worksElement) {
+      const resizeObserver = new ResizeObserver((entries) => {
+        for (let entry of entries) {
+          const worksHeight = entry.target.offsetHeight;
+          console.log(worksHeight);
+          targetElement.style.height = worksHeight + 50 + "px";
+        }
+      });
+      resizeObserver.observe(worksElement);
+    }
+
+    const scheduleElement = document.getElementById("schedule-top");
+    const targetElement2 = document.querySelector(".p-schedule__bg");
+
+    if (scheduleElement) {
+      const resizeObserver = new ResizeObserver((entries) => {
+        for (let entry of entries) {
+          const scheduleHeight = entry.target.offsetHeight;
+          console.log(scheduleHeight);
+          targetElement2.style.height = scheduleHeight + "px";
+        }
+      });
+      resizeObserver.observe(scheduleElement);
+    }
+
+    const guidelinenElement = document.querySelector(".p-guidelines__wrap");
+    const targetElement3 = document.querySelector(".p-guidelines__bg");
+
+    if (guidelinenElement) {
+      const resizeObserver = new ResizeObserver((entries) => {
+        for (let entry of entries) {
+          const guidelineHeight = entry.target.offsetHeight;
+          console.log(guidelineHeight);
+          targetElement3.style.height = guidelineHeight + "px";
+        }
+      });
+
+      resizeObserver.observe(guidelinenElement);
+    }
+  };
+  const matchMedia = window.matchMedia("(min-width: 800px)");
+  const listener = (event) => {
+    if (matchMedia.matches) {
+      document.querySelector(".js-changeImg").src = "/assets/img/hero/mv.png";
+      document.querySelector(".js-processImg").src =
+        "/assets/img/process/process_01.png";
+      console.log("800px以上");
+    } else {
+      document.querySelector(".js-changeImg").src =
+        "/assets/img/hero/mv_sp.png";
+      document.querySelector(".js-processImg").src =
+        "/assets/img/process/process_01-sp.png";
+      console.log("800px未満");
+    }
+  };
+
+  matchMedia.addEventListener("change", listener);
+  listener(matchMedia);
+
+  // window.onload = function () {
+  //   const worksElement = document.querySelector(".p-work__wrap");
+
+  //   if (worksElement) {
+  //     const worksHeight = worksElement.offsetHeight;
+  //     console.log(worksHeight);
+  //   }else {
+  //     console.log("worksElementがありません");
+  //   }
+  // };
+</script>
+
 <main>
   <!-- hero -->
   <section class="p-hero l-hero" id="">
     <div class="p-hero__inner inner">
       <div class="p-hero__img-wrap">
-        <img src="/assets/img/hero/mv.png" alt="" />
+        <img class="js-changeImg" src="/assets/img/hero/mv.png" alt="" />
       </div>
       <div class="p-hero__title-wrap">
         <h2 class="p-hero__title hiragino">
           <span>
-            施設にいるからこそ得られる日々を<br />
+            施設にいるからこそ<br class="sp-only" />得られる日々を<br />
             人生の彩りに変えるために
           </span>
         </h2>
@@ -29,21 +111,21 @@
         <!-- <p class="p-vision__sub-title sub-title">私たちのビジョン</p> -->
       </div>
       <div class="p-vision__wrap">
+        <div class="p-vision__img">
+          <img src="/assets/img/vision/vision.png" alt="ビジョン" />
+        </div>
         <div class="p-vision__text">
-          <p class="u-font22 gothic">
+          <p class="u-font22 hiragino">
             私たちは<br />
             介護を必要とする人<br />
             それを支える全ての人の尊厳を守り<br />
             幸せな日々を続けられる事を<br />
             喜び合える社会を創造します
           </p>
-          <p class="small-text hiragino">
+          <p class="small-text">
             私たちは入居者様、そのご家族そして私たち一人ひとりが主人公であり、幸せであるべきと考えています。<br />
             誰かが犠牲になった上での幸せではなく、すべての人が幸せを感じながら、年を重ねていくことを心から喜び合える社会を実現していきたいと考えています。
           </p>
-        </div>
-        <div class="p-vision__img">
-          <img src="/assets/img/vision/vision.png" alt="ビジョン" />
         </div>
       </div>
     </div>
@@ -121,10 +203,11 @@
 
   <!-- work -->
   <section class="p-work l-work" id="">
+    <div class="p-work__bg"></div>
     <div class="p-work__inner inner">
       <div class="p-work__title-wrap">
         <h2 class="p-work__title main-title" data-title="Reasons to work">
-          <span>私の会社で働く6つの理由</span>
+          <span>私の会社で働く<br class="sp-only">6つの理由</span>
         </h2>
       </div>
       <div class="p-work__first-info">
@@ -136,16 +219,25 @@
       </div>
 
       <div class="p-work__wrap">
+        <!-- <div class="p-work__bg-sp"></div> -->
         <!-- 1 -->
         <div class="p-work__item">
-          <div class="p-work__img">
+          <div class="p-work__img pc-only">
             <img
               src="/assets/img/work/work_1.png"
               alt="助け合えるいい仲間がいる"
             />
           </div>
           <div class="p-work__text">
-            <h3 class="p-work__item-title title1">助け合えるいい仲間がいる</h3>
+            <h3 class="p-work__item-title title1 hiragino">
+              助け合えるいい仲間がいる
+            </h3>
+            <div class="p-work__img sp-only">
+              <img
+                src="/assets/img/work/work_1.png"
+                alt="助け合えるいい仲間がいる"
+              />
+            </div>
             <p>
               私たちは心理的な安全性が保たれた職場作りを大切にしています。<br />
               困った時や分からない時にはいつでもサポートしてくれる笑顔の仲間がそばにいます。<br />
@@ -161,16 +253,22 @@
 
         <!-- 2 -->
         <div class="p-work__item">
-          <div class="p-work__img">
+          <div class="p-work__img pc-only">
             <img
               src="/assets/img/work/work_2.png"
               alt="自分で理想の介護を提案できる"
             />
           </div>
           <div class="p-work__text">
-            <h3 class="p-work__item-title title2">
+            <h3 class="p-work__item-title title2 hiragino">
               自分で理想の介護を提案できる
             </h3>
+            <div class="p-work__img sp-only">
+              <img
+                src="/assets/img/work/work_2.png"
+                alt="自分で理想の介護を提案できる"
+              />
+            </div>
             <p>
               人にはそれぞれの人生があります。<br />
               「正しい」人生や介護など存在しません。<br />
@@ -186,16 +284,22 @@
 
         <!-- 3 -->
         <div class="p-work__item">
-          <div class="p-work__img">
+          <div class="p-work__img pc-only">
             <img
               src="/assets/img/work/work_3.png"
               alt="生活と心に豊かさを持てる職場"
             />
           </div>
           <div class="p-work__text">
-            <h3 class="p-work__item-title title3">
+            <h3 class="p-work__item-title title3 hiragino">
               生活と心に豊かさを持てる職場
             </h3>
+            <div class="p-work__img sp-only">
+              <img
+                src="/assets/img/work/work_3.png"
+                alt="生活と心に豊かさを持てる職場"
+              />
+            </div>
             <p>
               私たちは全国の職員のために、安定的に成長しながら働きやすい職場作りのために人事制度を整えてきました。<br />
               私たちの職場は、スタッフ個人の尊厳を重んじ、健康管理とリフレッシュの時間を確保しています。<br />
@@ -208,16 +312,22 @@
 
         <!-- 4 -->
         <div class="p-work__item">
-          <div class="p-work__img">
+          <div class="p-work__img pc-only">
             <img
               src="/assets/img/work/work_4.png"
               alt="お金＋α のやりがいのある職場"
             />
           </div>
           <div class="p-work__text">
-            <h3 class="p-work__item-title title4">
+            <h3 class="p-work__item-title title4 hiragino">
               お金＋α のやりがいのある職場
             </h3>
+            <div class="p-work__img sp-only">
+              <img
+                src="/assets/img/work/work_4.png"
+                alt="お金＋α のやりがいのある職場"
+              />
+            </div>
             <p>
               前向きに取り組んだ人は学歴、年齢、性別に関係なく評価される職場です。<br />
               また、家庭の事情などで業務負担を軽くしてほしい場合には働き方を変えることも可能です。<br />
@@ -230,16 +340,22 @@
         </div>
         <!-- 5 -->
         <div class="p-work__item">
-          <div class="p-work__img">
+          <div class="p-work__img pc-only">
             <img
               src="/assets/img/work/work_5.png"
               alt="社会問題の解決に参加できる"
             />
           </div>
           <div class="p-work__text">
-            <h3 class="p-work__item-title title5">
+            <h3 class="p-work__item-title title5 hiragino">
               社会問題の解決に参加できる
             </h3>
+            <div class="p-work__img sp-only">
+              <img
+                src="/assets/img/work/work_5.png"
+                alt="社会問題の解決に参加できる"
+              />
+            </div>
             <p>
               私たちの運営する「いこいの里」はローコスト運営を心がけています。<br />
               そのために経営の効率化などの必要性はありますが、多くの所得層の方が利用できるように仕組み化されています。<br />
@@ -253,16 +369,22 @@
 
         <!-- 6 -->
         <div class="p-work__item">
-          <div class="p-work__img">
+          <div class="p-work__img pc-only">
             <img
               src="/assets/img/work/work_6.png"
               alt="充実した研修制度キャリアアップ"
             />
           </div>
           <div class="p-work__text">
-            <h3 class="p-work__item-title title6">
+            <h3 class="p-work__item-title title6 hiragino">
               充実した研修制度と<br />キャリアアップ
             </h3>
+            <div class="p-work__img sp-only">
+              <img
+                src="/assets/img/work/work_6.png"
+                alt="充実した研修制度キャリアアップ"
+              />
+            </div>
             <p>
               介護は多岐にわたりニーズがあり、柔軟性やチームワークが求められています。<br />
               そのため、コミュニケーションや接遇を重視し採用を基準としています。<br />
@@ -300,7 +422,7 @@
               <br />
               なぜなら、社員自身が幸せでないのに、お客様だけを幸せに導くことは難しいと考えるからです。私たちは入居者様、そのご家族そして私たち一人ひとりが主人公であり、幸せであるべきであると考えています。
             </p>
-            <p class="end-text">
+            <p class="end-text pc-only">
               株式会社 ウキシロケアセンター<br />
               株式会社 いこいの里 佐賀<br />
               株式会社 ウキシロホールディングス<br />
@@ -311,13 +433,19 @@
 
         <div class="p-message__bottom">
           <p class="pl-80">ですから私たちは</p>
-          <ul class="p-message__bottom-list">
+          <ul class="p-message__bottom-list hiragino">
             <li>・全ての社員が生活と心に豊かさを持てる職場</li>
             <li>・お客様の笑顔と社員の笑顔が循環する職場</li>
             <li>・彩りのある思い出が残るサービスを提供できる職場</li>
           </ul>
-          <p class="text-center">
+          <p class="p-message__bottom-text">
             3点を今後とも追求し、より魅力的な施設、職場を実現して参ります。
+          </p>
+          <p class="end-text sp-only">
+            株式会社 ウキシロケアセンター<br />
+            株式会社 いこいの里 佐賀<br />
+            株式会社 ウキシロホールディングス<br />
+            代表取締役 浮城 守
           </p>
         </div>
       </div>
@@ -356,48 +484,54 @@
 
   <!-- schedule -->
   <section class="p-schedule l-schedule" id="">
+    <div class="p-schedule__bg"></div>
     <div class="p-schedule__inner inner">
       <div class="p-schedule__title-wrap">
         <h2 class="p-schedule__title main-title" data-title="Schedule">
           <span>先輩の1日と働きがい</span>
         </h2>
       </div>
-      <div class="p-schedule__wrap top">
+      <div class="p-schedule__wrap top" id="schedule-top">
         <div class="p-schedule__items">
           <dl class="p-schedule__item">
-            <dt class="p-schedule__item-time">8:15</dt>
+            <dt class="p-schedule__item-time hiragino">8:15</dt>
             <dd>
-              <h3 class="p-schedule__item-title">始業、朝礼、掃除</h3>
+              <h3 class="p-schedule__item-title hiragino">始業、朝礼、掃除</h3>
               <p class="p-schedule__item-text">
                 業務内容の簡単な説明が入ります。
               </p>
             </dd>
           </dl>
           <dl class="p-schedule__item">
-            <dt class="p-schedule__item-time">9:00</dt>
+            <dt class="p-schedule__item-time hiragino">9:00</dt>
             <dd>
-              <h3 class="p-schedule__item-title">業務内容が入ります</h3>
+              <h3 class="p-schedule__item-title hiragino">
+                業務内容が入ります
+              </h3>
               <p class="p-schedule__item-text">
                 業務内容の簡単な説明が入ります。
               </p>
             </dd>
           </dl>
           <dl class="p-schedule__item">
-            <dt class="p-schedule__item-time">11:45~12:45</dt>
+            <dt class="p-schedule__item-time hiragino">11:45~12:45</dt>
             <dd>
-              <h3 class="p-schedule__item-title">昼休み</h3>
+              <h3 class="p-schedule__item-title hiragino">昼休み</h3>
             </dd>
           </dl>
           <dl class="p-schedule__item">
-            <dt class="p-schedule__item-time">18:15</dt>
+            <dt class="p-schedule__item-time hiragino">18:15</dt>
             <dd>
-              <h3 class="p-schedule__item-title">帰宅</h3>
+              <h3 class="p-schedule__item-title hiragino">帰宅</h3>
             </dd>
           </dl>
         </div>
-        <div class="p-schedule__images">
+        <div class="p-schedule__images pc-only">
           <div class="p-schedule__image">
-            <img src="/assets/img/schedule/schedule_01.png" alt="始業、朝礼、掃除" />
+            <img
+              src="/assets/img/schedule/schedule_01.png"
+              alt="始業、朝礼、掃除"
+            />
           </div>
           <div class="p-schedule__image">
             <img src="/assets/img/schedule/schedule_02.png" alt="昼休み" />
@@ -410,11 +544,16 @@
 
       <div class="p-schedule__wrap bottom">
         <div class="p-schedule-bottom__img">
-          <img src="/assets/img/schedule/schedule_04.png" alt="社会問題の解決に参加できる" />
+          <img
+            src="/assets/img/schedule/schedule_04.png"
+            alt="社会問題の解決に参加できる"
+          />
         </div>
         <div class="p-schedule-botttom__text">
           <h3 class="p-schedule-bottom__title">
-            <span> テキストが入りますテキストが入ります </span>
+            <span>
+              テキストが入ります<br class="sp-only" />テキストが入ります
+            </span>
           </h3>
           <p>
             先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。
@@ -433,17 +572,20 @@
           class="p-profile__title main-title"
           data-title="Ideal candidate profile"
         >
-          <span>私たちの会社で活躍できる人</span>
+          <span>私たちの会社で<br class="sp-only">活躍できる人</span>
         </h2>
       </div>
       <div class="p-profile__wrap">
-        <h2 class="p-profile-item__title">
+        <h2 class="p-profile-item__title hiragino">
           <span> いこいの里 基本３原則 </span>
         </h2>
         <div class="p-profile__items">
           <div class="p-profile__item">
             <div class="p-profile__img">
-              <img src="/assets/img/profile/profile_01.png" alt="嘘をつかない" />
+              <img
+                src="/assets/img/profile/profile_01.png"
+                alt="嘘をつかない"
+              />
             </div>
             <!-- <div class="p-profile__text">
               <h3 class="p-profile__item-title">1. 嘘をつかない</h3>
@@ -451,7 +593,10 @@
           </div>
           <div class="p-profile__item">
             <div class="p-profile__img">
-              <img src="/assets/img/profile/profile_02.png" alt="主体的に成長する" />
+              <img
+                src="/assets/img/profile/profile_02.png"
+                alt="主体的に成長する"
+              />
             </div>
             <!-- <div class="p-profile__text">
               <h3 class="p-profile__item-title">2. 主体的に成長する</h3>
@@ -479,7 +624,7 @@
     <div class="p-value__inner inner">
       <div class="p-value__title-wrap">
         <h2 class="p-value__title main-title" data-title="Value">
-          <span>いこいの里 5つのバリュー</span>
+          <span>いこいの里<br class="sp-onluy"> 5つのバリュー</span>
         </h2>
       </div>
       <div class="p-value__wrap">
@@ -487,8 +632,11 @@
           <!-- 1 -->
           <div class="p-value__item">
             <div class="p-value__head">
-              <img src="/assets/img/value/value_01.png" alt="お客様へのあり方" />
-              <h3 class="p-value__head-title">お客様へのあり方</h3>
+              <img
+                src="/assets/img/value/value_01.png"
+                alt="お客様へのあり方"
+              />
+              <h3 class="p-value__head-title hiragino">お客様へのあり方</h3>
             </div>
             <div class="p-value__text">
               <p>
@@ -502,7 +650,7 @@
           <div class="p-value__item">
             <div class="p-value__head">
               <img src="/assets/img/value/value_02.png" alt="人間性の尊重" />
-              <h3 class="p-value__head-title">人間性の尊重</h3>
+              <h3 class="p-value__head-title hiragino">人間性の尊重</h3>
             </div>
             <div class="p-value__text">
               <p>
@@ -519,7 +667,9 @@
                 src="/assets/img/value/value_03.png"
                 alt="サービス業としての接遇と挨拶"
               />
-              <h3 class="p-value__head-title">サービス業としての接遇と挨拶</h3>
+              <h3 class="p-value__head-title hiragino">
+                サービス業としての接遇と挨拶
+              </h3>
             </div>
             <div class="p-value__text">
               <p>
@@ -532,8 +682,11 @@
           <!-- 4 -->
           <div class="p-value__item">
             <div class="p-value__head">
-              <img src="/assets/img/value/value_04.png" alt="主体的な学びと実践" />
-              <h3 class="p-value__head-title">主体的な学びと実践</h3>
+              <img
+                src="/assets/img/value/value_04.png"
+                alt="主体的な学びと実践"
+              />
+              <h3 class="p-value__head-title hiragino">主体的な学びと実践</h3>
             </div>
             <div class="p-value__text">
               <p>
@@ -546,8 +699,11 @@
           <!-- 5 -->
           <div class="p-value__item">
             <div class="p-value__head">
-              <img src="/assets/img/value/value_05.png" alt="セルフマネジメント" />
-              <h3 class="p-value__head-title">セルフマネジメント</h3>
+              <img
+                src="/assets/img/value/value_05.png"
+                alt="セルフマネジメント"
+              />
+              <h3 class="p-value__head-title hiragino">セルフマネジメント</h3>
             </div>
             <div class="p-value__text">
               <p>
@@ -560,14 +716,17 @@
           <!-- 6 -->
           <div class="p-value__item">
             <div class="p-value__image">
-              <img src="/assets/img/value/value_06.png" alt="お客様へのあり方" />
+              <img
+                src="/assets/img/value/value_06.png"
+                alt="お客様へのあり方"
+              />
             </div>
           </div>
         </div>
       </div>
 
       <div class="p-value__wrap">
-        <div class="p-value__bottom">
+        <div class="p-value__bottom hiragino">
           <p>
             既に今の段階でこのようなことが完璧に出来ていなくても構いません。<br />
             しかし「いつかこのような働き方を目指したいな！」と共感できる方はいこいの里で活躍できる可能性が高いと考えています。
@@ -601,13 +760,16 @@
           <h3 class="p-career__item-image__title">
             <span> キャリアアップイメージ図 </span>
           </h3>
-          <img src="/assets/img/career/career_01.png" alt="キャリアアップイメージ図" />
+          <img
+            src="/assets/img/career/career_01.png"
+            alt="キャリアアップイメージ図"
+          />
         </div>
         <span class="listMark-grid">※夜勤4回、諸手当含む</span>
       </div>
       <div class="p-career__wrap bottom">
         <div class="p-career__box">
-          <h3 class="p-career__box-title">
+          <h3 class="p-career__box-title hiragino">
             <span>研修制度</span>
           </h3>
           <p class="p-career__box-text">
@@ -618,7 +780,7 @@
         </div>
 
         <div class="p-career__box">
-          <h3 class="p-career__box-title">
+          <h3 class="p-career__box-title hiragino">
             <span> 福利厚生制度 </span>
           </h3>
           <p class="p-career__box-text">
@@ -640,20 +802,32 @@
       <div class="p-data__wrap">
         <ul class="p-data__items">
           <li class="p-data__item">
-            <img src="/assets/img/data/data_01.png" alt="データで見るいこいの里" />
+            <img
+              src="/assets/img/data/data_01.png"
+              alt="データで見るいこいの里"
+            />
           </li>
           <li class="p-data__item">
-            <img src="/assets/img/data/data_02.png" alt="データで見るいこいの里" />
+            <img
+              src="/assets/img/data/data_02.png"
+              alt="データで見るいこいの里"
+            />
           </li>
           <li class="p-data__item">
-            <img src="/assets/img/data/data_03.png" alt="データで見るいこいの里" />
+            <img
+              src="/assets/img/data/data_03.png"
+              alt="データで見るいこいの里"
+            />
           </li>
           <li class="p-data__item">
-            <img src="/assets/img/data/data_04.png" alt="データで見るいこいの里" />
+            <img
+              src="/assets/img/data/data_04.png"
+              alt="データで見るいこいの里"
+            />
           </li>
         </ul>
 
-        <h3 class="p-data-item__title">採用担当者からのメッセージ</h3>
+        <h3 class="p-data-item__title hiragino">採用担当者からのメッセージ</h3>
         <p class="p-data-item__text"></p>
       </div>
     </div>
@@ -661,6 +835,7 @@
 
   <!-- guidelines -->
   <section class="p-guidelines l-guidelines" id="">
+    <div class="p-guidelines__bg"></div>
     <div class="p-guidelines__inner inner">
       <div class="p-guidelines__title-wrap">
         <h2
@@ -692,7 +867,9 @@
           </dd>
         </dl>
         <dl class="p-guidelines__list">
-          <dt class="p-guidelines__term">勤務地（募集エリア）</dt>
+          <dt class="p-guidelines__term">
+            勤務地<br class="sp-only" />(募集エリア)
+          </dt>
           <dd class="p-guidelines__description">
             北九州市（戸畑区、小倉北区、小倉南区、八幡西区）<br />
             苅田町、糸島市、古賀市<br />
@@ -754,7 +931,11 @@
         </h2>
       </div>
       <div class="p-process__wrap">
-        <img src="/assets/img/process/process_01.png" alt="選考プロセス" />
+        <img
+          class="js-processImg"
+          src="/assets/img/process/process_01.png"
+          alt="選考プロセス"
+        />
       </div>
     </div>
   </section>
@@ -865,14 +1046,22 @@
           <dl>
             <dt>＜グループ会社＞</dt>
             <dd>
-              株式会社ウキシロケアセンター(介護福祉事業)資本金 3.5千万円<br />
-              株式会社いこいの里佐賀(介護福祉事業)資本金 1千万円<br />
-              浮城興産株式会社(総合不動産業)資本金 7千万円<br />
-              株式会社浮城工務店(総合建築業)資本金 3千万円<br />
-              西日本興業協同組合(不動産管理)資本金 3百万円<br />
-              株式会社わーくわーく(障がい者福祉事業)資本金 1千万円<br />
-              株式会社ウキシロホールディングス(介護福祉事業・農業)資本金
-              1千万円
+              株式会社ウキシロケアセンター(介護福祉事業)<br
+                class="sp-only"
+              />資本金 3.5千万円<br />
+              株式会社いこいの里佐賀(介護福祉事業)<br class="sp-only" />資本金
+              1千万円<br />
+              浮城興産株式会社(総合不動産業)<br class="sp-only" />資本金
+              7千万円<br />
+              株式会社浮城工務店(総合建築業)<br class="sp-only" />資本金
+              3千万円<br />
+              西日本興業協同組合(不動産管理)<br class="sp-only" />資本金
+              3百万円<br />
+              株式会社わーくわーく(障がい者福祉事業)<br class="sp-only" />資本金
+              1千万円<br />
+              株式会社ウキシロホールディングス(介護福祉事業・農業)<br
+                class="sp-only"
+              />資本金 1千万円
             </dd>
           </dl>
           <dl>

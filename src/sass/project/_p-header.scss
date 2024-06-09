@@ -155,7 +155,7 @@
 
 .p-header__drawer {
     padding: rem(228) 0;
-    position: absolute;
+    position: fixed;
     z-index: 900;
     top: 0;
     right: -120%;
@@ -171,8 +171,8 @@
     right: 0;
 }
 
-.p-header__drawer {
-    display:none;
+.p-header__drawer::-webkit-scrollbar {
+  display:none;
 }
 
 .p-header__drawer-item a {

@@ -1,32 +1,25 @@
-@use '../foundation' as *;
+@use "../foundation" as *;
 
 .p-message {
-
 }
 
-
-
 .p-message__inner {
-
 }
 
 .inner {
-
 }
 
 .p-message__title-wrap {
   margin-bottom: rem(40);
-  @include mq(md){
+  @include mq(md) {
     margin-bottom: rem(50);
   }
 }
 
 .p-message__title {
-
 }
 
 .main-title {
-
 }
 
 .p-message__wrap {
@@ -34,7 +27,7 @@
 
 .p-message__top {
   margin-bottom: rem(50);
-  @include mq(md){
+  @include mq(md) {
     display: flex;
     justify-content: space-between;
     margin-bottom: rem(60);
@@ -42,7 +35,10 @@
 }
 
 .p-message__top-img {
-
+  margin-bottom: rem(20);
+  @include mq(md) {
+    margin-bottom: rem(0);
+  }
   img {
     aspect-ratio: 480/540;
     object-fit: cover;
@@ -52,7 +48,7 @@
 
 .p-message__top-text {
   width: 100%;
-  @include mq(md){
+  @include mq(md) {
     margin-top: rem(-30);
     margin-left: rem(40);
   }
@@ -61,32 +57,45 @@
 .p-message__top-title {
   margin-bottom: rem(20);
   font-family: $font-family-hiragino;
-  @include mq(md){
-    font-size:  rem(38);
+  font-size: rem(26);
+  @include mq(md) {
+    font-size: rem(38);
     margin-bottom: rem(30);
   }
 }
 
 .end-text {
-  display: flex;
-  justify-content: flex-end;
-  @include mq(md){
+  @include mq(md) {
+    display: flex;
+    justify-content: flex-end;
     margin-top: rem(30);
   }
 }
 
 .p-message__bottom {
-
 }
 
 .p-message__bottom-list {
-margin: 0 auto;
-background-image: url("../../../assets/img/message/message-text__bg.svg");
-background-repeat: no-repeat;
-background-size: contain;
-background-position: center;
-padding: rem(60) rem(20);
-width: 100%;
-display: grid;
-justify-content: center;
+  margin: 0 auto;
+  background-image: url("../../../assets/img/message/message-text__bg-sp.png");
+  background-repeat: no-repeat;
+  background-size: 150%;
+  overflow: hidden;
+  background-position: center;
+  padding: rem(60) rem(20);
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  @include mq(md){
+    background-size: contain;
+    background-image: url("../../../assets/img/message/message-text__bg.svg");
+  }
+}
+
+.p-message__bottom-text {
+  margin-bottom: rem(30);
+  @include mq(md){
+    margin-bottom: rem(0);
+    text-align: center;
+  }
 }

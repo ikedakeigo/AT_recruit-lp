@@ -2,7 +2,8 @@
 
 .l-anckerLink {
   background-color: $color-blue;
-  margin-bottom:  rem(100);
+  margin-bottom:  rem(130);
+  padding:  rem(40)  rem(20);
   @include mq(md){
     padding:  rem(40) 0;
     margin-bottom: rem(130);

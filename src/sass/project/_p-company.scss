@@ -37,11 +37,17 @@
 }
 
 .p-company__box {
+  font-size:  rem(14);
+  @include mq(md){
+    font-size:  rem(16);
+  }
   dl {
-    display: flex;
     padding-top:  rem(25);
     padding-bottom:  rem(25);
     border-bottom: 1px solid $color-black;
+    @include mq(md){
+      display: flex;
+    }
   }
 
   dt {

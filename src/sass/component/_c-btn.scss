@@ -1,7 +1,7 @@
 @use "../foundation" as *;
 
 .l-contactBtn {
-  margin-bottom: rem(200);
+  margin-bottom: rem(100);
   @include mq(md) {
     margin-bottom: rem(220);
   }
@@ -18,15 +18,19 @@
 
 // Modifier
 .c-contactBtn .c-contactBtn--black {
-  font-size: rem(36);
+  font-size: rem(25);
   border-radius: rem(50);
+  padding: rem(25) rem(20);
   color: #fff;
-  padding: rem(35) rem(50);
-  padding-left: rem(50);
+  // padding-left: rem(50);
   background-color: $color-orange;
   position: relative;
   display: flex;
   align-items: center;
+  @include mq(md){
+    padding: rem(35) rem(50);
+    font-size:  rem(36);
+  }
   &::after {
     content: "";
     display: inline-block;
@@ -36,6 +40,9 @@
     background-position: center;
     width: rem(40);
     height: rem(40);
-    margin-left: rem(70);
+    margin-left: rem(40);
+    @include mq(md){
+      margin-left: rem(70);
+    }
   }
 }

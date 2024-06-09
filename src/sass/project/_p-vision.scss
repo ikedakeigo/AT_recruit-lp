@@ -36,8 +36,11 @@
 }
 
 .p-vision__wrap {
-  display: flex;
-  justify-content: space-between;
+  @include mq(md){
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
 }
 
 .p-vision__text {
@@ -59,5 +62,8 @@
 }
 
 .p-vision__img {
-
+  margin-bottom: rem(20);
+  @include mq(md){
+    margin-bottom: rem(0);
+  }
 }

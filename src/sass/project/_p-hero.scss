@@ -1,11 +1,9 @@
-@use '../foundation' as *;
+@use "../foundation" as *;
 
 .p-hero {
-
 }
 
 .l-hero {
-
 }
 
 .p-hero__inner {
@@ -13,7 +11,6 @@
 }
 
 .inner {
-
 }
 
 .p-hero__img-wrap {
@@ -40,14 +37,12 @@
 }
 
 .p-hero__title {
-  font-size:  rem(12);
+  font-size: rem(28);
   line-height: 1.2;
-  // text-shadow: 2px 1px 13px rgba(240, 236, 236, 0.4);
-  @include mq(md){
+  @include mq(md) {
     font-size: rem(45);
   }
 }
 
 .p-hero__wrap {
-
 }

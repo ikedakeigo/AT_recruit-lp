@@ -26,7 +26,9 @@
 
 .p-profile__wrap {
   p {
-    text-align: center;
+    @include mq(md){
+      text-align: center;
+    }
   }
 }
 
@@ -35,8 +37,8 @@
   position: relative;
   display: inline-block;
   text-align: center;
-  border-bottom: 2px solid $color-black;
-  border-top: 2px solid $color-black;
+  border-bottom: 1px solid $color-black;
+  border-top: 1px solid $color-black;
   left: 50%;
   transform: translateX(-50%);
   margin-bottom: rem(10);
