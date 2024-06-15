@@ -213,7 +213,7 @@ a {
   position: absolute;
   z-index: -1;
   bottom: 30%;
-  left: -5%;
+  left: 0;
   color: #e5f5ff;
   font-size: clamp(45px, 10vw, 90px);
   font-size: clamp(2.8125rem, 10vw, 5.625rem);
@@ -221,6 +221,7 @@ a {
 
 @media screen and (min-width: 800px) {
   .main-title::before {
+    left: -5%;
     bottom: -25%;
   }
 }
@@ -583,11 +584,11 @@ a {
 }
 
 .c-contactBtn .c-contactBtn--black {
-  font-size: 25px;
-  font-size: 1.5625rem;
+  font-size: 20px;
+  font-size: 1.25rem;
   border-radius: 3.125rem;
-  padding: 25px 20px;
-  padding: 1.5625rem 1.25rem;
+  padding: 15px 30px;
+  padding: 0.9375rem 1.875rem;
   color: #fff;
   background-color: #ff9648;
   position: relative;
@@ -597,10 +598,13 @@ a {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  max-width: 400px;
+  max-width: 25rem;
 }
 
 @media screen and (min-width: 800px) {
   .c-contactBtn .c-contactBtn--black {
+    max-width: 100%;
     padding: 2.1875rem 3.125rem;
     font-size: 2.25rem;
   }
@@ -608,7 +612,7 @@ a {
 .c-contactBtn .c-contactBtn--black::after {
   content: "";
   display: inline-block;
-  background-image: url("../../../assets/img/icon/icon_arrowLink.svg");
+  background-image: url("../../assets/img/icon/icon_arrowLink.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -616,13 +620,13 @@ a {
   width: 2.5rem;
   height: 40px;
   height: 2.5rem;
-  margin-left: 40px;
-  margin-left: 2.5rem;
+  margin-left: 30px;
+  margin-left: 1.875rem;
 }
 
 @media screen and (min-width: 800px) {
   .c-contactBtn .c-contactBtn--black::after {
-    margin-left: 4.375rem;
+    margin-left: 3.75rem;
   }
 }
 .p-header {
@@ -759,7 +763,7 @@ a {
   height: 12px;
   height: 0.75rem;
   display: inline-block;
-  background-image: url("../../../assets/img/icon/icon_arrowLink.svg");
+  background-image: url("../../assets/img/icon/icon_arrowLink.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -851,12 +855,26 @@ a {
   transition: 0.6s;
 }
 
+.p-header__drawe-logo {
+  max-width: 300px;
+  max-width: 18.75rem;
+  width: 100%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  margin-bottom: 3.125rem;
+}
+
 .p-header__drawer.is-open {
   right: 0;
 }
 
 .p-header__drawer::-webkit-scrollbar {
   display: none;
+}
+
+.p-header__drawer-item {
+  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
 }
 
 .p-header__drawer-item a {
@@ -901,7 +919,7 @@ a {
   height: 40px;
   height: 2.5rem;
   display: inline-block;
-  background-image: url("../../../assets/img/icon/icon_arrowLink.svg");
+  background-image: url("../../assets/img/icon/icon_arrowLink.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -1056,7 +1074,7 @@ a {
 .p-anckerLink__sub-title::before {
   content: "";
   position: absolute;
-  background-image: url("../../../assets/img/icon/icon_mokuzi.svg");
+  background-image: url("../../assets/img/icon/icon_mokuzi.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -1130,7 +1148,7 @@ a {
 .p-anckerLink__item::before {
   content: "";
   position: absolute;
-  background-image: url("../../../assets/img/icon/icon_maruarrow.svg");
+  background-image: url("../../assets/img/icon/icon_maruarrow.svg");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -1226,24 +1244,20 @@ a {
     -ms-flex-pack: justify;
     justify-content: space-between;
   }
+  .p-work__item:nth-of-type(even) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+  }
+  .p-work__item:nth-of-type(even) .p-work__text {
+    margin-right: 4.375rem;
+    margin-left: 0rem;
+  }
 }
-.p-work__item:nth-of-type(even) {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-  -ms-flex-direction: row-reverse;
-  flex-direction: row-reverse;
-}
-
-.p-work__item:nth-of-type(even) .p-work__text {
-  margin-right: 70px;
-  margin-right: 4.375rem;
-  margin-left: 0px;
-  margin-left: 0rem;
-}
-
 .p-work__item:not(:last-child) {
-  margin-bottom: 40px;
-  margin-bottom: 2.5rem;
+  margin-bottom: 70px;
+  margin-bottom: 4.375rem;
 }
 
 @media screen and (min-width: 800px) {
@@ -1307,27 +1321,27 @@ a {
 }
 
 .title1::before {
-  background-image: url("../../../assets/img/icon/number_1.png");
+  background-image: url("../../assets/img/icon/number_1.png");
 }
 
 .title2::before {
-  background-image: url("../../../assets/img/icon/number_2.png");
+  background-image: url("../../assets/img/icon/number_2.png");
 }
 
 .title3::before {
-  background-image: url("../../../assets/img/icon/number_3.png");
+  background-image: url("../../assets/img/icon/number_3.png");
 }
 
 .title4::before {
-  background-image: url("../../../assets/img/icon/number_4.png");
+  background-image: url("../../assets/img/icon/number_4.png");
 }
 
 .title5::before {
-  background-image: url("../../../assets/img/icon/number_5.png");
+  background-image: url("../../assets/img/icon/number_5.png");
 }
 
 .title6::before {
-  background-image: url("../../../assets/img/icon/number_6.png");
+  background-image: url("../../assets/img/icon/number_6.png");
 }
 
 .p-message__title-wrap {
@@ -1427,7 +1441,7 @@ a {
 .p-message__bottom-list {
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
-  background-image: url("../../../assets/img/message/message-text__bg-sp.png");
+  background-image: url("../../assets/img/message/message-text__bg-sp.png");
   background-repeat: no-repeat;
   background-size: contain;
   overflow: hidden;
@@ -1444,7 +1458,7 @@ a {
   .p-message__bottom-list {
     margin: 0 auto;
     background-size: contain;
-    background-image: url("../../../assets/img/message/message-text__bg.svg");
+    background-image: url("../../assets/img/message/message-text__bg.svg");
   }
 }
 .p-message__bottom-text {
@@ -2045,7 +2059,8 @@ a {
 }
 
 .p-guidelines__term {
-  width: 30%;
+  min-width: 80px;
+  min-width: 5rem;
 }
 
 @media screen and (min-width: 800px) {
@@ -2054,15 +2069,12 @@ a {
   }
 }
 .p-guidelines__description {
-  margin-left: 20px;
-  margin-left: 1.25rem;
+  min-width: 200px;
+  min-width: 12.5rem;
+  padding-left: 30px;
+  padding-left: 1.875rem;
 }
 
-@media screen and (min-width: 800px) {
-  .p-guidelines__description {
-    margin-left: 1.25rem;
-  }
-}
 .p-process__title-wrap {
   margin-bottom: 50px;
   margin-bottom: 3.125rem;
@@ -2071,6 +2083,17 @@ a {
 @media screen and (min-width: 800px) {
   .p-process__title-wrap {
     margin-bottom: 4.0625rem;
+  }
+}
+.js-processImg {
+  max-width: 300px;
+  max-width: 18.75rem;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 800px) {
+  .js-processImg {
+    max-width: 100%;
   }
 }
 .p-faq__title-wrap {
@@ -2109,7 +2132,7 @@ a {
   padding-left: 1.75rem;
   position: relative;
   color: #0098ee;
-  text-indent: -13px;
+  text-indent: -18px;
 }
 
 @media screen and (min-width: 800px) {
@@ -2132,7 +2155,7 @@ a {
   margin-top: 0.9375rem;
   padding-left: 30px;
   padding-left: 1.875rem;
-  text-indent: -13px;
+  text-indent: -18px;
 }
 
 @media screen and (min-width: 800px) {
@@ -2164,13 +2187,14 @@ a {
   font-size: 22px;
   font-size: 1.375rem;
   border-bottom: 1px solid #000000;
-  text-align: center;
+  text-align: left;
   padding-bottom: 20px;
   padding-bottom: 1.25rem;
 }
 
 @media screen and (min-width: 800px) {
   .p-company__title {
+    text-align: center;
     font-size: 1.6875rem;
   }
 }
@@ -2353,4 +2377,327 @@ a {
   .pl-80 {
     padding-left: 5rem;
   }
+}
+/*==================================================
+遅延表示
+===================================*/
+.delay > * {
+  opacity: 0;
+}
+
+/*==================================================
+ふわっ
+===================================*/
+.fadeUp {
+  -webkit-animation-name: fadeUpAnime;
+  animation-name: fadeUpAnime;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+  opacity: 0;
+}
+
+@-webkit-keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(2vw);
+    transform: translateY(2vw);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes fadeUpAnime {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(2vw);
+    transform: translateY(2vw);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+.btnAnimation:hover {
+  display: inline-block;
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 838px) {
+  .fadein {
+    opacity: 0;
+    -webkit-transform: translate(0, 100px);
+    transform: translate(0, 100px);
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+  .fadein.active {
+    opacity: 1;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+  }
+}
+.fadein_pc {
+  opacity: 0;
+  -webkit-transform: translate(0, 100px);
+  transform: translate(0, 100px);
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.fadein_pc.active {
+  opacity: 1;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+/*===================================
+ * アニメーションpart2
+===================================*/
+/*左右のアニメーション*/
+.leftAnime {
+  opacity: 0; /*事前に透過0にして消しておく*/
+}
+
+.slideAnimeLeftRight {
+  -webkit-animation-name: slideTextX100;
+  animation-name: slideTextX100;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes slideTextX100 {
+  from {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%); /*要素を左の枠外に移動*/
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); /*要素を元の位置に移動*/
+    opacity: 1;
+  }
+}
+@keyframes slideTextX100 {
+  from {
+    -webkit-transform: translateX(-100%);
+    transform: translateX(-100%); /*要素を左の枠外に移動*/
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); /*要素を元の位置に移動*/
+    opacity: 1;
+  }
+}
+.slideAnimeRightLeft {
+  -webkit-animation-name: slideTextX-100;
+  animation-name: slideTextX-100;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes slideTextX-100 {
+  from {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%); /*要素を右の枠外に移動*/
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); /*要素を元の位置に移動*/
+    opacity: 1;
+  }
+}
+@keyframes slideTextX-100 {
+  from {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%); /*要素を右の枠外に移動*/
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateX(0);
+    transform: translateX(0); /*要素を元の位置に移動*/
+    opacity: 1;
+  }
+}
+/*===================================
+ * hoverアニメーション 画像ズーム
+===================================*/
+.u-hover-img {
+  cursor: pointer;
+  max-width: 500px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.u-hover-img img {
+  height: auto;
+  -webkit-transition: -webkit-transform 0.8s ease !important;
+  transition: -webkit-transform 0.8s ease !important;
+  transition: transform 0.8s ease !important;
+  transition: transform 0.8s ease, -webkit-transform 0.8s ease !important; /* ゆっくり変化させる */
+}
+
+.u-hover-img:hover img {
+  -webkit-transform: scale(1.1) !important;
+  transform: scale(1.1) !important; /* 拡大 */
+  opacity: 0.8 !important;
+}
+
+/*===================================
+ * ボタンアニメーション
+===================================*/
+.btn03 {
+  /*影の基点とするためrelativeを指定*/
+  position: relative;
+  /*ボタンの形状*/
+  text-decoration: none;
+  text-align: center;
+  border-radius: 25px;
+  outline: none;
+  /*アニメーションの指定*/
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+
+.btn03::before {
+  content: "";
+  position: absolute;
+  background-image: url("../img/icon/icon_hand.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: block;
+  width: 30px;
+  width: 1.875rem;
+  height: 30px;
+  height: 1.875rem;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  right: 10%;
+}
+
+@media screen and (min-width: 400px) {
+  .btn03::before {
+    right: 0;
+  }
+}
+/*影の設定*/
+.pushdown::after {
+  content: "";
+  /*絶対配置で影の位置を決める*/
+  position: absolute;
+  z-index: -1;
+  top: -4px;
+  left: 0;
+  /*影の形状*/
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+
+/*hoverの際にY軸に4pxずらす*/
+.pushdown:hover {
+  background-color: #333;
+  color: #fff;
+  -webkit-transform: translateY(-4px);
+  transform: translateY(-4px);
+}
+
+/*===================================
+ * 横スクロールアニメーションアイコン
+===================================*/
+/*スクロールダウン全体の場所*/
+.scrolldown4 {
+  /*描画位置※位置は適宜調整してください*/
+  position: absolute;
+  top: 18%;
+  right: 50%;
+  /*矢印の動き1秒かけて永遠にループ*/
+  -webkit-animation: arrowmove 1s ease-in-out infinite;
+  animation: arrowmove 1s ease-in-out infinite;
+}
+
+@media screen and (min-width: 800px) {
+  .scrolldown4 {
+    display: none;
+  }
+}
+/*下からの距離が変化して全体が下→上→下に動く*/
+@-webkit-keyframes arrowmove {
+  0% {
+    right: 1%;
+  }
+  50% {
+    right: 3%;
+  }
+  100% {
+    right: 1%;
+  }
+}
+@keyframes arrowmove {
+  0% {
+    right: 1%;
+  }
+  50% {
+    right: 3%;
+  }
+  100% {
+    right: 1%;
+  }
+}
+/*Scrollテキストの描写*/
+.scrolldown4 span {
+  /*描画位置*/
+  position: absolute;
+  left: -130px;
+  left: -8.125rem;
+  bottom: 10px;
+  /*テキストの形状*/
+  font-size: 11.2px;
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+}
+
+/* 矢印の描写 */
+.scrolldown4:before {
+  content: "";
+  /*描画位置*/
+  position: absolute;
+  bottom: 0;
+  right: 8px;
+  /*矢印の形状*/
+  width: 2px;
+  height: 20px;
+  -webkit-transform: skewX(45deg);
+  transform: skewX(45deg);
+}
+
+.scrolldown4:after {
+  content: "";
+  /*描画位置*/
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  /*矢印の形状*/
+  width: 150px;
+  width: 9.375rem;
+  height: 2px;
+  height: 0.125rem;
 }

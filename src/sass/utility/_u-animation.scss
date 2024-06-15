@@ -1,0 +1,252 @@
+@use '../foundation' as *;
+
+/*==================================================
+遅延表示
+===================================*/
+
+.delay > * {
+    opacity: 0;
+}
+
+/*==================================================
+ふわっ
+===================================*/
+
+.fadeUp {
+    animation-name: fadeUpAnime;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-out;
+    opacity: 0;
+}
+
+@keyframes fadeUpAnime {
+    from {
+        opacity: 0;
+        transform: translateY(2vw);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.btnAnimation {
+    &:hover {
+        display: inline-block;
+        opacity: 0.8;
+        // transform: translate(-6px, -6px);
+    }
+}
+
+.fadein {
+    @media screen and (max-width: 838px) {
+        opacity: 0;
+        transform: translate(0, 100px);
+        transition: all 1s;
+
+        &.active {
+            opacity: 1;
+            transform: translate(0, 0);
+        }
+    }
+}
+
+.fadein_pc {
+    opacity: 0;
+    transform: translate(0, 100px);
+    transition: all 1s;
+
+    &.active {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+/*===================================
+ * アニメーションpart2
+===================================*/
+/*左右のアニメーション*/
+.leftAnime {
+    opacity: 0; /*事前に透過0にして消しておく*/
+}
+
+.slideAnimeLeftRight {
+    animation-name: slideTextX100;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes slideTextX100 {
+    from {
+        transform: translateX(-100%); /*要素を左の枠外に移動*/
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0); /*要素を元の位置に移動*/
+        opacity: 1;
+    }
+}
+
+.slideAnimeRightLeft {
+    animation-name: slideTextX-100;
+    animation-duration: 0.8s;
+    animation-fill-mode: forwards;
+    opacity: 0;
+}
+
+@keyframes slideTextX-100 {
+    from {
+        transform: translateX(100%); /*要素を右の枠外に移動*/
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0); /*要素を元の位置に移動*/
+        opacity: 1;
+    }
+}
+
+/*===================================
+ * hoverアニメーション 画像ズーム
+===================================*/
+.u-hover-img {
+    cursor: pointer;
+    max-width: 500px;
+    overflow: hidden;
+    width: 100%;
+}
+.u-hover-img img {
+    height: auto;
+    transition: transform 0.8s ease !important; /* ゆっくり変化させる */
+}
+.u-hover-img:hover img {
+    transform: scale(1.1) !important; /* 拡大 */
+    opacity: 0.8 !important;
+}
+
+/*===================================
+ * ボタンアニメーション
+===================================*/
+
+.btn03 {
+    /*影の基点とするためrelativeを指定*/
+    position: relative;
+    /*ボタンの形状*/
+    text-decoration: none;
+    text-align: center;
+    border-radius: 25px;
+    outline: none;
+    /*アニメーションの指定*/
+    transition: all 0.2s ease;
+
+    &::before {
+        content: '';
+        position: absolute;
+        background-image: url('../img/icon/icon_hand.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        display: block;
+        width: rem(30);
+        height: rem(30);
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10%;
+        @include mq(sm) {
+            right: 0;
+        }
+    }
+}
+
+/*影の設定*/
+.pushdown::after {
+    content: '';
+    /*絶対配置で影の位置を決める*/
+    position: absolute;
+    z-index: -1;
+    top: -4px;
+    left: 0;
+    /*影の形状*/
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+
+}
+
+/*hoverの際にY軸に4pxずらす*/
+.pushdown:hover {
+    background-color: #333;
+    color: #fff;
+    transform: translateY(-4px);
+}
+
+/*===================================
+ * 横スクロールアニメーションアイコン
+===================================*/
+
+/*スクロールダウン全体の場所*/
+.scrolldown4 {
+    /*描画位置※位置は適宜調整してください*/
+    position: absolute;
+    top: 18%;
+    right: 50%;
+    /*矢印の動き1秒かけて永遠にループ*/
+    animation: arrowmove 1s ease-in-out infinite;
+    @include mq(md){
+     display: none;
+    }
+}
+
+/*下からの距離が変化して全体が下→上→下に動く*/
+@keyframes arrowmove {
+    0% {
+        right: 1%;
+    }
+    50% {
+      right: 3%;
+    }
+    100% {
+      right: 1%;
+    }
+}
+
+/*Scrollテキストの描写*/
+.scrolldown4 span {
+    /*描画位置*/
+    position: absolute;
+    left:  rem(-130);
+    bottom: 10px;
+    /*テキストの形状*/
+
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
+
+}
+
+/* 矢印の描写 */
+.scrolldown4:before {
+    content: '';
+    /*描画位置*/
+    position: absolute;
+    bottom: 0;
+    right: 8px;
+    /*矢印の形状*/
+    width: 2px;
+    height: 20px;
+    transform: skewX(45deg);
+}
+
+.scrolldown4:after {
+    content: '';
+    /*描画位置*/
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    /*矢印の形状*/
+    width: rem(150);
+    height: rem(2);
+}

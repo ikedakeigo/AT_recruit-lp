@@ -1,4 +1,4 @@
-<!--#include virtual="../_include/header.html"-->
+<?php get_header(); ?>
 
 <main>
   <!-- hero -->
@@ -7,12 +7,12 @@
       <div class="p-hero__img-wrap">
         <img
           class="js-changeImg pc-only"
-          src="/assets/img/hero/mv.png"
+          src="<?php echo get_template_directory_uri(); ?>/assets/img/hero/mv.png"
           alt=""
         />
         <img
           class="js-changeImg sp-only"
-          src="/assets/img/hero/mv_sp.png"
+          src="<?php echo get_template_directory_uri(); ?>/assets/img/hero/mv_sp.png"
           alt=""
         />
       </div>
@@ -39,7 +39,7 @@
       </div>
       <div class="p-vision__wrap delay">
         <div class="p-vision__img">
-          <img src="/assets/img/vision/vision.png" alt="ビジョン" />
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/vision/vision.png" alt="ビジョン" />
         </div>
         <div class="p-vision__text delay">
           <p class="u-font22 hiragino">
@@ -228,7 +228,7 @@
         <div class="p-work__item delay">
           <div class="p-work__img pc-only">
             <img
-              src="/assets/img/work/work_1.png"
+              src="<?php echo get_template_directory_uri(); ?>/assets/img/work/work_1.png"
               alt="助け合えるいい仲間がいる"
             />
           </div>
@@ -238,7 +238,7 @@
             </h3>
             <div class="p-work__img sp-only">
               <img
-                src="/assets/img/work/work_1.png"
+                src="<?php echo get_template_directory_uri(); ?>/assets/img/work/work_1.png"
                 alt="助け合えるいい仲間がいる"
               />
             </div>
@@ -259,7 +259,7 @@
         <div class="p-work__item delay">
           <div class="p-work__img pc-only">
             <img
-              src="/assets/img/work/work_2.png"
+              src="<?php echo get_template_directory_uri(); ?>/assets/img/work/work_2.png"
               alt="自分で理想の介護を提案できる"
             />
           </div>
@@ -269,7 +269,7 @@
             </h3>
             <div class="p-work__img sp-only">
               <img
-                src="/assets/img/work/work_2.png"
+                src="<?php echo get_template_directory_uri(); ?>/assets/img/work/work_2.png"
                 alt="自分で理想の介護を提案できる"
               />
             </div>
@@ -290,7 +290,7 @@
         <div class="p-work__item delay">
           <div class="p-work__img pc-only">
             <img
-              src="/assets/img/work/work_3.png"
+              src="<?php echo get_template_directory_uri(); ?>/assets/img/work/work_3.png"
               alt="生活と心に豊かさを持てる職場"
             />
           </div>
@@ -300,7 +300,7 @@
             </h3>
             <div class="p-work__img sp-only">
               <img
-                src="/assets/img/work/work_3.png"
+                src="<?php echo get_template_directory_uri(); ?>/assets/img/work/work_3.png"
                 alt="生活と心に豊かさを持てる職場"
               />
             </div>
@@ -318,7 +318,7 @@
         <div class="p-work__item delay">
           <div class="p-work__img pc-only">
             <img
-              src="/assets/img/work/work_4.png"
+              src="<?php echo get_template_directory_uri(); ?>/assets/img/work/work_4.png"
               alt="お金＋α のやりがいのある職場"
             />
           </div>
@@ -328,7 +328,7 @@
             </h3>
             <div class="p-work__img sp-only">
               <img
-                src="/assets/img/work/work_4.png"
+                src="<?php echo get_template_directory_uri(); ?>/assets/img/work/work_4.png"
                 alt="お金＋α のやりがいのある職場"
               />
             </div>
@@ -347,7 +347,7 @@
         <div class="p-work__item delay">
           <div class="p-work__img pc-only">
             <img
-              src="/assets/img/work/work_5.png"
+              src="<?php echo get_template_directory_uri(); ?>/assets/img/work/work_5.png"
               alt="社会問題の解決に参加できる"
             />
           </div>
@@ -357,7 +357,7 @@
             </h3>
             <div class="p-work__img sp-only">
               <img
-                src="/assets/img/work/work_5.png"
+                src="<?php echo get_template_directory_uri(); ?>/assets/img/work/work_5.png"
                 alt="社会問題の解決に参加できる"
               />
             </div>
@@ -376,7 +376,7 @@
         <div class="p-work__item delay">
           <div class="p-work__img pc-only">
             <img
-              src="/assets/img/work/work_6.png"
+              src="<?php echo get_template_directory_uri(); ?>/assets/img/work/work_6.png"
               alt="充実した研修制度キャリアアップ"
             />
           </div>
@@ -386,7 +386,7 @@
             </h3>
             <div class="p-work__img sp-only">
               <img
-                src="/assets/img/work/work_6.png"
+                src="<?php echo get_template_directory_uri(); ?>/assets/img/work/work_6.png"
                 alt="充実した研修制度キャリアアップ"
               />
             </div>
@@ -414,7 +414,7 @@
       <div class="p-message__wrap">
         <div class="p-message__top">
           <div class="p-message__top-img delay">
-            <img src="/assets/img/message/message_1.png" alt="代表挨拶" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/message/message_1.png" alt="代表挨拶" />
           </div>
           <div class="p-message__top-text delay">
             <h3 class="p-message__top-title">“思いがなければ意味がない”</h3>
@@ -481,7 +481,7 @@
           </p>
         </div>
         <!-- <div class="p-about__img">
-          <img src="./images/about.jpg" alt="私たちのお仕事" />
+          <img src="<?php echo get_template_directory_uri(); ?>./images/about.jpg" alt="私たちのお仕事" />
         </div> -->
       </div>
     </div>
@@ -534,15 +534,15 @@
         <div class="p-schedule__images pc-only delay">
           <div class="p-schedule__image">
             <img
-              src="/assets/img/schedule/schedule_01.png"
+              src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_01.png"
               alt="始業、朝礼、掃除"
             />
           </div>
           <div class="p-schedule__image">
-            <img src="/assets/img/schedule/schedule_02.png" alt="昼休み" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_02.png" alt="昼休み" />
           </div>
           <div class="p-schedule__image">
-            <img src="/assets/img/schedule/schedule_03.png" alt="帰宅" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_03.png" alt="帰宅" />
           </div>
         </div>
       </div>
@@ -550,7 +550,7 @@
       <div class="p-schedule__wrap bottom delay">
         <div class="p-schedule-bottom__img">
           <img
-            src="/assets/img/schedule/schedule_04.png"
+            src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_04.png"
             alt="社会問題の解決に参加できる"
           />
         </div>
@@ -587,7 +587,7 @@
           <div class="p-profile__item delay">
             <div class="p-profile__img">
               <img
-                src="/assets/img/profile/profile_01.png"
+                src="<?php echo get_template_directory_uri(); ?>/assets/img/profile/profile_01.png"
                 alt="嘘をつかない"
               />
             </div>
@@ -598,7 +598,7 @@
           <div class="p-profile__item delay">
             <div class="p-profile__img">
               <img
-                src="/assets/img/profile/profile_02.png"
+                src="<?php echo get_template_directory_uri(); ?>/assets/img/profile/profile_02.png"
                 alt="主体的に成長する"
               />
             </div>
@@ -608,7 +608,7 @@
           </div>
           <div class="p-profile__item delay">
             <div class="p-profile__img">
-              <img src="/assets/img/profile/profile_03.png" alt="約束は守る" />
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/profile/profile_03.png" alt="約束は守る" />
             </div>
             <!-- <div class="p-profile__text">
               <h3 class="p-profile__item-title">3. 約束は守る</h3>
@@ -639,7 +639,7 @@
           <div class="p-value__item delay">
             <div class="p-value__head">
               <img
-                src="/assets/img/value/value_01.png"
+                src="<?php echo get_template_directory_uri(); ?>/assets/img/value/value_01.png"
                 alt="お客様へのあり方"
               />
               <h3 class="p-value__head-title hiragino">お客様へのあり方</h3>
@@ -655,7 +655,7 @@
           <!-- 2 -->
           <div class="p-value__item delay">
             <div class="p-value__head">
-              <img src="/assets/img/value/value_02.png" alt="人間性の尊重" />
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/value/value_02.png" alt="人間性の尊重" />
               <h3 class="p-value__head-title hiragino">人間性の尊重</h3>
             </div>
             <div class="p-value__text">
@@ -670,7 +670,7 @@
           <div class="p-value__item delay">
             <div class="p-value__head">
               <img
-                src="/assets/img/value/value_03.png"
+                src="<?php echo get_template_directory_uri(); ?>/assets/img/value/value_03.png"
                 alt="サービス業としての接遇と挨拶"
               />
               <h3 class="p-value__head-title hiragino">
@@ -689,7 +689,7 @@
           <div class="p-value__item delay">
             <div class="p-value__head">
               <img
-                src="/assets/img/value/value_04.png"
+                src="<?php echo get_template_directory_uri(); ?>/assets/img/value/value_04.png"
                 alt="主体的な学びと実践"
               />
               <h3 class="p-value__head-title hiragino">主体的な学びと実践</h3>
@@ -706,7 +706,7 @@
           <div class="p-value__item delay">
             <div class="p-value__head">
               <img
-                src="/assets/img/value/value_05.png"
+                src="<?php echo get_template_directory_uri(); ?>/assets/img/value/value_05.png"
                 alt="セルフマネジメント"
               />
               <h3 class="p-value__head-title hiragino">セルフマネジメント</h3>
@@ -723,7 +723,7 @@
           <div class="p-value__item delay">
             <div class="p-value__image">
               <img
-                src="/assets/img/value/value_06.png"
+                src="<?php echo get_template_directory_uri(); ?>/assets/img/value/value_06.png"
                 alt="お客様へのあり方"
               />
             </div>
@@ -767,7 +767,7 @@
             <span> キャリアアップイメージ図 </span>
           </h3>
           <img
-            src="/assets/img/career/career_01.png"
+            src="<?php echo get_template_directory_uri(); ?>/assets/img/career/career_01.png"
             alt="キャリアアップイメージ図"
           />
         </div>
@@ -809,25 +809,25 @@
         <ul class="p-data__items">
           <li class="p-data__item delay">
             <img
-              src="/assets/img/data/data_01.png"
+              src="<?php echo get_template_directory_uri(); ?>/assets/img/data/data_01.png"
               alt="データで見るいこいの里"
             />
           </li>
           <li class="p-data__item delay">
             <img
-              src="/assets/img/data/data_02.png"
+              src="<?php echo get_template_directory_uri(); ?>/assets/img/data/data_02.png"
               alt="データで見るいこいの里"
             />
           </li>
           <li class="p-data__item delay">
             <img
-              src="/assets/img/data/data_03.png"
+              src="<?php echo get_template_directory_uri(); ?>/assets/img/data/data_03.png"
               alt="データで見るいこいの里"
             />
           </li>
           <li class="p-data__item delay">
             <img
-              src="/assets/img/data/data_04.png"
+              src="<?php echo get_template_directory_uri(); ?>/assets/img/data/data_04.png"
               alt="データで見るいこいの里"
             />
           </li>
@@ -842,7 +842,7 @@
   </section>
 
   <!-- guidelines -->
-  <section class="p-guidelines l-guidelines delay" id="guidelines">
+    <section class="p-guidelines l-guidelines delay" id="guidelines">
     <div class="p-guidelines__bg"></div>
     <div class="p-guidelines__inner inner">
       <div class="p-guidelines__title-wrap delay">
@@ -943,12 +943,12 @@
       <div class="p-process__wrap delay">
         <img
           class="js-processImg pc-only"
-          src="/assets/img/process/process_01.png"
+          src="<?php echo get_template_directory_uri(); ?>/assets/img/process/process_01.png"
           alt="選考プロセス"
         />
         <img
           class="js-processImg sp-only"
-          src="/assets/img/process/process_01-sp.png"
+          src="<?php echo get_template_directory_uri(); ?>/assets/img/process/process_01-sp.png"
           alt="選考プロセス"
         />
       </div>
@@ -1089,4 +1089,5 @@
   </section>
 </main>
 
-<!--#include virtual="../_include/footer.html"-->
+
+<?php get_footer(); ?>

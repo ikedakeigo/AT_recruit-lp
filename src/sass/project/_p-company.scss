@@ -24,9 +24,10 @@
 .p-company__title {
   font-size:  rem(22);
   border-bottom: 1px solid $color-black;
-  text-align: center;
+  text-align: left;
   padding-bottom: rem(20);
   @include mq(md){
+    text-align: center;
     font-size:  rem(27);
   }
 }

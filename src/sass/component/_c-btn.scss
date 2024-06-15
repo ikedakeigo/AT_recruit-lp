@@ -18,31 +18,32 @@
 
 // Modifier
 .c-contactBtn .c-contactBtn--black {
-  font-size: rem(25);
+  font-size: rem(20);
   border-radius: rem(50);
-  padding: rem(25) rem(20);
+  padding: rem(15) rem(30);
   color: #fff;
-  // padding-left: rem(50);
   background-color: $color-orange;
   position: relative;
   display: flex;
   align-items: center;
+  max-width:  rem(400);
   @include mq(md){
+    max-width:100%;
     padding: rem(35) rem(50);
     font-size:  rem(36);
   }
   &::after {
     content: "";
     display: inline-block;
-    background-image: url("../../../assets/img/icon/icon_arrowLink.svg");
+    background-image: url("../../assets/img/icon/icon_arrowLink.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
     width: rem(40);
     height: rem(40);
-    margin-left: rem(40);
+    margin-left: rem(30);
     @include mq(md){
-      margin-left: rem(70);
+      margin-left: rem(60);
     }
   }
 }

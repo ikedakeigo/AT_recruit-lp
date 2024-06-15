@@ -87,7 +87,7 @@
 .p-message__bottom-list {
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
-  background-image: url("../../../assets/img/message/message-text__bg-sp.png");
+  background-image: url("../../assets/img/message/message-text__bg-sp.png");
   background-repeat: no-repeat;
   background-size: contain;
   overflow: hidden;
@@ -99,7 +99,7 @@
   @include mq(md){
     margin: 0 auto;
     background-size: contain;
-    background-image: url("../../../assets/img/message/message-text__bg.svg");
+    background-image: url("../../assets/img/message/message-text__bg.svg");
   }
 }
 

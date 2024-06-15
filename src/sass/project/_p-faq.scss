@@ -26,7 +26,7 @@
   padding-left: rem(28);
   position: relative;
   color: $color-text-blue;
-  text-indent: -13px;
+  text-indent: -18px;
   @include mq(md){
     text-indent: rem(-14);
       font-size: rem(18);
@@ -43,7 +43,7 @@
 .p-faq-list__item-answer {
   margin-top: rem(15);
   padding-left: rem(30);
-  text-indent: -13px;
+  text-indent: -18px;
   @include mq(md){
     padding-left: rem(40);
     text-indent: -1em;

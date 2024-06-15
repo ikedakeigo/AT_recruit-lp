@@ -81,21 +81,18 @@
 
 .p-guidelines__term {
   // float: left;
-  width: 30%;
+  // width: 60%;
+  min-width: rem(80);
   @include mq(md) {
     width: rem(180);
   }
 }
 
 .p-guidelines__description {
-  // position: absolute;
-  // top: 50%;
-  // transform: translateY(-50%);
-  // left: 0;
-  // padding-left: rem(150);
-  margin-left: rem(20);
+  min-width:  rem(200);
+  padding-left: rem(30);
   @include mq(md) {
     // padding-left: rem(200);
-    margin-left: rem(20);
+    // margin-left: rem(20);
   }
 }
