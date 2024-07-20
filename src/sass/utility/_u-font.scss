@@ -1,0 +1,93 @@
+@use '../foundation' as *;
+
+.u-font14 {
+    font-size: rem(12);
+    @include mq(md) {
+        font-size: rem(14);
+    }
+}
+
+.u-font16 {
+    font-size: rem(14);
+    @include mq(md) {
+        font-size: rem(16);
+    }
+}
+
+.u-font18 {
+    font-size: rem(16);
+    @include mq(md) {
+        font-size: rem(18);
+    }
+}
+
+.u-font20 {
+    font-size: rem(18);
+    @include mq(md) {
+        font-size: rem(20);
+    }
+}
+
+.u-font22 {
+    font-size: rem(20);
+    @include mq(md) {
+        font-size: rem(22);
+    }
+}
+
+.u-font24 {
+    font-size: rem(22);
+    @include mq(md) {
+        font-size: rem(24);
+    }
+}
+
+.u-font28 {
+    font-size: rem(26);
+    @include mq(md) {
+        font-size: rem(28);
+    }
+}
+
+.u-font32 {
+    font-size: rem(30);
+    @include mq(md) {
+        font-size: rem(32);
+    }
+}
+
+.u-font33 {
+    font-size: rem(30);
+    @include mq(md) {
+        font-size: rem(33);
+    }
+}
+
+.u-font40 {
+    font-size: rem(38);
+    @include mq(md) {
+        font-size: rem(40);
+    }
+}
+
+.u-font48 {
+    font-size: rem(46);
+    @include mq(md) {
+        font-size: rem(48);
+    }
+}
+
+.u-font52 {
+    font-size: rem(24);
+    @include mq(md) {
+        font-size: rem(52);
+    }
+}
+
+.u-title span {
+    background-image: linear-gradient(
+        rgba(0, 0, 0, 0) 70%,
+        rgb(27, 202, 47) 70%
+    );
+    text-shadow: 0 0 rem(2) rgb(243, 232, 232);
+}

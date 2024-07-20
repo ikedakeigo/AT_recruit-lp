@@ -1,0 +1,234 @@
+@use '../foundation' as *;
+
+.p-header {
+    height: rem(60);
+    background-color: #fff;
+    @include mq(md) {
+        height: rem(70);
+    }
+}
+
+.p-header__inner {
+    padding-left: rem(15);
+    padding-right:  rem(15);
+    height: inherit;
+    display: flex;
+    justify-content: space-between;
+    @include mq(md) {
+      height: inherit;
+        padding: 0 rem(50);
+    }
+}
+
+.p-header__logo {
+    max-width: rem(74);
+    width: 100%;
+    height: inherit;
+    @include mq(md) {
+        max-width: rem(100);
+    }
+}
+
+.p-header__logo a {
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.p-header__logo img {
+  aspect-ratio: 140/60;
+  object-fit: cover;
+  height: auto;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.p-header__nav {
+    display: none;
+    height: inherit;
+    @include mq(md) {
+        display: block;
+    }
+}
+
+.p-header__nav-list {
+    display: flex;
+    height: inherit;
+}
+
+.p-header__nav-item {
+    height: inherit;
+}
+
+.p-header__nav-item.p-header__nav-item--contact {
+    margin-left: rem(15);
+    display: flex;
+    align-items: center;
+}
+
+.p-header__nav-item a {
+    padding: 0 rem(15);
+    height: inherit;
+    display: flex;
+    align-items: center;
+    font-size: rem(15);
+    font-weight: bold;
+    line-height: 1;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.p-header__nav-item.p-header__nav-item--contact a {
+    padding: rem(10) rem(20);
+    position: relative;
+    height: initial;
+    color: #fff;
+    background-color: #DE8430;
+    border-radius:  rem(50);
+}
+
+.p-header__nav-item.p-header__nav-item--contact a::after {
+    content: "";
+    margin-left: rem(10);
+    width: rem(11);
+    height: rem(12);
+    display: inline-block;
+    background-image: url("../../assets/img/icon/icon_arrowLink.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.p-header__hamburger {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    position: relative;
+    z-index: 999;
+    width: rem(40);
+    height: inherit;
+    background-color: transparent;
+    cursor: pointer;
+    transition: .3s;
+    @include mq(md) {
+        display: none;
+    }
+}
+
+.p-header__hamburger.is-open {
+    background-color: transparent;
+}
+
+.p-header__hamburger span {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: rem(30);
+    height: 2px;
+    background-color: $color-black;
+    transition: .5s;
+}
+
+.p-header__hamburger span:nth-of-type(1) {
+    top: rem(-10);
+}
+
+.p-header__hamburger span:nth-of-type(2) {
+    top: 0;
+}
+
+.p-header__hamburger span:nth-of-type(3) {
+    top: rem(10);
+}
+
+.p-header__hamburger.is-open span:nth-of-type(1) {
+    top: 0;
+    transform: translateX(-50%) rotate(45deg);
+}
+
+.p-header__hamburger.is-open span:nth-of-type(2) {
+    opacity: 0;
+}
+
+.p-header__hamburger.is-open span:nth-of-type(3) {
+    top: rem(-5);
+    transform: translateX(-50%) rotate(-45deg);
+}
+
+.p-header__drawer {
+    padding-top: rem(100);
+    position: fixed;
+    z-index: 900;
+    top: 0;
+    right: -120%;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba($color-blue, $alpha: .9);
+    overflow-y: scroll;
+    scrollbar-width: none;
+    transition: .6s;
+
+}
+
+.p-header__drawe-logo {
+    max-width:  rem(300);
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: rem(50);
+}
+
+.p-header__drawer.is-open {
+    right: 0;
+}
+
+.p-header__drawer::-webkit-scrollbar {
+  display:none;
+}
+
+.p-header__drawer-item{
+    margin-bottom: rem(20);
+
+}
+
+.p-header__drawer-item a {
+    padding: rem(15) 0;
+    display: block;
+    font-size: rem(24);
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.05em;
+    color: $color-black;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.p-header__drawer-item--contact a{
+    padding: rem(10) 0;
+    color: #fff;
+    background-color: #DE8430;
+    border-radius: rem(50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-header__drawer-item.p-header__drawer-item--contact a::after {
+    content: "";
+    margin-bottom: rem(5);
+    margin-left: rem(20);
+    width: rem(40);
+    height: rem(40);
+    display: inline-block;
+    background-image: url("../../assets/img/icon/icon_arrowLink.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+.p-header__drawer-list{
+  padding: 0  rem(20);
+}

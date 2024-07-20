@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="_レイヤー_2" data-name="レイヤー 2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 89 136">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #92cdee;
+        filter: url(#drop-shadow-1);
+        font-family: DINCondensed-Bold, 'DIN Condensed';
+        font-size: 105.04px;
+        font-weight: 700;
+      }
+
+      .cls-2 {
+        letter-spacing: -.02em;
+      }
+    </style>
+    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
+      <feOffset dx="2" dy="2"/>
+      <feGaussianBlur result="blur" stdDeviation="2"/>
+      <feFlood flood-color="#656666" flood-opacity=".75"/>
+      <feComposite in2="blur" operator="in"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="_レイヤー_1-2" data-name="レイヤー 1">
+    <text class="cls-1" transform="translate(4.15 94.43)"><tspan class="cls-2" x="0" y="0">0</tspan><tspan x="37" y="0">1</tspan></text>
+  </g>
+</svg>

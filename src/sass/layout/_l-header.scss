@@ -1,0 +1,34 @@
+@use '../foundation' as *;
+
+.l-header {
+    position: sticky;
+    z-index: 900;
+    top: 0;
+    right: 0;
+    left: 0;
+    box-shadow: 0 0 rem(10) rgba(0, 0, 0, 0.1);
+}
+
+/*===================================
+ * mask
+===================================*/
+// .mask {
+//     position: fixed;
+//     top: 0;
+//     left: 0;
+//     z-index: 1;
+//     width: 100%;
+//     height: 100%;
+//     background-color: $color-white;
+//     opacity: 0;
+//     visibility: hidden;
+//     transition: 0.3s;
+//     z-index: 99;
+// }
+
+// .mask.is-open {
+//     opacity: 0.7;
+//     visibility: visible;
+//     @include mq(md) {
+//     }
+// }

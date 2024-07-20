@@ -1,0 +1,42 @@
+@use '../foundation/' as *;
+
+.p-about {
+
+}
+
+
+
+.p-about__inner {
+
+}
+
+.inner {
+
+}
+
+.p-about__title-wrap {
+  margin-bottom: rem(60);
+  @include mq(md){
+    margin-bottom: rem(80);
+  }
+}
+
+.p-about__title {
+
+}
+
+.main-title {
+
+}
+
+.p-about__wrap {
+
+}
+
+.p-about__text {
+
+}
+
+.p-about__img {
+
+}

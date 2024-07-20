@@ -1,0 +1,9 @@
+@use '../foundation/' as *;
+
+
+.l-about {
+  margin-bottom: rem(200);
+  @include mq(md){
+    margin-bottom: rem(250);
+  }
+}

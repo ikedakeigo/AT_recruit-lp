@@ -2,12 +2,24 @@
 
 <main>
   <!-- hero -->
-  <section class="p-hero l-hero" id="">
+  <section class="p-hero l-hero delay" id="">
     <div class="p-hero__inner inner">
-      <div class="p-hero__title-wrap">
-        <h2 class="p-hero__title">
+      <div class="p-hero__img-wrap">
+        <img
+          class="js-changeImg pc-only"
+          src="/assets/img/hero/mv.png"
+          alt=""
+        />
+        <img
+          class="js-changeImg sp-only"
+          src="/assets/img/hero/mv_sp.png"
+          alt=""
+        />
+      </div>
+      <div class="p-hero__title-wrap delay">
+        <h2 class="p-hero__title hiragino">
           <span>
-            施設にいるからこそ得られる日々を<br />
+            施設にいるからこそ<br class="sp-only" />得られる日々を<br />
             人生の彩りに変えるために
           </span>
         </h2>
@@ -17,17 +29,20 @@
   </section>
 
   <!-- vision -->
-  <section class="p-vision l-vision" id="">
+  <section class="p-vision l-vision delay" id="">
     <div class="p-vision__inner inner">
-      <div class="p-vision__title-wrap">
-        <h2 class="p-vision__title main-title">
-          <span>Vision</span>
+      <div class="p-vision__title-wrap delay">
+        <h2 class="p-vision__title main-title vision-title" data-title="Vision">
+          <span>私たちのビジョン</span>
         </h2>
-        <p class="p-vision__sub-title sub-title">私たちのビジョン</p>
+        <!-- <p class="p-vision__sub-title sub-title">私たちのビジョン</p> -->
       </div>
-      <div class="p-vision__wrap">
-        <div class="p-vision__text">
-          <p>
+      <div class="p-vision__wrap delay">
+        <div class="p-vision__img">
+          <img src="/assets/img/vision/vision.png" alt="ビジョン" />
+        </div>
+        <div class="p-vision__text delay">
+          <p class="u-font22 hiragino">
             私たちは<br />
             介護を必要とする人<br />
             それを支える全ての人の尊厳を守り<br />
@@ -39,108 +54,194 @@
             誰かが犠牲になった上での幸せではなく、すべての人が幸せを感じながら、年を重ねていくことを心から喜び合える社会を実現していきたいと考えています。
           </p>
         </div>
-        <div class="p-vision__img">
-          <img src="./images/vision.jpg" alt="ビジョン" />
-        </div>
       </div>
     </div>
   </section>
 
   <!-- anckerLink -->
-  <section class="p-anckerLink l-anckerLink" id="">
+  <section class="p-anckerLink l-anckerLink delay" id="">
     <div class="p-anckerLink__inner inner">
       <div class="p-anckerLink__title-wrap">
         <p class="p-anckerLink__sub-title sub-title">目次</p>
       </div>
-      <div class="p-anckerLink__wrap">
-        <ul class="p-anckerLink__items">
+      <div class="p-anckerLink__wrap" id="page-link">
+        <!-- pc -->
+        <ul class="p-anckerLink__items pc-only">
           <li class="p-anckerLink__item">
-            <a href="#vision" class="p-anckerLink__link"
+            <a href="#work" class="p-anckerLink__link"
               >私の会社で働く6つの理由</a
             >
           </li>
           <li class="p-anckerLink__item">
-            <a href="#service" class="p-anckerLink__link">代表挨拶</a>
+            <a href="#message" class="p-anckerLink__link">代表挨拶</a>
           </li>
           <li class="p-anckerLink__item">
-            <a href="#news" class="p-anckerLink__link">私たちのお仕事</a>
+            <a href="#about" class="p-anckerLink__link">私たちのお仕事</a>
           </li>
           <li class="p-anckerLink__item">
-            <a href="#contact" class="p-anckerLink__link"
+            <a href="#schedule" class="p-anckerLink__link"
               >先輩の1日と働きがい</a
             >
           </li>
           <li class="p-anckerLink__item">
-            <a href="#contact" class="p-anckerLink__link"
+            <a href="#profile" class="p-anckerLink__link"
               >私たちの会社で活躍できる人</a
             >
           </li>
           <li class="p-anckerLink__item">
-            <a href="#contact" class="p-anckerLink__link">キャリアアップ制度</a>
+            <a href="#career" class="p-anckerLink__link">キャリアアップ制度</a>
           </li>
           <li class="p-anckerLink__item">
-            <a href="#contact" class="p-anckerLink__link">研修制度</a>
+            <a href="#career02" class="p-anckerLink__link">研修制度</a>
           </li>
           <li class="p-anckerLink__item">
-            <a href="#contact" class="p-anckerLink__link">福利厚生制度</a>
+            <a href="#career03" class="p-anckerLink__link">福利厚生制度</a>
           </li>
           <li class="p-anckerLink__item">
-            <a href="#contact" class="p-anckerLink__link"
+            <a href="#data" class="p-anckerLink__link"
               >データで見るいこいの里</a
             >
           </li>
           <li class="p-anckerLink__item">
-            <a href="#contact" class="p-anckerLink__link"
+            <a href="#reMessage" class="p-anckerLink__link"
               >採用担当者からのメッセージ</a
             >
           </li>
           <li class="p-anckerLink__item">
-            <a href="#contact" class="p-anckerLink__link">募集要項</a>
+            <a href="#guidelines" class="p-anckerLink__link">募集要項</a>
           </li>
           <li class="p-anckerLink__item">
-            <a href="#contact" class="p-anckerLink__link">選考プロセス</a>
+            <a href="#process" class="p-anckerLink__link">選考プロセス</a>
           </li>
           <li class="p-anckerLink__item">
-            <a href="#contact" class="p-anckerLink__link">エントリー</a>
+            <a href="#contactBtn" class="p-anckerLink__link">エントリー</a>
           </li>
           <li class="p-anckerLink__item">
-            <a href="#contact" class="p-anckerLink__link">よくある質問</a>
+            <a href="#faq" class="p-anckerLink__link">よくある質問</a>
           </li>
           <li class="p-anckerLink__item">
-            <a href="#contact" class="p-anckerLink__link"
+            <a href="#company" class="p-anckerLink__link"
               >ウキシログループ概要</a
             >
           </li>
         </ul>
+
+        <!-- sp -->
+        <div class="sp-only">
+          <ul class="p-anckerLink__items">
+            <li class="p-anckerLink__item">
+              <a href="#work" class="p-anckerLink__link"
+                >私の会社で働く6つの理由</a
+              >
+            </li>
+            <ul class="p-anckerLink__items-sp">
+              <li class="p-anckerLink__item">
+                <a href="#message" class="p-anckerLink__link">代表挨拶</a>
+              </li>
+              <li class="p-anckerLink__item">
+                <a href="#about" class="p-anckerLink__link">私たちのお仕事</a>
+              </li>
+            </ul>
+            <ul>
+              <li class="p-anckerLink__item">
+                <a href="#schedule" class="p-anckerLink__link"
+                  >先輩の1日と働きがい</a
+                >
+              </li>
+            </ul>
+            <li class="p-anckerLink__item">
+              <a href="#profile" class="p-anckerLink__link"
+                >私たちの会社で活躍できる人</a
+              >
+            </li>
+            <ul class="p-anckerLink__items-sp">
+              <li class="p-anckerLink__item">
+                <a href="#career" class="p-anckerLink__link"
+                  >キャリアアップ制度</a
+                >
+              </li>
+              <li class="p-anckerLink__item">
+                <a href="#career02" class="p-anckerLink__link">研修制度</a>
+              </li>
+            </ul>
+            <ul class="p-anckerLink__items-sp">
+              <li class="p-anckerLink__item">
+                <a href="#career03" class="p-anckerLink__link">福利厚生制度</a>
+              </li>
+              <li class="p-anckerLink__item">
+                <a href="#data" class="p-anckerLink__link"
+                  >データで見るいこいの里</a
+                >
+              </li>
+            </ul>
+            <li class="p-anckerLink__item">
+              <a href="#reMessage" class="p-anckerLink__link"
+                >採用担当者からのメッセージ</a
+              >
+            </li>
+            <ul class="p-anckerLink__items-sp">
+              <li class="p-anckerLink__item">
+                <a href="#guidelines" class="p-anckerLink__link">募集要項</a>
+              </li>
+              <li class="p-anckerLink__item">
+                <a href="#process" class="p-anckerLink__link">選考プロセス</a>
+              </li>
+            </ul>
+            <ul class="p-anckerLink__items-sp">
+              <li class="p-anckerLink__item">
+                <a href="#contactBtn" class="p-anckerLink__link">エントリー</a>
+              </li>
+              <li class="p-anckerLink__item">
+                <a href="#faq" class="p-anckerLink__link">よくある質問</a>
+              </li>
+            </ul>
+            <li class="p-anckerLink__item">
+              <a href="#company" class="p-anckerLink__link"
+                >ウキシログループ概要</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- work -->
-  <section class="p-work l-work" id="">
+  <section class="p-work l-work anchor delay" id="work">
+    <div class="p-work__bg"></div>
     <div class="p-work__inner inner">
-      <div class="p-work__title-wrap">
-        <h2 class="p-work__title main-title">
-          <span>Reasons to work</span>
+      <div class="p-work__title-wrap delay">
+        <h2 class="p-work__title main-title work-title" data-title="Reasons to work">
+          <span>私の会社で働く<br class="sp-only" />6つの理由</span>
         </h2>
-        <p class="p-work__sub-title sub-title">私の会社で働く6つの理由</p>
       </div>
-      <div class="p-work__first-info">
+      <div class="p-work__first-info delay">
         <p>
-          全国で16施設、450名（R6.1）と、安定的に成長しながら働きやすい職場作りのために人事制度を整えてきました。<br />
+          全国で16施設、450名(R6.1)と、安定的に成長しながら働きやすい職場作りのために人事制度を整えてきました。<br />
           会社が不正のない透明性のある経営の実践し、社員が安心して働ける経営こそが、お客様に上質のサービスを提供できると考えているからです。<br />
           そのため、ノルマや「辻つま合わせ」などで無理なことを強要されることはなく、あなたのライフスタイルやキャリアに合わせて安心して働くことができます。
         </p>
       </div>
 
-      <div class="p-work__wrap">
+      <div class="p-work__wrap delay">
         <!-- 1 -->
-        <div class="p-work__item">
-          <div class="p-work__img">
-            <img src="./images/work2.jpg" alt="助け合えるいい仲間がいる" />
+        <div class="p-work__item delay">
+          <div class="p-work__img pc-only">
+            <img
+              src="/assets/img/work/work_1.png"
+              alt="助け合えるいい仲間がいる"
+            />
           </div>
           <div class="p-work__text">
-            <h3 class="p-work__item-title">1. 助け合えるいい仲間がいる</h3>
+            <h3 class="p-work__item-title title1 hiragino">
+              助け合えるいい仲間がいる
+            </h3>
+            <div class="p-work__img sp-only">
+              <img
+                src="/assets/img/work/work_1.png"
+                alt="助け合えるいい仲間がいる"
+              />
+            </div>
             <p>
               私たちは心理的な安全性が保たれた職場作りを大切にしています。<br />
               困った時や分からない時にはいつでもサポートしてくれる笑顔の仲間がそばにいます。<br />
@@ -155,12 +256,23 @@
         </div>
 
         <!-- 2 -->
-        <div class="p-work__item">
-          <div class="p-work__img">
-            <img src="./images/work1.jpg" alt="自分で理想の介護を提案できる" />
+        <div class="p-work__item delay">
+          <div class="p-work__img pc-only">
+            <img
+              src="/assets/img/work/work_2.png"
+              alt="自分で理想の介護を提案できる"
+            />
           </div>
           <div class="p-work__text">
-            <h3 class="p-work__item-title">2. 自分で理想の介護を提案できる</h3>
+            <h3 class="p-work__item-title title2 hiragino">
+              自分で理想の介護を提案できる
+            </h3>
+            <div class="p-work__img sp-only">
+              <img
+                src="/assets/img/work/work_2.png"
+                alt="自分で理想の介護を提案できる"
+              />
+            </div>
             <p>
               人にはそれぞれの人生があります。<br />
               「正しい」人生や介護など存在しません。<br />
@@ -175,12 +287,23 @@
         </div>
 
         <!-- 3 -->
-        <div class="p-work__item">
-          <div class="p-work__img">
-            <img src="./images/work3.jpg" alt="生活と心に豊かさを持てる職場" />
+        <div class="p-work__item delay">
+          <div class="p-work__img pc-only">
+            <img
+              src="/assets/img/work/work_3.png"
+              alt="生活と心に豊かさを持てる職場"
+            />
           </div>
           <div class="p-work__text">
-            <h3 class="p-work__item-title">3. 生活と心に豊かさを持てる職場</h3>
+            <h3 class="p-work__item-title title3 hiragino">
+              生活と心に豊かさを持てる職場
+            </h3>
+            <div class="p-work__img sp-only">
+              <img
+                src="/assets/img/work/work_3.png"
+                alt="生活と心に豊かさを持てる職場"
+              />
+            </div>
             <p>
               私たちは全国の職員のために、安定的に成長しながら働きやすい職場作りのために人事制度を整えてきました。<br />
               私たちの職場は、スタッフ個人の尊厳を重んじ、健康管理とリフレッシュの時間を確保しています。<br />
@@ -192,12 +315,23 @@
         </div>
 
         <!-- 4 -->
-        <div class="p-work__item">
-          <div class="p-work__img">
-            <img src="./images/work4.jpg" alt="お金＋α のやりがいのある職場" />
+        <div class="p-work__item delay">
+          <div class="p-work__img pc-only">
+            <img
+              src="/assets/img/work/work_4.png"
+              alt="お金＋α のやりがいのある職場"
+            />
           </div>
           <div class="p-work__text">
-            <h3 class="p-work__item-title">4. お金＋α のやりがいのある職場</h3>
+            <h3 class="p-work__item-title title4 hiragino">
+              お金＋α のやりがいのある職場
+            </h3>
+            <div class="p-work__img sp-only">
+              <img
+                src="/assets/img/work/work_4.png"
+                alt="お金＋α のやりがいのある職場"
+              />
+            </div>
             <p>
               前向きに取り組んだ人は学歴、年齢、性別に関係なく評価される職場です。<br />
               また、家庭の事情などで業務負担を軽くしてほしい場合には働き方を変えることも可能です。<br />
@@ -208,13 +342,25 @@
             </p>
           </div>
         </div>
+
         <!-- 5 -->
-        <div class="p-work__item">
-          <div class="p-work__img">
-            <img src="./images/work4.jpg" alt="社会問題の解決に参加できる" />
+        <div class="p-work__item delay">
+          <div class="p-work__img pc-only">
+            <img
+              src="/assets/img/work/work_5.png"
+              alt="社会問題の解決に参加できる"
+            />
           </div>
           <div class="p-work__text">
-            <h3 class="p-work__item-title">5. 社会問題の解決に参加できる</h3>
+            <h3 class="p-work__item-title title5 hiragino">
+              社会問題の解決に参加できる
+            </h3>
+            <div class="p-work__img sp-only">
+              <img
+                src="/assets/img/work/work_5.png"
+                alt="社会問題の解決に参加できる"
+              />
+            </div>
             <p>
               私たちの運営する「いこいの里」はローコスト運営を心がけています。<br />
               そのために経営の効率化などの必要性はありますが、多くの所得層の方が利用できるように仕組み化されています。<br />
@@ -227,17 +373,23 @@
         </div>
 
         <!-- 6 -->
-        <div class="p-work__item">
-          <div class="p-work__img">
+        <div class="p-work__item delay">
+          <div class="p-work__img pc-only">
             <img
-              src="./images/work4.jpg"
-              alt="充実した研修制度とキャリアアップ"
+              src="/assets/img/work/work_6.png"
+              alt="充実した研修制度キャリアアップ"
             />
           </div>
           <div class="p-work__text">
-            <h3 class="p-work__item-title">
-              6. 充実した研修制度と<br />キャリアアップ
+            <h3 class="p-work__item-title title6 hiragino">
+              充実した研修制度と<br />キャリアアップ
             </h3>
+            <div class="p-work__img sp-only">
+              <img
+                src="/assets/img/work/work_6.png"
+                alt="充実した研修制度キャリアアップ"
+              />
+            </div>
             <p>
               介護は多岐にわたりニーズがあり、柔軟性やチームワークが求められています。<br />
               そのため、コミュニケーションや接遇を重視し採用を基準としています。<br />
@@ -252,20 +404,19 @@
   </section>
 
   <!-- message -->
-  <section class="p-message l-message" id="">
+  <section class="p-message l-message delay" id="message">
     <div class="p-message__inner inner">
-      <div class="p-message__title-wrap">
-        <h2 class="p-message__title main-title">
-          <span>Message</span>
+      <div class="p-message__title-wrap delay">
+        <h2 class="p-message__title main-title message-title" data-title="Message">
+          <span>代表挨拶</span>
         </h2>
-        <p class="p-message__sub-title sub-title">代表挨拶</p>
       </div>
       <div class="p-message__wrap">
         <div class="p-message__top">
-          <div class="p-message__top-img">
-            <img src="" alt="" />
+          <div class="p-message__top-img delay">
+            <img src="/assets/img/message/message_1.png" alt="代表挨拶" />
           </div>
-          <div class="p-message__top-text">
+          <div class="p-message__top-text delay">
             <h3 class="p-message__top-title">“思いがなければ意味がない”</h3>
             <p>
               私たちは「人としての想いと接遇で家庭の延長線上にある安らぎを、介護のプロとしての知識と技術で家庭では実現できない安心な生活を提供する」というミッションを掲げ、社員一丸となってお客様にご満足いただけるサービスを提供しています。<br />
@@ -276,7 +427,7 @@
               <br />
               なぜなら、社員自身が幸せでないのに、お客様だけを幸せに導くことは難しいと考えるからです。私たちは入居者様、そのご家族そして私たち一人ひとりが主人公であり、幸せであるべきであると考えています。
             </p>
-            <p class="end-text">
+            <p class="end-text pc-only">
               株式会社 ウキシロケアセンター<br />
               株式会社 いこいの里 佐賀<br />
               株式会社 ウキシロホールディングス<br />
@@ -285,36 +436,43 @@
           </div>
         </div>
 
-        <div class="p-message__bottom">
-          <p>ですから私たちは</p>
-          <ul class="p-message__bottom-list">
+        <div class="p-message__bottom delay">
+          <p class="pl-80">ですから私たちは</p>
+          <ul class="p-message__bottom-list hiragino">
             <li>・全ての社員が生活と心に豊かさを持てる職場</li>
             <li>・お客様の笑顔と社員の笑顔が循環する職場</li>
             <li>・彩りのある思い出が残るサービスを提供できる職場</li>
           </ul>
-          <p>3点を今後とも追求し、より魅力的な施設、職場を実現して参ります。</p>
+          <p class="p-message__bottom-text">
+            3点を今後とも追求し、より魅力的な施設、職場を実現して参ります。
+          </p>
+          <p class="end-text-sp">
+            株式会社 ウキシロケアセンター<br />
+            株式会社 いこいの里 佐賀<br />
+            株式会社 ウキシロホールディングス<br />
+            代表取締役 浮城 守
+          </p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- contactBtn -->
-  <section class="p-contactBtn l-contactBtn" id="">
-    <a href="#" class="btn">
+  <section class="c-contactBtn l-contactBtn delay" id="">
+    <a href="#" class="c-contactBtn--black">
       <span>エントリーはこちら</span>
     </a>
   </section>
 
   <!-- about -->
-  <section class="p-about l-about" id="">
+  <section class="p-about l-about delay" id="about">
     <div class="p-about__inner inner">
-      <div class="p-about__title-wrap">
-        <h2 class="p-about__title main-title">
-          <span>About work</span>
+      <div class="p-about__title-wrap delay">
+        <h2 class="p-about__title main-title about-title" data-title="About work">
+          <span>私たちのお仕事</span>
         </h2>
-        <p class="p-about__sub-title sub-title">私たちのお仕事</p>
       </div>
-      <div class="p-about__wrap">
+      <div class="p-about__wrap delay">
         <div class="p-about__text">
           <p>
             簡単なビジネスモデル<br />
@@ -322,74 +480,88 @@
             募集中の職種の業務内容
           </p>
         </div>
-        <div class="p-about__img">
+        <!-- <div class="p-about__img">
           <img src="./images/about.jpg" alt="私たちのお仕事" />
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
 
   <!-- schedule -->
-  <section class="p-schedule l-schedule" id="">
+  <section class="p-schedule l-schedule delay" id="schedule">
+    <div class="p-schedule__bg"></div>
     <div class="p-schedule__inner inner">
-      <div class="p-schedule__title-wrap">
-        <h2 class="p-schedule__title main-title">
-          <span>Schedule</span>
+      <div class="p-schedule__title-wrap delay">
+        <h2 class="p-schedule__title main-title schedule-title" data-title="Schedule">
+          <span>先輩の1日と働きがい</span>
         </h2>
-        <p class="p-schedule__sub-title sub-title">先輩の1日と働きがい</p>
       </div>
-      <div class="p-schedule__wrap">
-        <div class="p-schedule__items">
-          <div class="p-schedule__item">
-            <span class="p-schedule__item-time"> 8:15 </span>
-            <h3 class="p-schedule__item-title">始業、朝礼、掃除</h3>
-            <p class="p-schedule__item-text">
-              業務内容の簡単な説明が入ります。
-            </p>
+      <div class="p-schedule__wrap top" id="schedule-top">
+        <div class="p-schedule__items ">
+          <dl class="p-schedule__item delay">
+            <dt class="p-schedule__item-time hiragino">8:15</dt>
+            <dd>
+              <h3 class="p-schedule__item-title hiragino">始業、朝礼、掃除</h3>
+              <p class="p-schedule__item-text">
+                業務内容の簡単な説明が入ります。
+              </p>
+            </dd>
+          </dl>
+          <dl class="p-schedule__item delay">
+            <dt class="p-schedule__item-time hiragino">9:00</dt>
+            <dd>
+              <h3 class="p-schedule__item-title hiragino">
+                業務内容が入ります
+              </h3>
+              <p class="p-schedule__item-text">
+                業務内容の簡単な説明が入ります。
+              </p>
+            </dd>
+          </dl>
+          <dl class="p-schedule__item delay">
+            <dt class="p-schedule__item-time hiragino">11:45~12:45</dt>
+            <dd>
+              <h3 class="p-schedule__item-title hiragino">昼休み</h3>
+            </dd>
+          </dl>
+          <dl class="p-schedule__item delay">
+            <dt class="p-schedule__item-time hiragino">18:15</dt>
+            <dd>
+              <h3 class="p-schedule__item-title hiragino">帰宅</h3>
+            </dd>
+          </dl>
+        </div>
+        <div class="p-schedule__images pc-only delay">
+          <div class="p-schedule__image">
+            <img
+              src="/assets/img/schedule/schedule_01.png"
+              alt="始業、朝礼、掃除"
+            />
           </div>
-
-          <div class="p-schedule__item">
-            <span class="p-schedule__item-time"> 9:00 </span>
-            <h3 class="p-schedule__item-title">業務内容が入ります</h3>
-            <p class="p-schedule__item-text">
-              業務内容の簡単な説明が入ります。
-            </p>
+          <div class="p-schedule__image">
+            <img src="/assets/img/schedule/schedule_02.png" alt="昼休み" />
           </div>
-
-          <div class="p-schedule__item">
-            <span class="p-schedule__item-time"> 11:45~12:45 </span>
-            <h3 class="p-schedule__item-title">昼休み</h3>
-          </div>
-
-          <div class="p-schedule__item">
-            <span class="p-schedule__item-time"> 18:15 </span>
-            <h3 class="p-schedule__item-title">帰宅</h3>
+          <div class="p-schedule__image">
+            <img src="/assets/img/schedule/schedule_03.png" alt="帰宅" />
           </div>
         </div>
-        <div class="p-schedule__images">
-          <div class="p-schedule__image">
-            <img src="./images/schedule1.jpg" alt="先輩の1日と働きがい" />
-          </div>
-          <div class="p-schedule__image">
-            <img src="./images/schedule1.jpg" alt="先輩の1日と働きがい" />
-          </div>
-          <div class="p-schedule__image">
-            <img src="./images/schedule1.jpg" alt="先輩の1日と働きがい" />
-          </div>
-        </div>
       </div>
 
-      <div class="p-schedule__wrap">
+      <div class="p-schedule__wrap bottom delay">
         <div class="p-schedule-bottom__img">
-          <img src="./images/schedule4.jpg" alt="社会問題の解決に参加できる" />
+          <img
+            src="/assets/img/schedule/schedule_04.png"
+            alt="社会問題の解決に参加できる"
+          />
         </div>
         <div class="p-schedule-botttom__text">
           <h3 class="p-schedule-bottom__title">
-            <span> テキストが入りますテキストが入ります </span>
+            <span>
+              テキストが入ります<br class="sp-only" />テキストが入ります
+            </span>
           </h3>
           <p>
-            先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。
-            先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。
+            先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。
           </p>
         </div>
       </div>
@@ -397,42 +569,50 @@
   </section>
 
   <!-- profile -->
-  <section class="p-profile l-profile" id="">
+  <section class="p-profile l-profile delay" id="profile">
     <div class="p-profile__inner inner">
-      <div class="p-profile__title-wrap">
-        <h2 class="p-profile__title main-title">
-          <span>Ideal candidate profile</span>
+      <div class="p-profile__title-wrap delay">
+        <h2
+          class="p-profile__title main-title profile-title"
+          data-title="Ideal candidate profile"
+        >
+          <span>私たちの会社で<br class="sp-only" />活躍できる人</span>
         </h2>
-        <p class="p-profile__sub-title sub-title">私たちの会社で活躍できる人</p>
       </div>
       <div class="p-profile__wrap">
-        <h2 class="p-profile-item__title">
+        <h2 class="p-profile-item__title hiragino delay">
           <span> いこいの里 基本３原則 </span>
         </h2>
         <div class="p-profile__items">
-          <div class="p-profile__item">
+          <div class="p-profile__item delay">
             <div class="p-profile__img">
-              <img src="./images/profile1.jpg" alt="嘘をつかない" />
+              <img
+                src="/assets/img/profile/profile_01.png"
+                alt="嘘をつかない"
+              />
             </div>
-            <div class="p-profile__text">
+            <!-- <div class="p-profile__text">
               <h3 class="p-profile__item-title">1. 嘘をつかない</h3>
-            </div>
+            </div> -->
           </div>
-          <div class="p-profile__item">
+          <div class="p-profile__item delay">
             <div class="p-profile__img">
-              <img src="./images/profile2.jpg" alt="主体的に成長する" />
+              <img
+                src="/assets/img/profile/profile_02.png"
+                alt="主体的に成長する"
+              />
             </div>
-            <div class="p-profile__text">
+            <!-- <div class="p-profile__text">
               <h3 class="p-profile__item-title">2. 主体的に成長する</h3>
-            </div>
+            </div> -->
           </div>
-          <div class="p-profile__item">
+          <div class="p-profile__item delay">
             <div class="p-profile__img">
-              <img src="./images/profile3.jpg" alt="約束は守る" />
+              <img src="/assets/img/profile/profile_03.png" alt="約束は守る" />
             </div>
-            <div class="p-profile__text">
+            <!-- <div class="p-profile__text">
               <h3 class="p-profile__item-title">3. 約束は守る</h3>
-            </div>
+            </div> -->
           </div>
         </div>
 
@@ -444,21 +624,25 @@
   </section>
 
   <!-- value -->
-  <section class="p-value l-value" id="">
+  <section class="p-value l-value delay" id="value">
     <div class="p-value__inner inner">
-      <div class="p-value__title-wrap">
-        <h2 class="p-value__title main-title">
-          <span>Value</span>
+      <div class="p-value__title-wrap delay">
+        <h2 class="p-value__title main-title" data-title="Value">
+          <span
+            >いこいの里 5つのバリュー</span
+          >
         </h2>
-        <p class="p-value__sub-title sub-title">いこいの里 5つのバリュー</p>
       </div>
       <div class="p-value__wrap">
         <div class="p-value__items">
           <!-- 1 -->
-          <div class="p-value__item">
+          <div class="p-value__item delay">
             <div class="p-value__head">
-              <img src="./images/value1.jpg" alt="お客様へのあり方" />
-              <h3 class="p-value__head-title">お客様へのあり方</h3>
+              <img
+                src="/assets/img/value/value_01.png"
+                alt="お客様へのあり方"
+              />
+              <h3 class="p-value__head-title hiragino">お客様へのあり方</h3>
             </div>
             <div class="p-value__text">
               <p>
@@ -469,10 +653,10 @@
           </div>
 
           <!-- 2 -->
-          <div class="p-value__item">
+          <div class="p-value__item delay">
             <div class="p-value__head">
-              <img src="./images/value1.jpg" alt="人間性の尊重" />
-              <h3 class="p-value__head-title">人間性の尊重</h3>
+              <img src="/assets/img/value/value_02.png" alt="人間性の尊重" />
+              <h3 class="p-value__head-title hiragino">人間性の尊重</h3>
             </div>
             <div class="p-value__text">
               <p>
@@ -483,13 +667,15 @@
           </div>
 
           <!-- 3 -->
-          <div class="p-value__item">
+          <div class="p-value__item delay">
             <div class="p-value__head">
               <img
-                src="./images/value1.jpg"
+                src="/assets/img/value/value_03.png"
                 alt="サービス業としての接遇と挨拶"
               />
-              <h3 class="p-value__head-title">サービス業としての接遇と挨拶</h3>
+              <h3 class="p-value__head-title hiragino">
+                サービス業としての接遇と挨拶
+              </h3>
             </div>
             <div class="p-value__text">
               <p>
@@ -500,10 +686,13 @@
           </div>
 
           <!-- 4 -->
-          <div class="p-value__item">
+          <div class="p-value__item delay">
             <div class="p-value__head">
-              <img src="./images/value1.jpg" alt="主体的な学びと実践" />
-              <h3 class="p-value__head-title">主体的な学びと実践</h3>
+              <img
+                src="/assets/img/value/value_04.png"
+                alt="主体的な学びと実践"
+              />
+              <h3 class="p-value__head-title hiragino">主体的な学びと実践</h3>
             </div>
             <div class="p-value__text">
               <p>
@@ -514,10 +703,13 @@
           </div>
 
           <!-- 5 -->
-          <div class="p-value__item">
+          <div class="p-value__item delay">
             <div class="p-value__head">
-              <img src="./images/value1.jpg" alt="セルフマネジメント" />
-              <h3 class="p-value__head-title">セルフマネジメント</h3>
+              <img
+                src="/assets/img/value/value_05.png"
+                alt="セルフマネジメント"
+              />
+              <h3 class="p-value__head-title hiragino">セルフマネジメント</h3>
             </div>
             <div class="p-value__text">
               <p>
@@ -528,16 +720,19 @@
           </div>
 
           <!-- 6 -->
-          <div class="p-value__item">
+          <div class="p-value__item delay">
             <div class="p-value__image">
-              <img src="./images/value1.jpg" alt="お客様へのあり方" />
+              <img
+                src="/assets/img/value/value_06.png"
+                alt="お客様へのあり方"
+              />
             </div>
           </div>
         </div>
       </div>
 
-      <div class="p-value__wrap">
-        <div class="p-value__bottom">
+      <div class="p-value__wrap delay">
+        <div class="p-value__bottom hiragino">
           <p>
             既に今の段階でこのようなことが完璧に出来ていなくても構いません。<br />
             しかし「いつかこのような働き方を目指したいな！」と共感できる方はいこいの里で活躍できる可能性が高いと考えています。
@@ -548,15 +743,14 @@
   </section>
 
   <!-- career -->
-  <section class="p-career l-career" id="">
+  <section class="p-career l-career delay" id="career">
     <div class="p-career__inner inner">
-      <div class="p-career__title-wrap">
-        <h2 class="p-career__title main-title">
-          <span> Career enhancement </span>
+      <div class="p-career__title-wrap delay">
+        <h2 class="p-career__title main-title career-title" data-title="Career enhancement">
+          <span> キャリアアップ制度 </span>
         </h2>
-        <p class="p-career__sub-title sub-title">キャリアアップ制度</p>
       </div>
-      <div class="p-career__wrap">
+      <div class="p-career__wrap top delay">
         <div class="p-career__item-text">
           <p>
             今までのいこいの里は、単に職員の生活のための給料アップを考え実行してきました。<br />
@@ -569,16 +763,19 @@
           </p>
         </div>
         <div class="p-career__item-image">
-          <h3 class="p-career__item-imge__title">
+          <h3 class="p-career__item-image__title">
             <span> キャリアアップイメージ図 </span>
           </h3>
-          <img src="" alt="キャリアアップイメージ図" />
-          <span class="listMark-grid">※夜勤4回、諸手当含む</span>
+          <img
+            src="/assets/img/career/career_01.png"
+            alt="キャリアアップイメージ図"
+          />
         </div>
+        <span class="listMark-grid">※夜勤4回、諸手当含む</span>
       </div>
-      <div class="p-career__wrap">
-        <div class="p-career__box">
-          <h3 class="p-career__box-title">
+      <div class="p-career__wrap bottom delay">
+        <div class="p-career__box" id="career02">
+          <h3 class="p-career__box-title hiragino">
             <span>研修制度</span>
           </h3>
           <p class="p-career__box-text">
@@ -588,8 +785,8 @@
           </p>
         </div>
 
-        <div class="p-career__box">
-          <h3 class="p-career__box-title">
+        <div class="p-career__box" id="career03">
+          <h3 class="p-career__box-title hiragino">
             <span> 福利厚生制度 </span>
           </h3>
           <p class="p-career__box-text">
@@ -601,57 +798,73 @@
   </section>
 
   <!-- data -->
-  <section class="p-data l-data" id="">
+  <section class="p-data l-data delay" id="data">
     <div class="p-data__inner inner">
-      <div class="p-data__title-wrap">
-        <h2 class="p-data__title main-title">
-          <span>Data</span>
+      <div class="p-data__title-wrap delay">
+        <h2 class="p-data__title main-title data-title" data-title="Data">
+          <span>データで見るいこいの里</span>
         </h2>
-        <p class="p-data__sub-title sub-title">データで見るいこいの里</p>
       </div>
       <div class="p-data__wrap">
         <ul class="p-data__items">
-          <li class="p-data__item">
-            <img src="" alt="" />
+          <li class="p-data__item delay">
+            <img
+              src="/assets/img/data/data_01.png"
+              alt="データで見るいこいの里"
+            />
           </li>
-          <li class="p-data__item">
-            <img src="" alt="" />
+          <li class="p-data__item delay">
+            <img
+              src="/assets/img/data/data_02.png"
+              alt="データで見るいこいの里"
+            />
           </li>
-          <li class="p-data__item">
-            <img src="" alt="" />
+          <li class="p-data__item delay">
+            <img
+              src="/assets/img/data/data_03.png"
+              alt="データで見るいこいの里"
+            />
           </li>
-          <li class="p-data__item">
-            <img src="" alt="" />
+          <li class="p-data__item delay">
+            <img
+              src="/assets/img/data/data_04.png"
+              alt="データで見るいこいの里"
+            />
           </li>
         </ul>
 
-        <h3 class="p-data-item__title">採用担当者からのメッセージ</h3>
+        <h3 class="p-data-item__title hiragino delay" id="reMessage">
+          採用担当者からのメッセージ
+        </h3>
         <p class="p-data-item__text"></p>
       </div>
     </div>
   </section>
 
   <!-- guidelines -->
-  <section class="p-guidelines l-guidelines" id="">
+  <section class="p-guidelines l-guidelines delay" id="guidelines">
+    <div class="p-guidelines__bg"></div>
     <div class="p-guidelines__inner inner">
-      <div class="p-guidelines__title-wrap">
-        <h2 class="p-guidelines__title main-title">
-          <span>Application Guidelines</span>
+      <div class="p-guidelines__title-wrap delay">
+        <h2
+          class="p-guidelines__title main-title guidelines-title"
+          data-title="Application Guidelines"
+        >
+          <span>募集要項</span>
         </h2>
-        <p class="p-guidelines__sub-title sub-title">募集要項</p>
       </div>
       <div class="p-guidelines__wrap">
-        <dl class="p-guidelines__list">
+        <dl class="p-guidelines__list delay">
           <dt class="p-guidelines__term">会社概要</dt>
           <dd class="p-guidelines__description">テキストテキスト</dd>
         </dl>
-        <dl class="p-guidelines__list">
+        <dl class="p-guidelines__list delay">
           <dt class="p-guidelines__term">事業内容</dt>
           <dd class="p-guidelines__description">
             テキストテキストテキストテキスト
           </dd>
         </dl>
-        <dl class="p-guidelines__list">
+        <dl class="p-guidelines__list delay">
           <dt class="p-guidelines__term">募集職種</dt>
           <dd class="p-guidelines__description">
             常勤介護スタッフ <br />
@@ -661,21 +874,24 @@
             生活相談員・サービス提供責任者
           </dd>
         </dl>
-        <dl class="p-guidelines__list">
-          <dt class="p-guidelines__term">勤務地（募集エリア）</dt>
+        <dl class="p-guidelines__list delay">
+          <dt class="p-guidelines__term">
+            勤務地<br class="sp-only" />(募集エリア)
+          </dt>
           <dd class="p-guidelines__description">
-            北九州市（戸畑区、小倉北区、小倉南区、八幡西区）<br />
+            北九州市(戸畑区、小倉北区、小倉南区、八幡西区)<br />
             苅田町、糸島市、古賀市<br />
             佐賀県：佐賀市、伊万里市、唐津市
           </dd>
         </dl>
-        <dl class="p-guidelines__list">
+        <dl class="p-guidelines__list delay">
           <dt class="p-guidelines__term">仕事内容</dt>
           <dd class="p-guidelines__description">
-            テキストテキストテキストテキストテキストテキストテキストテキスト
+            テキストテキストテキストテキストテキスト<br>
+            テキストテキストテキスト
           </dd>
         </dl>
-        <dl class="p-guidelines__list">
+        <dl class="p-guidelines__list delay">
           <dt class="p-guidelines__term">求める人材</dt>
           <dd class="p-guidelines__description">
             ⼈と話すこと、喜ばせることが好きな方<br />
@@ -683,32 +899,33 @@
             地域に根ざして働きたい方
           </dd>
         </dl>
-        <dl class="p-guidelines__list">
+        <dl class="p-guidelines__list delay">
           <dt class="p-guidelines__term">応募資格</dt>
           <dd class="p-guidelines__description">ブランク有り 未経験可</dd>
         </dl>
-        <dl class="p-guidelines__list">
+        <dl class="p-guidelines__list delay">
           <dt class="p-guidelines__term">雇用形態</dt>
           <dd class="p-guidelines__description">
             テキストテキストテキストテキスト
           </dd>
         </dl>
-        <dl class="p-guidelines__list">
+        <dl class="p-guidelines__list delay">
           <dt class="p-guidelines__term">時間勤務</dt>
           <dd class="p-guidelines__description">
             テキストテキストテキストテキスト
           </dd>
         </dl>
-        <dl class="p-guidelines__list">
+        <dl class="p-guidelines__list delay">
           <dt class="p-guidelines__term">休日・休暇</dt>
           <dd class="p-guidelines__description">
             テキストテキストテキストテキスト
           </dd>
         </dl>
-        <dl class="p-guidelines__list">
+        <dl class="p-guidelines__list delay">
           <dt class="p-guidelines__term">福利厚生</dt>
           <dd class="p-guidelines__description">
-            各社会保険、制服貸与、社宅有、退職金制度（規定有）、確定拠出年金、入居者家族割引、社内奨学金制度等
+            各社会保険、制服貸与、社宅有、退職金制度(規定有)、<br>
+            確定拠出年金、入居者家族割引、社内奨学金制度等
           </dd>
         </dl>
       </div>
@@ -716,106 +933,113 @@
   </section>
 
   <!-- process -->
-  <section class="p-process l-process" id="">
+  <section class="p-process l-process delay" id="process">
     <div class="p-process__inner inner">
-      <div class="p-process__title-wrap">
-        <h2 class="p-process__title main-title">
-          <span>Process</span>
+      <div class="p-process__title-wrap delay">
+        <h2 class="p-process__title main-title process-title" data-title="Process">
+          <span>選考プロセス</span>
         </h2>
-        <p class="p-process__sub-title sub-title">選考プロセス</p>
       </div>
-      <div class="p-process__wrap">
-        <img src="" alt="選考プロセス" />
+      <div class="p-process__wrap delay">
+        <img
+          class="js-processImg pc-only"
+          src="/assets/img/process/process_01.png"
+          alt="選考プロセス"
+        />
+        <img
+          class="js-processImg sp-only"
+          src="/assets/img/process/process_01-sp.png"
+          alt="選考プロセス"
+        />
       </div>
     </div>
   </section>
 
   <!-- contactBtn -->
-  <section class="p-contactBtn l-contactBtn" id="">
-    <a href="#" class="btn">
+  <section class="c-contactBtn l-contactBtn delay" id="contactBtn">
+    <a href="#" class="c-contactBtn--black">
       <span>エントリーはこちら</span>
     </a>
   </section>
 
   <!-- faq -->
-  <section class="p-faq l-faq" id="">
+  <section class="p-faq l-faq delay" id="faq">
     <div class="p-faq__inner inner">
-      <div class="p-faq__title-wrap">
-        <h2 class="p-faq__title main-title">
-          <span>タイトル</span>
+      <div class="p-faq__title-wrap delay">
+        <h2 class="p-faq__title main-title faq-title" data-title="O&A">
+          <span>よくある質問</span>
         </h2>
-        <p class="p-faq__sub-title sub-title">サブタイトル</p>
       </div>
       <div class="p-faq__wrap">
-        <ul class="p-faq__list p-faq-list">
-          <li class="p-faq-list__item">
+        <ul class="p-faq__list p-faq-list delay">
+          <li class="p-faq-list__item delay">
             <p class="p-faq-list__item-question">
-              <span>Q.</span>
+              <span>Q</span>
               産休・育休・勤務時間の調整は可能ですか？
             </p>
             <p class="p-faq-list__item-answer">
-              <span>A.</span>
+              <span>A</span>
               可能です。
               皆が不安を抱かず働き、休るようにしっかりと話し合いの上、決定します。また、時短勤務や、午後・午前だけの勤務もできるようにできる限り配慮しています。
             </p>
           </li>
-          <li class="p-faq-list__item">
+          <li class="p-faq-list__item delay">
             <p class="p-faq-list__item-question">
-              <span>Q.</span>
+              <span>Q</span>
               通勤時にスタッフが使える駐車場はありますか？
             </p>
             <p class="p-faq-list__item-answer">
-              <span>A.</span>
+              <span>A</span>
               無料で使える駐車場を準備しています。
             </p>
           </li>
-          <li class="p-faq-list__item">
+          <li class="p-faq-list__item delay">
             <p class="p-faq-list__item-question">
-              <span>Q.</span>
+              <span>Q</span>
               子供の発熱など急な用事で休めますか？
             </p>
             <p class="p-faq-list__item-answer">
-              <span>A.</span>
+              <span>A</span>
               大丈夫です。しかし、必ず連絡はしていただくようにお願いしています。
             </p>
           </li>
-          <li class="p-faq-list__item">
+          <li class="p-faq-list__item delay">
             <p class="p-faq-list__item-question">
-              <span>Q.</span>
+              <span>Q</span>
               帰りは何時ごろになりますか？
             </p>
             <p class="p-faq-list__item-answer">
-              <span>A.</span>
+              <span>A</span>
               退社時刻は、シフトによって異なりますが、基本的に残業はほぼありません。
             </p>
           </li>
-          <li class="p-faq-list__item">
+          <li class="p-faq-list__item delay">
             <p class="p-faq-list__item-question">
-              <span>Q.</span>
+              <span>Q</span>
               有給は取りやすい環境ですか？
             </p>
             <p class="p-faq-list__item-answer">
-              <span>A.</span>
+              <span>A</span>
               取りやすいと思います。皆が気持ちよく休んでいただくために、出来るだけ早く責任者にご希望をお知らせください。
             </p>
           </li>
-          <li class="p-faq-list__item">
+          <li class="p-faq-list__item delay">
             <p class="p-faq-list__item-question">
-              <span>Q.</span>
+              <span>Q</span>
               親の介護がありますが、勤務可能ですか？
             </p>
             <p class="p-faq-list__item-answer">
-              <span>A.</span>
+              <span>A</span>
               不安の無いように施設内で話し合い、無理のないように勤務体制を決めています。また、職員のご家族の入居の優遇制度も整備されています。
             </p>
           </li>
-          <li class="p-faq-list__item">
+          <li class="p-faq-list__item delay">
             <p class="p-faq-list__item-question">
-              <span>Q.</span>
+              <span>Q</span>
               ネイル、ピアス、髪の色に関して規則はありますか？
             </p>
             <p class="p-faq-list__item-answer">
-              <span>A.</span>
+              <span>A</span>
               ネイルに関しては派手過ぎなければ、大丈夫です。ピアス、髪の色なども程度にもよりますが大丈夫です。詳しくは面接時にお問い合わせください。
             </p>
           </li>
@@ -825,26 +1049,34 @@
   </section>
 
   <!-- company -->
-  <section class="p-company l-company" id="">
+  <section class="p-company l-company delay" id="company">
     <div class="p-company__inner inner">
-      <div class="p-company__title-wrap">
+      <div class="p-company__title-wrap delay">
         <h3 class="p-company__title main-title">
           <span>ウキシログループ概要</span>
         </h3>
       </div>
-      <div class="p-company__wrap">
+      <div class="p-company__wrap delay">
         <div class="p-company__box">
           <dl>
             <dt>＜グループ会社＞</dt>
             <dd>
-              株式会社ウキシロケアセンター（介護福祉事業）資本金 3.5千万円<br />
-              株式会社いこいの里佐賀（介護福祉事業）資本金 1千万円<br />
-              浮城興産株式会社（総合不動産業）資本金 7千万円<br />
-              株式会社浮城工務店（総合建築業）資本金 3千万円<br />
-              西日本興業協同組合（不動産管理）資本金 3百万円<br />
-              株式会社わーくわーく（障がい者福祉事業）資本金 1千万円<br />
-              株式会社ウキシロホールディングス（介護福祉事業・農業）資本金
-              1千万円
+              株式会社ウキシロケアセンター(介護福祉事業)<br
+                class="sp-only"
+              />資本金 3.5千万円<br />
+              株式会社いこいの里佐賀(介護福祉事業)<br class="sp-only" />資本金
+              1千万円<br />
+              浮城興産株式会社(総合不動産業)<br class="sp-only" />資本金
+              7千万円<br />
+              株式会社浮城工務店(総合建築業)<br class="sp-only" />資本金
+              3千万円<br />
+              西日本興業協同組合(不動産管理)<br class="sp-only" />資本金
+              3百万円<br />
+              株式会社わーくわーく(障がい者福祉事業)<br class="sp-only" />資本金
+              1千万円<br />
+              株式会社ウキシロホールディングス(介護福祉事業・農業)<br
+                class="sp-only"
+              />資本金 1千万円
             </dd>
           </dl>
           <dl>
@@ -855,7 +1087,6 @@
       </div>
     </div>
   </section>
-  
 </main>
 
 <!--#include virtual="../_include/footer.html"-->

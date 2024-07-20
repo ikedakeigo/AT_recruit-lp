@@ -1,0 +1,98 @@
+@use "../foundation/" as *;
+
+.p-guidelines {
+  position: relative;
+}
+
+.p-guidelines__bg {
+  position: absolute;
+  z-index: -1;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    transparent 45%,
+    $color-blue 25%
+  );
+}
+
+.p-guidelines__inner {
+}
+
+.inner {
+}
+
+.p-guidelines__title-wrap {
+  margin-bottom: rem(40);
+  @include mq(md) {
+    margin-bottom: rem(40);
+  }
+}
+
+.p-guidelines__title {
+}
+
+.main-title {
+}
+
+.p-guidelines__sub-title {
+}
+
+.sub-title {
+}
+
+.p-guidelines__wrap {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+
+  @include mq(md) {
+    padding-bottom: rem(50);
+    width: per(650, 1030);
+  }
+}
+
+.p-guidelines__list {
+  display: flex;
+  position: relative;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #999390;
+  box-sizing: border-box;
+  padding-bottom: rem(30);
+  padding-top: rem(30);
+  @include mq(md) {
+    padding-bottom: rem(30);
+    padding-top: rem(30);
+  }
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 140px;
+    height: 2px;
+    background: $color-text-blue;
+  }
+}
+
+.p-guidelines__term {
+  // float: left;
+  // width: 60%;
+  min-width: rem(80);
+  @include mq(md) {
+    width: rem(180);
+  }
+}
+
+.p-guidelines__description {
+  min-width:  rem(200);
+  padding-left: rem(30);
+  @include mq(md) {
+    // padding-left: rem(200);
+    // margin-left: rem(20);
+  }
+}

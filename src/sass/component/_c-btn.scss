@@ -1,19 +1,49 @@
-@use '../foundation' as *;
+@use "../foundation" as *;
 
-.c-btn {
-  padding: prem(14) prem(60);
+.l-contactBtn {
+  margin-bottom: rem(100);
+  @include mq(md) {
+    margin-bottom: rem(220);
+  }
+}
+
+.c-contactBtn {
   display: inline-block;
-  font-size: prem(15);
   line-height: 1;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-  border: 1px solid #000;
-  border-radius: prem(50);
-  background-color: #fff;
+  display: flex;
+  justify-content: center;
 }
 
 // Modifier
-.c-btn.c-btn--black {
+.c-contactBtn .c-contactBtn--black {
+  font-size: rem(20);
+  border-radius: rem(50);
+  padding: rem(15) rem(30);
   color: #fff;
-  background-color: #000;
+  background-color: $color-orange;
+  position: relative;
+  display: flex;
+  align-items: center;
+  max-width:  rem(400);
+  @include mq(md){
+    max-width:100%;
+    padding: rem(35) rem(50);
+    font-size:  rem(36);
+  }
+  &::after {
+    content: "";
+    display: inline-block;
+    background-image: url("../../assets/img/icon/icon_arrowLink.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: rem(40);
+    height: rem(40);
+    margin-left: rem(30);
+    @include mq(md){
+      margin-left: rem(60);
+    }
+  }
 }

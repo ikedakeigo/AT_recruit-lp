@@ -1,0 +1,15 @@
+@use "../foundation" as *;
+
+.l-hero {
+  padding-top: rem(30);
+  margin-bottom: rem(200);
+  background: linear-gradient(
+    0deg,
+    transparent 20%,
+    $color-blue 100%,
+    transparent 100%,
+  );
+  @include mq(md) {
+    margin-bottom: rem(210);
+  }
+}
