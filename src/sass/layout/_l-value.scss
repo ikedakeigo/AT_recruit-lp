@@ -1,0 +1,16 @@
+@use '../foundation/' as *;
+
+.l-value {
+  position: relative;
+  z-index: -1;
+  background-color: $color-blue;
+  margin-bottom: rem(100);
+  padding-top: rem(50);
+  padding-bottom: rem(30);
+  @include mq(md){
+    // padding:  rem(70);
+    padding-top: rem(120);
+    padding-bottom: rem(70);
+    margin-bottom: rem(120);
+  }
+}

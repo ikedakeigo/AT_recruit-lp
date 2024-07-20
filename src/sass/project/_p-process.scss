@@ -1,0 +1,42 @@
+@use '../foundation/' as *;
+
+.p-process {
+
+}
+
+
+
+.p-process__inner {
+
+}
+
+.inner {
+
+}
+
+.p-process__title-wrap {
+  margin-bottom: rem(50);
+  @include mq(md){
+    margin-bottom: rem(65);
+  }
+}
+
+.p-process__title {
+
+}
+
+.main-title {
+
+}
+
+.p-process__wrap {
+
+}
+
+.js-processImg{
+  max-width:  rem(300);
+  margin: 0 auto;
+  @include mq(md){
+    max-width: 100%;
+  }
+}

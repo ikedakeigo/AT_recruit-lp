@@ -1,0 +1,10 @@
+@use '../foundation/' as *;
+
+.p-footer {
+text-align: center;
+}
+
+
+.p-footer__copyright {
+  color: $color-white;
+}

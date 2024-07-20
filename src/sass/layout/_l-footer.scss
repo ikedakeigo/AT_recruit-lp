@@ -1,0 +1,6 @@
+@use '../foundation/' as *;
+
+.l-footer {
+  background-color: $color-text-blue;
+  padding:  rem(20) 0;
+}

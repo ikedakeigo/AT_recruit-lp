@@ -1,0 +1,65 @@
+@use '../foundation/' as *;
+
+.p-company {
+
+}
+
+
+
+.p-company__inner {
+  margin: 0 auto;
+  @include mq(md){
+    max-width:  rem(690);
+  }
+}
+
+.inner {
+
+}
+
+.p-company__title-wrap {
+
+}
+
+.p-company__title {
+  font-size:  rem(22);
+  border-bottom: 1px solid $color-black;
+  text-align: left;
+  padding-bottom: rem(20);
+  @include mq(md){
+    text-align: center;
+    font-size:  rem(27);
+  }
+}
+
+
+.p-company__wrap {
+
+}
+
+.p-company__box {
+  font-size:  rem(14);
+  @include mq(md){
+    font-size:  rem(16);
+  }
+  dl {
+    padding-top:  rem(25);
+    padding-bottom:  rem(25);
+    border-bottom: 1px solid $color-black;
+    @include mq(md){
+      display: flex;
+    }
+  }
+
+  dt {
+    @include mq(md){
+      width:  rem(150);
+    }
+  }
+
+  dd {
+    @include mq(md){
+      margin-left: rem(20);
+    }
+  }
+}

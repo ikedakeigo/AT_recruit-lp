@@ -8,7 +8,7 @@ $breakpoints: null;
 @if $break-flg == 0 {
   $breakpoints: (
     "sm": "screen and (min-width: 400px)",
-    "md": "screen and (min-width: 768px)",
+    "md": "screen and (min-width: 800px)",
     "lg": "screen and (min-width: 1000px)",
     "xl": "screen and (min-width: 1200px)",
   );
@@ -31,6 +31,15 @@ $padding-sp: 20px; // スマホ用余白設定
 
 // フォント
 $font-family-base: 'Noto Sans JP', sans-serif; // ベースフォント設定
+$font-family-yu: 'Yu Gothic', '游ゴシック体', 'YuGothic', sans-serif;
+$font-family-hiragino: 'Hiragino Mincho ProN', 'ヒラギノ明朝 ProN', 'Hiragino Mincho Pro', serif;
+
+.gothic {
+    font-family: $font-family-yu;
+}
+.hiragino {
+    font-family: $font-family-hiragino;
+}
 
 $regular: 400;
 $medium: 500;

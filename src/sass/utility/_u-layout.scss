@@ -1,0 +1,8 @@
+@use '../foundation/' as *;
+
+.pl-80 {
+  padding-left: rem(60);
+  @include mq(md){
+    padding-left: rem(80);
+  }
+}

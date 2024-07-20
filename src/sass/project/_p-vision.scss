@@ -1,0 +1,69 @@
+@use '../foundation' as *;
+.p-vision {
+
+}
+
+
+.p-vision__inner {
+
+}
+
+.inner {
+
+}
+
+.p-vision__title-wrap {
+  margin-bottom: rem(15);
+  @include mq(md){
+    margin-bottom: rem(15);
+  }
+}
+
+.p-vision__title {
+
+}
+
+.main-title {
+
+}
+
+.p-vision__sub-title {
+
+}
+
+.sub-title {
+
+}
+
+.p-vision__wrap {
+  @include mq(md){
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+}
+
+.p-vision__text {
+  margin-right: rem(0);
+  @include mq(md){
+    margin-right: rem(35);
+  }
+  p:first-of-type {
+    margin-bottom:  rem(20);
+    @include mq(md){
+      margin-bottom: rem(20);
+    }
+  }
+
+}
+
+.small-text {
+
+}
+
+.p-vision__img {
+  margin-bottom: rem(20);
+  @include mq(md){
+    margin-bottom: rem(0);
+  }
+}
