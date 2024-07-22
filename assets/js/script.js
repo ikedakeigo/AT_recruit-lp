@@ -82,33 +82,38 @@ window.onload = function () {
   matchMedia.addEventListener("change", handleResize);
 
   const scheduleElement = document.getElementById("schedule-top");
-  const targetElement2 = document.querySelector(".p-schedule__bg");
+  const targetElements = document.querySelectorAll(".p-schedule__bg, .p-schedule__bg-reverse");
 
   if (scheduleElement) {
     const resizeObserver = new ResizeObserver((entries) => {
       for (let entry of entries) {
         const scheduleHeight = entry.target.offsetHeight;
         console.log(scheduleHeight);
-        targetElement2.style.height = scheduleHeight + "px";
+        targetElements.forEach((element) => {
+          element.style.height = scheduleHeight + "px";
+        });
       }
     });
     resizeObserver.observe(scheduleElement);
   }
 
-  const guidelinenElement = document.querySelector(".p-guidelines__wrap");
-  const targetElement3 = document.querySelector(".p-guidelines__bg");
+  // const guidelinenElement = document.querySelector(".p-guidelines__wrap");
+  // const targetElements3 = document.querySelectorAll(".p-guidelines__bg, .p-schedule__bg-reverse");
 
-  if (guidelinenElement) {
-    const resizeObserver = new ResizeObserver((entries) => {
-      for (let entry of entries) {
-        const guidelineHeight = entry.target.offsetHeight;
-        console.log(guidelineHeight);
-        targetElement3.style.height = guidelineHeight + "px";
-      }
-    });
+  // if (guidelinenElement) {
+  //   const resizeObserver = new ResizeObserver((entries) => {
+  //     for (let entry of entries) {
+  //       const guidelineHeight = entry.target.offsetHeight;
+  //       console.log(guidelineHeight);
+  //       targetElements3.forEach((element) => {
+  //         element.style.height = guidelineHeight + "px";
+  //       });
+  //     }
+  //   });
 
-    resizeObserver.observe(guidelinenElement);
-  }
+  //   resizeObserver.observe(guidelinenElement);
+  // }
+
 };
 
 jQuery(function ($) {
@@ -150,4 +155,47 @@ jQuery(function ($) {
         return false;
         });
     });
+
+
+
+    // アコーディオン
+    // $('.js-staff-acordion').on('click', function () {
+    //     $('.p-schedule-prof-message__box, .p-schedule__wrap').slideToggle();
+    //     $(this).toggleClass('is-open');
+    //   });
+
+
+    $('.js-staff-acordion').on('click', function () {
+        // クリックされたスタッフに関連する要素だけを操作
+        var $currentBox = $(this).siblings('.p-schedule-prof__wrap').find('.p-schedule-prof-message__box');
+        // var $currentWrap = $(this).siblings('.p-schedule-prof__wrap').find('.p-schedule__wrap');
+        var $currentWrap = $('#schedule-top');
+
+        // $currentBox と $currentWrap に slideToggle を個別に適用
+        $currentBox.slideToggle();
+        $currentWrap.slideToggle();
+        $(this).toggleClass('is-open');
+
+
+    // $currentWrap の display スタイルを切り替え
+    if ($currentWrap.css('display') === 'none') {
+        $currentWrap.css('display', 'flex'); // 適切なスタイルを使用
+    } else {
+        $currentWrap.css('display', 'none');
+    }
+
+        // .p-schedule__bg-reverseに.is-openクラスをトグル
+        $('.p-schedule__bg-reverse').toggleClass('is-open');
+
+
+        if ($currentWrap.css('display') === 'block') {
+            $('.p-schedule__bg-reverse').addClass('is-open');
+        } else {
+            $('.p-schedule__bg-reverse').removeClass('is-open');
+        }
+    });
+
+
+
+
 });

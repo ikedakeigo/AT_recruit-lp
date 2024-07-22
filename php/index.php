@@ -428,10 +428,7 @@
               なぜなら、社員自身が幸せでないのに、お客様だけを幸せに導くことは難しいと考えるからです。私たちは入居者様、そのご家族そして私たち一人ひとりが主人公であり、幸せであるべきであると考えています。
             </p>
             <p class="end-text pc-only">
-              株式会社 ウキシロケアセンター<br />
-              株式会社 いこいの里 佐賀<br />
-              株式会社 ウキシロホールディングス<br />
-              代表取締役 浮城 守
+              ウキシログループ 代表取締役
             </p>
           </div>
         </div>
@@ -446,12 +443,7 @@
           <p class="p-message__bottom-text">
             3点を今後とも追求し、より魅力的な施設、職場を実現して参ります。
           </p>
-          <p class="end-text-sp">
-            株式会社 ウキシロケアセンター<br />
-            株式会社 いこいの里 佐賀<br />
-            株式会社 ウキシロホールディングス<br />
-            代表取締役 浮城 守
-          </p>
+          <p class="end-text-sp">ウキシログループ 代表取締役</p>
         </div>
       </div>
     </div>
@@ -464,70 +456,137 @@
     </a>
   </section>
 
-  <!-- about -->
-  <section class="p-about l-about delay" id="about">
-    <div class="p-about__inner inner">
-      <div class="p-about__title-wrap delay">
-        <h2 class="p-about__title main-title about-title" data-title="About work">
-          <span>私たちのお仕事</span>
-        </h2>
-      </div>
-      <div class="p-about__wrap delay">
-        <div class="p-about__text">
-          <p>
-            簡単なビジネスモデル<br />
-            主力商品、サービスの案内<br />
-            募集中の職種の業務内容
-          </p>
-        </div>
-        <!-- <div class="p-about__img">
-          <img src="<?php echo get_template_directory_uri(); ?>./images/about.jpg" alt="私たちのお仕事" />
-        </div> -->
-      </div>
-    </div>
-  </section>
-
   <!-- schedule -->
   <section class="p-schedule l-schedule delay" id="schedule">
-    <div class="p-schedule__bg"></div>
     <div class="p-schedule__inner inner">
       <div class="p-schedule__title-wrap delay">
-        <h2 class="p-schedule__title main-title schedule-title" data-title="Schedule">
+        <h2
+          class="p-schedule__title main-title schedule-title"
+          data-title="Schedule"
+        >
           <span>先輩の1日と働きがい</span>
         </h2>
       </div>
-      <div class="p-schedule__wrap top" id="schedule-top">
-        <div class="p-schedule__items ">
-          <dl class="p-schedule__item delay">
-            <dt class="p-schedule__item-time hiragino">8:15</dt>
-            <dd>
-              <h3 class="p-schedule__item-title hiragino">始業、朝礼、掃除</h3>
-              <p class="p-schedule__item-text">
-                業務内容の簡単な説明が入ります。
-              </p>
-            </dd>
-          </dl>
+
+      <!-- 先輩紹介 -->
+      <div class="p-schedule-prof__wrap">
+        <div class="p-schedule__bg"></div>
+        <div class="p-schedule-prof__box">
+          <h3 class="p-schedule-prof__title hiragino sp-only">
+            いこいの里 徳吉で働く菊田さん
+          </h3>
+          <div class="p-schedule-prof__img delay">
+            <img
+              src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_prof01.png"
+              alt="先輩の1日と働きがい"
+            />
+          </div>
+          <div class="p-schedule-prof__text">
+            <h3 class="p-schedule-prof__title hiragino pc-only">
+              いこいの里 徳吉で働く菊田さん
+            </h3>
+            <p>
+              <strong>勤続年数</strong><span>13年4ヶ月 </span><br />
+              <strong>好きなこと</strong
+              ><span>ダーツ、子供(片思い)、うどん、ラーメン</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="p-schedule-prof-message__box" style="display: none;">
+          <div class="p-schedule-prof-message__text">
+            <h3 class="p-schedule-prof-message__title hiragino">
+              この会社で働きやりがい
+            </h3>
+            <p>
+              入居者様の最後の時を迎える際に「心からの感謝の言葉」を頂き、自分自身が後悔や悔いのないお仕事ができたと思えた時にやりがいを感じます。また、自分が頑張れば必ず評価がついてくるため、仕事が面白くなります！
+            </p>
+          </div>
+          <div class="p-schedule-prof-message__text">
+            <h3 class="p-schedule-prof-message__title hiragino">
+              当社の入社試験を受ける方へのメッセージ
+            </h3>
+            <p>
+              当施設は明るく、楽しく、元気な職場です。職員、入居者様が笑顔で過ごせる環境を作っていきたいと思っています。介護職員だから分かる事、学べる事が沢山あります。さらに、いこいの里だから「できる事」「やりたい事」を実現することができます。入社されたら職員一丸となり、入居者様の生活にかかわり、素晴らしい人生のお手伝いを一緒に実現していきましょう。
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- <div class="p-schedule__bg"></div> -->
+
+      <!-- 一日のスケジュール -->
+      <div class="p-schedule__wrap top" id="schedule-top" style="display: none;">
+        <h3 class="p-schedule__sfaff-name hiragino">菊田さんの1日</h3>
+        <div class="p-schedule__bg-reverse delay"></div>
+        <div class="p-schedule__items">
           <dl class="p-schedule__item delay">
             <dt class="p-schedule__item-time hiragino">9:00</dt>
             <dd>
               <h3 class="p-schedule__item-title hiragino">
-                業務内容が入ります
+                朝礼、申し送り、<br />
+                入居者様とのコミュニケーション、排泄介助
               </h3>
-              <p class="p-schedule__item-text">
+              <!-- <p class="p-schedule__item-text">
                 業務内容の簡単な説明が入ります。
-              </p>
+              </p> -->
             </dd>
           </dl>
           <dl class="p-schedule__item delay">
-            <dt class="p-schedule__item-time hiragino">11:45~12:45</dt>
+            <dt class="p-schedule__item-time hiragino">10:00</dt>
             <dd>
-              <h3 class="p-schedule__item-title hiragino">昼休み</h3>
+              <h3 class="p-schedule__item-title hiragino">
+                体操、リハビリ、環境整備
+              </h3>
             </dd>
           </dl>
           <dl class="p-schedule__item delay">
-            <dt class="p-schedule__item-time hiragino">18:15</dt>
+            <dt class="p-schedule__item-time hiragino">11:00</dt>
             <dd>
-              <h3 class="p-schedule__item-title hiragino">帰宅</h3>
+              <h3 class="p-schedule__item-title hiragino">
+                入居者様休憩、水分補給、排泄介助
+              </h3>
+            </dd>
+          </dl>
+          <dl class="p-schedule__item delay">
+            <dt class="p-schedule__item-time hiragino">12:00</dt>
+            <dd>
+              <h3 class="p-schedule__item-title hiragino">
+                入居者食事介助、見守り
+              </h3>
+            </dd>
+          </dl>
+          <dl class="p-schedule__item delay">
+            <dt class="p-schedule__item-time hiragino">13:00</dt>
+            <dd>
+              <h3 class="p-schedule__item-title hiragino">
+                職員と一緒に昼食、<br />
+                レクレーション、趣味活動支援、<br />
+                （火・木・土は男性入浴） <br />
+              </h3>
+            </dd>
+          </dl>
+          <dl class="p-schedule__item delay">
+            <dt class="p-schedule__item-time hiragino">15:00</dt>
+            <dd>
+              <h3 class="p-schedule__item-title hiragino">
+                おやつ、グループリハビリなど<br />
+                排泄介助
+              </h3>
+            </dd>
+          </dl>
+          <dl class="p-schedule__item delay">
+            <dt class="p-schedule__item-time hiragino">17:00</dt>
+            <dd>
+              <h3 class="p-schedule__item-title hiragino">
+                入居者様夕食介助、ナイトケア
+              </h3>
+            </dd>
+          </dl>
+          <dl class="p-schedule__item delay">
+            <dt class="p-schedule__item-time hiragino">18:00</dt>
+            <dd>
+              <h3 class="p-schedule__item-title hiragino">業務終了、退勤</h3>
             </dd>
           </dl>
         </div>
@@ -547,24 +606,282 @@
         </div>
       </div>
 
-      <div class="p-schedule__wrap bottom delay">
-        <div class="p-schedule-bottom__img">
-          <img
-            src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_04.png"
-            alt="社会問題の解決に参加できる"
-          />
-        </div>
-        <div class="p-schedule-botttom__text">
-          <h3 class="p-schedule-bottom__title">
-            <span>
-              テキストが入ります<br class="sp-only" />テキストが入ります
-            </span>
+      <div class="js-staff-acordion hiragino">閉じる</div>
+    </div>
+  </section>
+
+  <!-- 2 -->
+  <section class="p-schedule l-schedule delay">
+    <div class="p-schedule__inner inner">
+      <!-- 先輩紹介 -->
+      <div class="p-schedule-prof__wrap">
+        <div class="p-schedule__bg"></div>
+        <div class="p-schedule-prof__box">
+          <h3 class="p-schedule-prof__title hiragino sp-only">
+            いこいの里 本城弐番館の坂口さん
           </h3>
-          <p>
-            先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。先輩のコメントが入ります。
-          </p>
+          <div class="p-schedule-prof__img delay">
+            <img
+              src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_prof02.png"
+              alt="先輩の1日と働きがい"
+            />
+          </div>
+          <div class="p-schedule-prof__text">
+            <h3 class="p-schedule-prof__title hiragino pc-only">
+              いこいの里 本城弐番館の坂口さん
+            </h3>
+            <p>
+              <strong>勤続年数</strong><span>6年 </span><br />
+              <strong>好きなこと</strong
+              ><span>アニメ鑑賞・飲酒・カラオケ・音楽鑑賞・読書</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="p-schedule-prof-message__box">
+          <div class="p-schedule-prof-message__text">
+            <h3 class="p-schedule-prof-message__title hiragino">
+              この会社で働きやりがい
+            </h3>
+            <p>
+              職員が年齢、経験問わず役職につけるため頑張っいてたら頑張った分返ってきやすい環境で面白いです！
+            </p>
+          </div>
+          <div class="p-schedule-prof-message__text">
+            <h3 class="p-schedule-prof-message__title hiragino">
+              当社の入社試験を受ける方へのメッセージ
+            </h3>
+            <p>
+              このページを見て頂きありがとうございます。多くの人生の先輩方と接するお仕事は仕事以外の事も学ぶ楽しさがたくさんあります。これからの時代さらに重視される介護施設で一緒に働きましょう。<br />
+              お会いできる日をとても楽しみにお待ちしております。
+            </p>
+          </div>
         </div>
       </div>
+
+      <!-- 一日のスケジュール -->
+      <div class="p-schedule__wrap top">
+        <h3 class="p-schedule__sfaff-name hiragino">菊田さんの1日</h3>
+        <div class="p-schedule__bg-reverse delay"></div>
+        <div class="p-schedule__items">
+          <dl class="p-schedule__item delay">
+            <dt class="p-schedule__item-time hiragino">9:00</dt>
+            <dd>
+              <h3 class="p-schedule__item-title hiragino">
+                業務分担、トイレ介助、バイタル測定
+              </h3>
+            </dd>
+          </dl>
+          <dl class="p-schedule__item delay">
+            <dt class="p-schedule__item-time hiragino">10:00</dt>
+            <dd>
+              <h3 class="p-schedule__item-title hiragino">女性入浴開始</h3>
+            </dd>
+          </dl>
+          <dl class="p-schedule__item delay">
+            <dt class="p-schedule__item-time hiragino">11:00</dt>
+            <dd>
+              <h3 class="p-schedule__item-title hiragino">食事準備</h3>
+            </dd>
+          </dl>
+          <dl class="p-schedule__item delay">
+            <dt class="p-schedule__item-time hiragino">12:00</dt>
+            <dd>
+              <h3 class="p-schedule__item-title hiragino">
+                食事介助、配膳、服薬、トイレ介助、<br />
+                バイタル測定
+              </h3>
+            </dd>
+          </dl>
+          <dl class="p-schedule__item delay">
+            <dt class="p-schedule__item-time hiragino">13:00</dt>
+            <dd>
+              <h3 class="p-schedule__item-title hiragino">
+                好きなアニメを見ながらお弁当タイム!!
+              </h3>
+            </dd>
+          </dl>
+          <dl class="p-schedule__item delay">
+            <dt class="p-schedule__item-time hiragino">14:00</dt>
+            <dd>
+              <h3 class="p-schedule__item-title hiragino">
+                レクリエーション、体操、リハビリ
+              </h3>
+            </dd>
+          </dl>
+          <dl class="p-schedule__item delay">
+            <dt class="p-schedule__item-time hiragino">15:00</dt>
+            <dd>
+              <h3 class="p-schedule__item-title hiragino">
+                おやつ配り、排泄介助
+              </h3>
+            </dd>
+          </dl>
+          <dl class="p-schedule__item delay">
+            <dt class="p-schedule__item-time hiragino">16:00</dt>
+            <dd>
+              <h3 class="p-schedule__item-title hiragino">食事準備</h3>
+            </dd>
+          </dl>
+          <dl class="p-schedule__item delay">
+            <dt class="p-schedule__item-time hiragino">17:00</dt>
+            <dd>
+              <h3 class="p-schedule__item-title hiragino">
+                夕食配膳、服薬介助、口腔ケア、就寝介助夕食配膳、服薬介助、口腔ケア、就寝介助
+              </h3>
+            </dd>
+          </dl>
+          <dl class="p-schedule__item delay">
+            <dt class="p-schedule__item-time hiragino">18:00</dt>
+            <dd>
+              <h3 class="p-schedule__item-title hiragino">業務終了、退勤</h3>
+            </dd>
+          </dl>
+        </div>
+        <div class="p-schedule__images pc-only delay">
+          <div class="p-schedule__image">
+            <img
+              src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_01.png"
+              alt="始業、朝礼、掃除"
+            />
+          </div>
+          <div class="p-schedule__image">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_02.png" alt="昼休み" />
+          </div>
+          <div class="p-schedule__image">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_03.png" alt="帰宅" />
+          </div>
+        </div>
+      </div>
+
+      <div class="js-staff-acordion hiragino">閉じる</div>
+    </div>
+  </section>
+
+  <!-- 3 -->
+  <section class="p-schedule l-schedule delay">
+    <div class="p-schedule__inner inner">
+      <!-- 先輩紹介 -->
+      <div class="p-schedule-prof__wrap">
+        <div class="p-schedule__bg"></div>
+        <div class="p-schedule-prof__box">
+          <h3 class="p-schedule-prof__title hiragino sp-only">
+            いこいの里 伊万里の大古場さん
+          </h3>
+          <div class="p-schedule-prof__img delay">
+            <img
+              src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_prof03.png"
+              alt="先輩の1日と働きがい"
+            />
+          </div>
+          <div class="p-schedule-prof__text">
+            <h3 class="p-schedule-prof__title hiragino pc-only">
+              いこいの里 伊万里の大古場さん
+            </h3>
+            <p>
+              <strong>勤続年数</strong><span>4年 </span><br />
+              <strong>好きなこと</strong><span>映画鑑賞、韓国ドラマ鑑賞</span>
+            </p>
+          </div>
+        </div>
+
+        <div class="p-schedule-prof-message__box">
+          <div class="p-schedule-prof-message__text">
+            <h3 class="p-schedule-prof-message__title hiragino">
+              この会社で働きやりがい
+            </h3>
+            <p>
+              私は、お客様から感謝された時にやりがいを感じます。<br />
+              家族様や入居者様に対し安心感を与え信頼してもらえるかは自分自身のコミュニケーションや表情一つで、おおきく変わってくると思います。寄り添い対応する事で亡くなられた後、退去の後にも何度も感謝の言葉を頂けました。
+            </p>
+          </div>
+          <div class="p-schedule-prof-message__text">
+            <h3 class="p-schedule-prof-message__title hiragino">
+              当社の入社試験を受ける方へのメッセージ
+            </h3>
+            <p>
+              当社は、様々な職種・年齢層の方々が働いており、一人一人が声をかけあい、お互い協力し合いながら和気あいあいと働いています！皆さんも一員になってご利用者様の生活をサポートしてみませんか？<br />
+              皆さんの入社お待ちしています！
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 一日のスケジュール -->
+      <div class="p-schedule__wrap top" style="display: none">
+        <h3 class="p-schedule__sfaff-name hiragino">菊田さんの1日</h3>
+        <div class="p-schedule__bg-reverse delay"></div>
+        <div class="p-schedule__items">
+          <dl class="p-schedule__item delay">
+            <dt class="p-schedule__item-time hiragino">8:30</dt>
+            <dd>
+              <h3 class="p-schedule__item-title hiragino">
+                検温、事務所内掃除、申し送り事項確認
+              </h3>
+            </dd>
+          </dl>
+          <dl class="p-schedule__item delay">
+            <dt class="p-schedule__item-time hiragino">9:00</dt>
+            <dd>
+              <h3 class="p-schedule__item-title hiragino">朝礼</h3>
+            </dd>
+          </dl>
+          <dl class="p-schedule__item delay">
+            <dt class="p-schedule__item-time hiragino">10:00</dt>
+            <dd>
+              <h3 class="p-schedule__item-title hiragino">
+                書類作成、ご家族様対応、電話対応、<br />
+                受診対応等
+              </h3>
+            </dd>
+          </dl>
+          <dl class="p-schedule__item delay">
+            <dt class="p-schedule__item-time hiragino">12:00</dt>
+            <dd>
+              <h3 class="p-schedule__item-title hiragino">ランチ</h3>
+            </dd>
+          </dl>
+          <dl class="p-schedule__item delay">
+            <dt class="p-schedule__item-time hiragino">13:00</dt>
+            <dd>
+              <h3 class="p-schedule__item-title hiragino">
+                書類作成、ご家族様対応、電話対応、<br />
+                受診対応等
+              </h3>
+            </dd>
+          </dl>
+          <dl class="p-schedule__item delay">
+            <dt class="p-schedule__item-time hiragino">16:00</dt>
+            <dd>
+              <h3 class="p-schedule__item-title hiragino">
+                ケアマネージャーさん対応
+              </h3>
+            </dd>
+          </dl>
+          <dl class="p-schedule__item delay">
+            <dt class="p-schedule__item-time hiragino">17:30</dt>
+            <dd>
+              <h3 class="p-schedule__item-title hiragino">退勤</h3>
+            </dd>
+          </dl>
+        </div>
+        <div class="p-schedule__images pc-only delay">
+          <div class="p-schedule__image">
+            <img
+              src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_01.png"
+              alt="始業、朝礼、掃除"
+            />
+          </div>
+          <div class="p-schedule__image">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_02.png" alt="昼休み" />
+          </div>
+          <div class="p-schedule__image">
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_03.png" alt="帰宅" />
+          </div>
+        </div>
+      </div>
+
+      <div class="js-staff-acordion hiragino">閉じる</div>
     </div>
   </section>
 
@@ -790,7 +1107,7 @@
             <span> 福利厚生制度 </span>
           </h3>
           <p class="p-career__box-text">
-            各社会保険、年次有給休暇、通勤手当、制服貸与、社宅、退職金制度（規定有）、確定拠出年金、入居者家族割引、社内奨学金制度、マイカー通勤支援、託児所（？）
+            各社会保険、年次有給休暇、通勤手当、制服貸与、社宅、退職金制度（規定有）、確定拠出年金、入居者家族割引、社内奨学金制度、マイカー通勤支援
           </p>
         </div>
       </div>
@@ -854,16 +1171,16 @@
         </h2>
       </div>
       <div class="p-guidelines__wrap">
-        <dl class="p-guidelines__list delay">
+        <!-- <dl class="p-guidelines__list delay">
           <dt class="p-guidelines__term">会社概要</dt>
           <dd class="p-guidelines__description">テキストテキスト</dd>
-        </dl>
-        <dl class="p-guidelines__list delay">
+        </dl> -->
+        <!-- <dl class="p-guidelines__list delay">
           <dt class="p-guidelines__term">事業内容</dt>
           <dd class="p-guidelines__description">
             テキストテキストテキストテキスト
           </dd>
-        </dl>
+        </dl> -->
         <dl class="p-guidelines__list delay">
           <dt class="p-guidelines__term">募集職種</dt>
           <dd class="p-guidelines__description">
@@ -885,18 +1202,24 @@
           </dd>
         </dl>
         <dl class="p-guidelines__list delay">
-          <dt class="p-guidelines__term">仕事内容</dt>
-          <dd class="p-guidelines__description">
-            テキストテキストテキストテキストテキスト<br>
-            テキストテキストテキスト
-          </dd>
-        </dl>
-        <dl class="p-guidelines__list delay">
           <dt class="p-guidelines__term">求める人材</dt>
           <dd class="p-guidelines__description">
             ⼈と話すこと、喜ばせることが好きな方<br />
             ポジティブ思考で、柔軟性がある方<br />
             地域に根ざして働きたい方
+          </dd>
+        </dl>
+        <dl class="p-guidelines__list delay">
+          <dt class="p-guidelines__term">給与</dt>
+          <dd class="p-guidelines__description">
+            ★正社員給与例<br />
+            265,000円<br />
+            介護職員、夜勤4回ありの場合の月収例です。<br />
+            ここから年次昇給がございます。<br />
+            夜勤なしの働き方もあります。<br />
+            <br />
+            詳細についてはお問い合わせください。<br />
+            また、事務・看護・相談員等の募集もございます。
           </dd>
         </dl>
         <dl class="p-guidelines__list delay">
@@ -906,25 +1229,28 @@
         <dl class="p-guidelines__list delay">
           <dt class="p-guidelines__term">雇用形態</dt>
           <dd class="p-guidelines__description">
-            テキストテキストテキストテキスト
+            正社員、準社員、非常勤<br />
+            準社員および非常勤についての詳細についてはお問い合わせください。
           </dd>
         </dl>
         <dl class="p-guidelines__list delay">
           <dt class="p-guidelines__term">時間勤務</dt>
           <dd class="p-guidelines__description">
-            テキストテキストテキストテキスト
+            1日8時間、週30〜40時間、シフト制
           </dd>
         </dl>
         <dl class="p-guidelines__list delay">
           <dt class="p-guidelines__term">休日・休暇</dt>
-          <dd class="p-guidelines__description">
-            テキストテキストテキストテキスト
-          </dd>
+          <dd class="p-guidelines__description">年間 107日</dd>
+        </dl>
+        <dl class="p-guidelines__list delay">
+          <dt class="p-guidelines__term">試用期間</dt>
+          <dd class="p-guidelines__description">3ヶ月</dd>
         </dl>
         <dl class="p-guidelines__list delay">
           <dt class="p-guidelines__term">福利厚生</dt>
           <dd class="p-guidelines__description">
-            各社会保険、制服貸与、社宅有、退職金制度(規定有)、<br>
+            各社会保険、制服貸与、社宅有、退職金制度(規定有)、<br />
             確定拠出年金、入居者家族割引、社内奨学金制度等
           </dd>
         </dl>
@@ -1051,36 +1377,44 @@
   <!-- company -->
   <section class="p-company l-company delay" id="company">
     <div class="p-company__inner inner">
-      <div class="p-company__title-wrap delay">
-        <h3 class="p-company__title main-title">
-          <span>ウキシログループ概要</span>
-        </h3>
+      <div class="p-faq__title-wrap delay">
+        <h2 class="p-faq__title main-title faq-title" data-title="Company">
+          <span>会社概要</span>
+        </h2>
       </div>
       <div class="p-company__wrap delay">
         <div class="p-company__box">
           <dl>
-            <dt>＜グループ会社＞</dt>
+            <dt>会社名</dt>
+            <dd>株式会社ウキシロケアセンター</dd>
+          </dl>
+          <dl>
+            <dt>本社所在地</dt>
+            <dd>〒804-0053 福岡県北九州市戸畑区牧山2丁目3番5号</dd>
+          </dl>
+          <dl>
+            <dt>電話番号</dt>
+            <dd>093-871-5800</dd>
+          </dl>
+          <dl>
+            <dt>FAX</dt>
+            <dd>093-881-8020</dd>
+          </dl>
+          <dl>
+            <dt>グループ会社</dt>
             <dd>
-              株式会社ウキシロケアセンター(介護福祉事業)<br
-                class="sp-only"
-              />資本金 3.5千万円<br />
-              株式会社いこいの里佐賀(介護福祉事業)<br class="sp-only" />資本金
-              1千万円<br />
-              浮城興産株式会社(総合不動産業)<br class="sp-only" />資本金
-              7千万円<br />
-              株式会社浮城工務店(総合建築業)<br class="sp-only" />資本金
-              3千万円<br />
-              西日本興業協同組合(不動産管理)<br class="sp-only" />資本金
-              3百万円<br />
-              株式会社わーくわーく(障がい者福祉事業)<br class="sp-only" />資本金
-              1千万円<br />
-              株式会社ウキシロホールディングス(介護福祉事業・農業)<br
-                class="sp-only"
-              />資本金 1千万円
+              株式会社ウキシロケアセンター（介護福祉事業）資本金 3.5千万円<br />
+              株式会社いこいの里佐賀（介護福祉事業）資本金 1千万円<br />
+              浮城興産株式会社（総合不動産業）資本金 7千万円<br />
+              株式会社浮城工務店（総合建築業）資本金 3千万円<br />
+              西日本興業協同組合（不動産管理）資本金 3百万円<br />
+              株式会社わーくわーく（障がい者福祉事業）資本金 1千万円<br />
+              株式会社ウキシロホールディングス（介護福祉事業・農業）資本金
+              1千万円
             </dd>
           </dl>
           <dl>
-            <dt>＜創業＞</dt>
+            <dt>創業</dt>
             <dd>1953年5月</dd>
           </dl>
         </div>

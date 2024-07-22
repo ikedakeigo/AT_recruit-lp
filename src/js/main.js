@@ -37,31 +37,36 @@ window.onload = function () {
   matchMedia.addEventListener("change", handleResize);
 
   const scheduleElement = document.getElementById("schedule-top");
-  const targetElement2 = document.querySelector(".p-schedule__bg");
+  const targetElements = document.querySelectorAll(".p-schedule__bg, .p-schedule__bg-reverse");
 
   if (scheduleElement) {
     const resizeObserver = new ResizeObserver((entries) => {
       for (let entry of entries) {
         const scheduleHeight = entry.target.offsetHeight;
         console.log(scheduleHeight);
-        targetElement2.style.height = scheduleHeight + "px";
+        targetElements.forEach((element) => {
+          element.style.height = scheduleHeight + "px";
+        });
       }
     });
     resizeObserver.observe(scheduleElement);
   }
 
-  const guidelinenElement = document.querySelector(".p-guidelines__wrap");
-  const targetElement3 = document.querySelector(".p-guidelines__bg");
+  // const guidelinenElement = document.querySelector(".p-guidelines__wrap");
+  // const targetElements3 = document.querySelectorAll(".p-guidelines__bg, .p-schedule__bg-reverse");
 
-  if (guidelinenElement) {
-    const resizeObserver = new ResizeObserver((entries) => {
-      for (let entry of entries) {
-        const guidelineHeight = entry.target.offsetHeight;
-        console.log(guidelineHeight);
-        targetElement3.style.height = guidelineHeight + "px";
-      }
-    });
+  // if (guidelinenElement) {
+  //   const resizeObserver = new ResizeObserver((entries) => {
+  //     for (let entry of entries) {
+  //       const guidelineHeight = entry.target.offsetHeight;
+  //       console.log(guidelineHeight);
+  //       targetElements3.forEach((element) => {
+  //         element.style.height = guidelineHeight + "px";
+  //       });
+  //     }
+  //   });
 
-    resizeObserver.observe(guidelinenElement);
-  }
+  //   resizeObserver.observe(guidelinenElement);
+  // }
+
 };

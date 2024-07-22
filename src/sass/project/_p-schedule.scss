@@ -5,21 +5,65 @@
 }
 
 .p-schedule__bg {
+  height: 100%;
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
+  background-color: $color-blue;
   position: absolute;
   z-index: -1;
-  width: 100%;
-  top: 80px;
-  left: 0;
-  background: linear-gradient(
-    -90deg,
-    transparent 0%,
-    transparent 25%,
-    $color-blue 25%
-  );
+  top: 0;
+  background: linear-gradient(to left, $color-blue 55%, transparent 55%);
+  // background: linear-gradient(
+  //   -90deg,
+  //   transparent 0%,
+  //   transparent 25%,
+  //   $color-blue 25%
+  // );
 
   @include mq(md) {
   }
+
 }
+
+// .p-schedule__bg-reverse{
+//   height: 100%;
+//   width: 100vw;
+//   margin: 0 calc(50% - 50vw);
+//   background-color: $color-blue;
+//   position: absolute;
+//   z-index: -1;
+//   top: 0;
+//   background: linear-gradient(to right, $color-blue 70%, transparent 70%);
+// }
+
+@keyframes slideInLeft {
+  0% {
+    width: 0;
+    margin: 0 calc(50% - 0vw);
+  }
+  100% {
+    width: 100vw;
+    margin: 0 calc(50% - 50vw);
+  }
+}
+
+.p-schedule__bg-reverse {
+  height: 100%;
+  width: 0; /* 初期状態の幅を0に設定 */
+  margin: 0 calc(50% - 0vw); /* 初期状態のマージンを0に設定 */
+  background-color: $color-blue;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  background: linear-gradient(to right, $color-blue 70%, transparent 70%);
+  transition: width 1s ease, margin 1s ease; /* アニメーションのトランジションを設定 */
+}
+
+.p-schedule__bg-reverse.is-open {
+  width: 100vw; /* アニメーション後の幅を100vwに設定 */
+  margin: 0 calc(50% - 50vw); /* アニメーション後のマージンを設定 */
+}
+
 
 .p-schedule__inner {
 }
@@ -44,6 +88,10 @@
   @include mq(md) {
     display: flex;
   }
+
+  &.top {
+    position: relative;
+  }
 }
 
 .p-schedule__items {
@@ -64,6 +112,7 @@
   }
   @include mq(md) {
     padding-bottom: rem(60);
+    width:  rem(500);
 
     &:not(:last-child) {
       margin-bottom: rem(65);
@@ -113,22 +162,44 @@
 
 .p-schedule__image {
   width: 300px;
+  @include mq(md){
+    position: absolute;
+  }
   &:not(:last-child) {
     margin-bottom: rem(30);
+    @include mq(md){
+      margin-bottom: rem(150);
+    }
   }
   &:nth-last-of-type(1) {
-
+    @include mq(md){
+      top: 10%;
+      right: 0;
+    }
   }
   &:nth-last-of-type(2) {
     margin-left: rem(-50);
+    @include mq(md){
+      // margin-left: rem(-80);
+      top: 40%;
+      right:  rem(-50);
+    }
   }
   &:nth-last-of-type(3) {
     margin-top: rem(30);
+    @include mq(md){
+      bottom: 0;
+      right: 0;
+    }
   }
   img {
-    aspect-ratio: 300/200;
+    aspect-ratio: 360/260;
     object-fit: cover;
     height: auto;
+  }
+
+  @include mq(md){
+    width: 400px;
   }
 }
 
@@ -187,11 +258,145 @@
 
 .p-schedule__wrap.top {
   margin-bottom: rem(50);
+  // display: none;
   @include mq(md) {
     margin-bottom: rem(70);
+    margin-top: rem(50);
   }
 }
 .p-schedule__wrap.bottom {
   align-items: center;
   justify-content: center;
+}
+
+/*===================================
+ * スタッフ紹介
+===================================*/
+
+.p-schedule-prof__wrap {
+  // background-color: $color-blue;
+  // box-shadow: 0 0 0 25vmax $color-blue;
+  // clip-path: inset(0 -25vmax 0 0);
+  // background: linear-gradient(to left, $color-blue 65%, transparent 65%);
+  position: relative;
+  @include mq(md) {
+    padding-top: rem(70);
+    margin-bottom: rem(50);
+    padding-bottom: rem(50);
+  }
+}
+
+.p-schedule-prof__box {
+  margin-bottom: rem(50);
+  @include mq(md) {
+    display: flex;
+    margin-bottom: rem(50);
+  }
+}
+
+.p-schedule-prof__img {
+  margin-bottom: rem(30);
+  @include mq(md) {
+    margin-bottom: rem(0);
+    margin-right: rem(30);
+    width: per(430, 1030);
+  }
+  img {
+    aspect-ratio: 420/280;
+    object-fit: cover;
+    height: auto;
+  }
+}
+
+.p-schedule-prof__text {
+  @include mq(md) {
+    padding-top: rem(50);
+    width: 50%;
+  }
+  strong {
+    font-weight: 700;
+    padding-right: rem(20);
+  }
+
+  p {
+    position: relative;
+  }
+
+  span {
+    position: absolute;
+    left: 0;
+    padding-left:  rem(100);
+  }
+}
+
+.p-schedule-prof__title {
+  font-size:  rem(23);
+  margin-bottom: rem(30);
+  text-align: center;
+  @include mq(md) {
+    text-align: left;
+    margin-bottom: rem(40);
+    font-size: rem(26);
+  }
+}
+
+.p-schedule-prof-message__box {
+  // display: none;
+  border: 1px solid #aeaeae;
+  background-color: $color-white;
+  padding: rem(20) rem(30);
+  @include mq(md) {
+    padding: rem(40) rem(60);
+  }
+}
+
+.p-schedule-prof-message__text{
+  &:not(:last-child) {
+    margin-bottom: rem(20);
+    @include mq(md){
+      margin-bottom: rem(40);
+    }
+  }
+}
+
+.p-schedule-prof-message__text p {
+  background-image: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 98.5%, #000 100%);
+  background-repeat: repeat-y;
+  background-size: 100% 3em;
+  line-height: 3;
+}
+
+
+.p-schedule-prof-message__title {
+  color: $color-text-blue;
+  @include mq(md) {
+    font-size: rem(28);
+  }
+}
+
+
+.p-schedule__sfaff-name{
+  position:absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+  @include mq(md){
+    top:  rem(-30);
+    font-size:  rem(33);
+  }
+}
+
+.js-staff-acordion {
+  border: 1px solid #aeaeae;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: rem(30);
+  width: rem(130);
+  padding: rem(10) rem(20);
+  @include mq(md){
+    width:  rem(180);
+    margin-top: rem(0);
+    padding:  rem(10)  rem(20);
+  }
 }
