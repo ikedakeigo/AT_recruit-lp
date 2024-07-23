@@ -156,32 +156,51 @@ jQuery(function ($) {
     });
   });
 
-  // アコーディオン
-  $(".js-staff-acordion").on("click", function () {
-    const $accordion = $(this).siblings(".p-schedule-prof__accordion");
-    $accordion.slideToggle();
+    // アコーディオン
+    $(".js-staff-acordion").on("click", function () {
+        const $accordion = $(this).siblings(".p-schedule-prof__accordion");
+        $accordion.slideToggle();
 
-    const $bg = $(this).closest(".p-schedule-prof__wrap").find(".p-schedule__bg");
+        const $bg = $(this).closest(".p-schedule-prof__wrap").find(".p-schedule__bg");
 
-    // ボタンのインデックスを取得
-    const index = $(".js-staff-acordion").index(this);
+        // ボタンのインデックスを取得
+        const index = $(".js-staff-acordion").index(this);
 
-    if ($(this).hasClass("is-open")) {
-      $bg.css("height", "78%");
-    } else {
-      if (index === 0) {
-        $bg.css("height", "33%");
-      } else if (index === 1) {
-        $bg.css("height", "28%");
-      } else if (index === 2) {
-        $bg.css("height", "35%");
-      }
+        if ($(this).hasClass("is-open")) {
+        $bg.css("height", "78%");
+        } else {
+        if (index === 0) {
+            $bg.css("height", "33%");
+        } else if (index === 1) {
+            $bg.css("height", "28%");
+        } else if (index === 2) {
+            $bg.css("height", "35%");
+        }
+        }
+
+        $(this).toggleClass("is-open");
+    });
+
+
+    // $('#js-anckerLink').on('click', function() {
+    //     $('.sp-only').slideToggle().toggleClass('open');
+    // })
+
+
+    function setAcordionBehavior() {
+        if($(window).width() < 800) {
+            $('#js-anckerLink').off('click').on('click', function() {
+                // .sp-onlyクラスの要素にslideToggleを適用
+                $('.sp-only').slideToggle().toggleClass('open');
+            });
+        } else{
+            $('#js-anckerLink').off('click');
+        }
     }
 
-    $(this).toggleClass("is-open");
-  });
+    setAcordionBehavior();
 
-
-
-
+    $(window).resize(function() {
+        setAcordionBehavior();
+    })
 });

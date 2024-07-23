@@ -1055,11 +1055,6 @@ a {
     padding: 1.875rem 1.25rem;
   }
 }
-.p-anckerLink__title-wrap {
-  margin-bottom: 10px;
-  margin-bottom: 0.625rem;
-}
-
 @media screen and (min-width: 800px) {
   .p-anckerLink__title-wrap {
     width: 6.25rem;
