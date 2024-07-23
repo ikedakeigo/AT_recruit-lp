@@ -1137,7 +1137,6 @@ a {
 
 .p-anckerLink__item {
   position: relative;
-  display: inline-block;
 }
 
 .p-anckerLink__item a {
@@ -1146,6 +1145,7 @@ a {
 
 @media screen and (min-width: 800px) {
   .p-anckerLink__item {
+    display: inline-block;
     margin-right: 3.75rem;
     margin-bottom: 1.875rem;
   }
@@ -1155,8 +1155,24 @@ a {
   .p-anckerLink__item:nth-of-type(n+11) {
     margin-bottom: 0;
   }
+  .p-anckerLink__item::before {
+    content: "";
+    position: absolute;
+    background-image: url("../../assets/img/icon/icon_maruarrow.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 0.625rem;
+    height: 0.625rem;
+    top: 30%;
+    right: -1.25rem;
+  }
 }
-.p-anckerLink__item::before {
+.p-anckerLink__link {
+  position: relative;
+}
+
+.p-anckerLink__link::before {
   content: "";
   position: absolute;
   background-image: url("../../assets/img/icon/icon_maruarrow.svg");
@@ -1172,6 +1188,11 @@ a {
   right: -1.25rem;
 }
 
+@media screen and (min-width: 800px) {
+  .p-anckerLink__link::before {
+    display: none;
+  }
+}
 .p-work {
   position: relative;
 }

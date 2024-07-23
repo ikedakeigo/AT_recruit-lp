@@ -87,13 +87,12 @@
 
 .p-anckerLink__item {
   position: relative;
-  display: inline-block;
   a {
     // font-size: clamp( rem(10), 2.5vw,  rem(16));
     line-height: 2;
   }
   @include mq(md){
-    // width: 100%;
+    display: inline-block;
     margin-right: rem(60);
     margin-bottom: rem(30);
     &:nth-of-type(5n){
@@ -102,7 +101,23 @@
     &:nth-of-type(n+11){
       margin-bottom: 0;
     }
+    &::before{
+      content: "";
+      position: absolute;
+      background-image: url("../../assets/img/icon/icon_maruarrow.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: center;
+      width:  rem(10);
+      height:  rem(10);
+      top: 30%;
+      right: - rem(20);
+    }
   }
+}
+
+.p-anckerLink__link {
+  position: relative;
   &::before{
     content: "";
     position: absolute;
@@ -114,9 +129,8 @@
     height:  rem(10);
     top: 30%;
     right: - rem(20);
+    @include mq(md){
+      display: none;
+    }
   }
-}
-
-.p-anckerLink__link {
-
 }
