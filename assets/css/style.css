@@ -222,7 +222,7 @@ a {
 
 @media screen and (min-width: 800px) {
   .main-title::before {
-    left: -20%;
+    left: 0;
     bottom: -25%;
   }
 }
@@ -493,8 +493,8 @@ a {
   background-color: #e5f5ff;
   margin-bottom: 100px;
   margin-bottom: 6.25rem;
-  padding-top: 50px;
-  padding-top: 3.125rem;
+  padding-top: 100px;
+  padding-top: 6.25rem;
   padding-bottom: 30px;
   padding-bottom: 1.875rem;
 }
@@ -1141,8 +1141,7 @@ a {
 }
 
 .p-anckerLink__item a {
-  font-size: clamp(10px, 2.5vw, 16px);
-  font-size: clamp(0.625rem, 2.5vw, 1rem);
+  line-height: 2;
 }
 
 @media screen and (min-width: 800px) {
@@ -1184,13 +1183,11 @@ a {
 @media screen and (min-width: 800px) {
   .p-work__bg {
     display: block;
+    height: 100%;
     position: absolute;
     z-index: -1;
     left: 0;
     width: 100%;
-    height: -webkit-fit-content;
-    height: -moz-fit-content;
-    height: fit-content;
     background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(70%, transparent), color-stop(25%, #e5f5ff));
     background: linear-gradient(90deg, transparent 0%, transparent 70%, #e5f5ff 25%);
     top: 160px;
@@ -1207,13 +1204,13 @@ a {
   }
 }
 .p-work__first-info {
-  text-align: center;
   margin-bottom: 30px;
   margin-bottom: 1.875rem;
 }
 
 @media screen and (min-width: 800px) {
   .p-work__first-info {
+    text-align: center;
     margin-bottom: 2.5rem;
   }
 }
@@ -1229,7 +1226,8 @@ a {
   position: absolute;
   top: 0;
   left: 10px;
-  width: 100%;
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
   height: 100%;
   z-index: -1;
   background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(15%, transparent), color-stop(25%, #e5f5ff));
@@ -1279,10 +1277,13 @@ a {
 }
 .p-work__img {
   width: 100%;
+  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 
 @media screen and (min-width: 800px) {
   .p-work__img {
+    margin-bottom: 0rem;
     max-width: 37.5rem;
   }
 }
@@ -1499,6 +1500,18 @@ a {
 }
 
 .p-schedule__bg {
+  height: 78%;
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
+  background-color: #e5f5ff;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  background: -webkit-gradient(linear, right top, left top, color-stop(60%, #e5f5ff), color-stop(70%, transparent));
+  background: linear-gradient(to left, #e5f5ff 60%, transparent 70%);
+}
+
+.p-schedule__bg-reverse {
   height: 100%;
   width: 100vw;
   margin: 0 calc(50% - 50vw);
@@ -1506,47 +1519,77 @@ a {
   position: absolute;
   z-index: -1;
   top: 0;
-  background: -webkit-gradient(linear, right top, left top, color-stop(55%, #e5f5ff), color-stop(55%, transparent));
-  background: linear-gradient(to left, #e5f5ff 55%, transparent 55%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(70%, #e5f5ff), color-stop(80%, transparent));
+  background: linear-gradient(to right, #e5f5ff 70%, transparent 80%);
 }
 
-@-webkit-keyframes slideInLeft {
-  0% {
-    width: 0;
-    margin: 0 50%;
+@-webkit-keyframes expandHeight {
+  from {
+    height: 33%;
   }
-  100% {
-    width: 100vw;
-    margin: 0 calc(50% - 50vw);
+  to {
+    height: 78%;
   }
 }
-@keyframes slideInLeft {
-  0% {
-    width: 0;
-    margin: 0 50%;
+@keyframes expandHeight {
+  from {
+    height: 33%;
   }
-  100% {
-    width: 100vw;
-    margin: 0 calc(50% - 50vw);
+  to {
+    height: 78%;
   }
 }
-.p-schedule__bg-reverse {
-  height: 100%;
-  width: 0; /* 初期状態の幅を0に設定 */
-  margin: 0 50%; /* 初期状態のマージンを0に設定 */
-  background-color: #e5f5ff;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  background: -webkit-gradient(linear, left top, right top, color-stop(70%, #e5f5ff), color-stop(70%, transparent));
-  background: linear-gradient(to right, #e5f5ff 70%, transparent 70%);
-  -webkit-transition: width 1s ease, margin 1s ease;
-  transition: width 1s ease, margin 1s ease; /* アニメーションのトランジションを設定 */
+@-webkit-keyframes collapseHeight1 {
+  from {
+    height: 78%;
+  }
+  to {
+    height: 33%;
+  }
 }
-
-.p-schedule__bg-reverse.is-open {
-  width: 100vw; /* アニメーション後の幅を100vwに設定 */
-  margin: 0 calc(50% - 50vw); /* アニメーション後のマージンを設定 */
+@keyframes collapseHeight1 {
+  from {
+    height: 78%;
+  }
+  to {
+    height: 33%;
+  }
+}
+@-webkit-keyframes collapseHeight2 {
+  from {
+    height: 100%;
+  }
+  to {
+    height: 28%;
+  }
+}
+@keyframes collapseHeight2 {
+  from {
+    height: 100%;
+  }
+  to {
+    height: 28%;
+  }
+}
+@-webkit-keyframes collapseHeight3 {
+  from {
+    height: 78%;
+  }
+  to {
+    height: 35%;
+  }
+}
+@keyframes collapseHeight3 {
+  from {
+    height: 78%;
+  }
+  to {
+    height: 35%;
+  }
+}
+.p-schedule__bg {
+  -webkit-transition: height 0.5s ease;
+  transition: height 0.5s ease;
 }
 
 .p-schedule__title-wrap {
@@ -1702,6 +1745,17 @@ a {
     right: 0;
   }
 }
+.p-schedule__image:nth-last-of-type(4) {
+  margin-top: 30px;
+  margin-top: 1.875rem;
+}
+
+@media screen and (min-width: 800px) {
+  .p-schedule__image:nth-last-of-type(4) {
+    bottom: 0;
+    right: 0;
+  }
+}
 .p-schedule__image img {
   aspect-ratio: 360/260;
   -o-object-fit: cover;
@@ -1787,12 +1841,14 @@ a {
 .p-schedule__wrap.top {
   margin-bottom: 50px;
   margin-bottom: 3.125rem;
+  margin-top: 100px;
+  margin-top: 6.25rem;
 }
 
 @media screen and (min-width: 800px) {
   .p-schedule__wrap.top {
     margin-bottom: 4.375rem;
-    margin-top: 3.125rem;
+    margin-top: 9.375rem;
   }
 }
 .p-schedule__wrap.bottom {
@@ -1933,6 +1989,8 @@ a {
   left: 50%;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+  font-size: 23px;
+  font-size: 1.4375rem;
 }
 
 @media screen and (min-width: 800px) {
@@ -1951,6 +2009,8 @@ a {
   width: 8.125rem;
   padding: 10px 20px;
   padding: 0.625rem 1.25rem;
+  background-color: #fff;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 800px) {

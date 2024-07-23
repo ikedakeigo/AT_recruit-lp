@@ -5,6 +5,21 @@
 }
 
 .p-schedule__bg {
+  height: 78%;
+  width: 100vw;
+  margin: 0 calc(50% - 50vw);
+  background-color: $color-blue;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  background: linear-gradient(to left, $color-blue 60%, transparent 70%);
+
+  @include mq(md) {
+  }
+
+}
+
+.p-schedule__bg-reverse{
   height: 100%;
   width: 100vw;
   margin: 0 calc(50% - 50vw);
@@ -12,57 +27,49 @@
   position: absolute;
   z-index: -1;
   top: 0;
-  background: linear-gradient(to left, $color-blue 55%, transparent 55%);
-  // background: linear-gradient(
-  //   -90deg,
-  //   transparent 0%,
-  //   transparent 25%,
-  //   $color-blue 25%
-  // );
-
-  @include mq(md) {
-  }
-
+  background: linear-gradient(to right, $color-blue 70%, transparent 80%);
 }
 
-// .p-schedule__bg-reverse{
-//   height: 100%;
-//   width: 100vw;
-//   margin: 0 calc(50% - 50vw);
-//   background-color: $color-blue;
-//   position: absolute;
-//   z-index: -1;
-//   top: 0;
-//   background: linear-gradient(to right, $color-blue 70%, transparent 70%);
-// }
-
-@keyframes slideInLeft {
-  0% {
-    width: 0;
-    margin: 0 calc(50% - 0vw);
+@keyframes expandHeight {
+  from {
+    height: 33%;
   }
-  100% {
-    width: 100vw;
-    margin: 0 calc(50% - 50vw);
+  to {
+    height: 78%;
   }
 }
 
-.p-schedule__bg-reverse {
-  height: 100%;
-  width: 0; /* 初期状態の幅を0に設定 */
-  margin: 0 calc(50% - 0vw); /* 初期状態のマージンを0に設定 */
-  background-color: $color-blue;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  background: linear-gradient(to right, $color-blue 70%, transparent 70%);
-  transition: width 1s ease, margin 1s ease; /* アニメーションのトランジションを設定 */
+@keyframes collapseHeight1 {
+  from {
+    height: 78%;
+  }
+  to {
+    height: 33%;
+  }
 }
 
-.p-schedule__bg-reverse.is-open {
-  width: 100vw; /* アニメーション後の幅を100vwに設定 */
-  margin: 0 calc(50% - 50vw); /* アニメーション後のマージンを設定 */
+@keyframes collapseHeight2 {
+  from {
+    height: 100%;
+  }
+  to {
+    height: 28%;
+  }
 }
+
+@keyframes collapseHeight3 {
+  from {
+    height: 78%;
+  }
+  to {
+    height: 35%;
+  }
+}
+
+.p-schedule__bg {
+  transition: height 0.5s ease;
+}
+
 
 
 .p-schedule__inner {
@@ -192,6 +199,13 @@
       right: 0;
     }
   }
+  &:nth-last-of-type(4) {
+    margin-top: rem(30);
+    @include mq(md){
+      bottom: 0;
+      right: 0;
+    }
+  }
   img {
     aspect-ratio: 360/260;
     object-fit: cover;
@@ -259,9 +273,10 @@
 .p-schedule__wrap.top {
   margin-bottom: rem(50);
   // display: none;
+  margin-top: rem(100);
   @include mq(md) {
     margin-bottom: rem(70);
-    margin-top: rem(50);
+    margin-top: rem(150);
   }
 }
 .p-schedule__wrap.bottom {
@@ -380,7 +395,7 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
-
+  font-size:  rem(23);
   @include mq(md){
     top:  rem(-30);
     font-size:  rem(33);
@@ -394,6 +409,8 @@
   margin-top: rem(30);
   width: rem(130);
   padding: rem(10) rem(20);
+  background-color: $color-white;
+  cursor: pointer;
   @include mq(md){
     width:  rem(180);
     margin-top: rem(0);

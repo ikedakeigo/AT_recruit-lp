@@ -89,7 +89,8 @@
   position: relative;
   display: inline-block;
   a {
-    font-size: clamp( rem(10), 2.5vw,  rem(16));
+    // font-size: clamp( rem(10), 2.5vw,  rem(16));
+    line-height: 2;
   }
   @include mq(md){
     // width: 100%;
