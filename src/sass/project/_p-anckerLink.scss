@@ -86,6 +86,8 @@
 }
 
 .p-anckerLink__item {
+  color: $color-text-blue;
+  text-decoration: underline;
   position: relative;
   a {
     // font-size: clamp( rem(10), 2.5vw,  rem(16));

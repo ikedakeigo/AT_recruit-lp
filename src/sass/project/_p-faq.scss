@@ -10,6 +10,7 @@
 .p-faq-list__item{
   background-color: $color-blue;
   padding:  rem(10)  rem(20);
+  // padding-left: rem(30);
   @include mq(md){
     padding:  rem(30)  rem(40);
   }
@@ -23,11 +24,13 @@
 }
 
 .p-faq-list__item-question {
-  padding-left: rem(28);
+  padding-left: rem(15);
   position: relative;
   color: $color-text-blue;
   text-indent: -18px;
+  width: 95%;
   @include mq(md){
+    width: 100%;
     text-indent: rem(-14);
       font-size: rem(18);
   }
@@ -35,12 +38,13 @@
 
 .p-faq-list__item-question span {
   margin-right: rem(10);
-  display: inline-block;
+  display: contents;
   color: $color-text-blue;
   font-size:  rem(28);
 }
 
 .p-faq-list__item-answer {
+  display: none;
   margin-top: rem(15);
   padding-left: rem(30);
   text-indent: -18px;
@@ -53,7 +57,29 @@
 
 .p-faq-list__item-answer span {
   margin-right: rem(10);
-  display: inline-block;
+  display: contents;
   color: $color-black;
   font-size:  rem(28);
+}
+
+.p-faq-list__item-question::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: rem(-20);
+  width: rem(10);
+  height: rem(10);
+  border-top: rem(3) solid $color-text-blue;
+  border-right: rem(3) solid $color-text-blue;
+  transform: translateY(-50%) rotate(135deg);
+  transition: .3s;
+  @include mq(md){
+    right: rem(20);
+      width: rem(13);
+      height: rem(13);
+  }
+}
+
+.p-faq-list__item-question.is-open::before {
+  transform: translateY(-50%) rotate(315deg);
 }

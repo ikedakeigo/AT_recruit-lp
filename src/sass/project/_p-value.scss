@@ -14,9 +14,10 @@
 }
 
 .p-value__title {
-}
-
-.main-title {
+  font-size:  clamp(rem(24), 5vw, rem(28));
+  @include mq(md){
+    font-size:  rem(28);
+  }
 }
 
 .p-value__wrap {
@@ -26,7 +27,7 @@
 .p-value__items {
   background-color: $color-white;
   border-radius: rem(15);
-  padding:  rem(5)  rem(10)  rem(20)  rem(10);
+  padding:  rem(15)  rem(10)  rem(20)  rem(10);
   @include mq(md) {
     border-radius: rem(35);
     display: flex;

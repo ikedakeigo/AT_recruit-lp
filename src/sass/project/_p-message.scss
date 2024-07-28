@@ -57,7 +57,7 @@
 .p-message__top-title {
   margin-bottom: rem(20);
   font-family: $font-family-hiragino;
-  font-size: rem(26);
+  font-size: clamp(rem(22), 5vw, rem(26));
   @include mq(md) {
     font-size: rem(38);
     margin-bottom: rem(30);
@@ -100,6 +100,19 @@
     margin: 0 auto;
     background-size: contain;
     background-image: url("../../assets/img/message/message-text__bg.svg");
+  }
+
+  li:not(:last-child) {
+    margin-bottom: rem(10);
+  }
+
+  li {
+    padding-left:  rem(10);
+  }
+  li::marker {
+    content: "⚫︎";
+    color: $color-black;
+    font-size: rem(5);
   }
 }
 

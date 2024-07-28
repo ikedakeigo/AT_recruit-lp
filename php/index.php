@@ -5,8 +5,8 @@
   <section class="p-hero l-hero delay" id="">
     <div class="p-hero__inner inner">
       <div class="p-hero__img-wrap">
-        <img class="js-changeImg pc-only" src="<?php echo get_template_directory_uri(); ?>/assets/img/hero/mv.png" alt="" />
-        <img class="js-changeImg sp-only" src="<?php echo get_template_directory_uri(); ?>/assets/img/hero/mv_sp.png" alt="" />
+        <img class="pc-only" src="<?php echo get_template_directory_uri(); ?>/assets/img/hero/mv.png" alt="" />
+        <img class=" sp-only" src="<?php echo get_template_directory_uri(); ?>/assets/img/hero/mv_sp.png" alt="" />
       </div>
       <div class="p-hero__title-wrap delay">
         <h2 class="p-hero__title hiragino">
@@ -53,7 +53,7 @@
   <!-- anckerLink -->
   <section class="p-anckerLink l-anckerLink delay" id="">
     <div class="p-anckerLink__inner inner">
-      <div class="p-anckerLink__title-wrap">
+      <div class="p-anckerLink__title-wrap" id="js-anckerLink">
         <p class="p-anckerLink__sub-title sub-title">目次</p>
       </div>
       <div class="p-anckerLink__wrap" id="page-link">
@@ -107,62 +107,62 @@
         </ul>
 
         <!-- sp -->
-        <div class="sp-only">
+        <div class="sp-only" style="display: none;">
           <ul class="p-anckerLink__items">
             <li class="p-anckerLink__item">
               <a href="#work" class="p-anckerLink__link">私の会社で働く6つの理由</a>
             </li>
-            <ul class="p-anckerLink__items-sp">
-              <li class="p-anckerLink__item">
-                <a href="#message" class="p-anckerLink__link">代表挨拶</a>
-              </li>
-              <li class="p-anckerLink__item">
-                <a href="#about" class="p-anckerLink__link">私たちのお仕事</a>
-              </li>
-            </ul>
-            <ul>
-              <li class="p-anckerLink__item">
-                <a href="#schedule" class="p-anckerLink__link">先輩の1日と働きがい</a>
-              </li>
-            </ul>
+            <!-- <ul class="p-anckerLink__items-sp"> -->
+            <li class="p-anckerLink__item">
+              <a href="#message" class="p-anckerLink__link">代表挨拶</a>
+            </li>
+            <li class="p-anckerLink__item">
+              <a href="#about" class="p-anckerLink__link">私たちのお仕事</a>
+            </li>
+            <!-- </ul> -->
+            <!-- <ul> -->
+            <li class="p-anckerLink__item">
+              <a href="#schedule" class="p-anckerLink__link">先輩の1日と働きがい</a>
+            </li>
+            <!-- </ul> -->
             <li class="p-anckerLink__item">
               <a href="#profile" class="p-anckerLink__link">私たちの会社で活躍できる人</a>
             </li>
-            <ul class="p-anckerLink__items-sp">
-              <li class="p-anckerLink__item">
-                <a href="#career" class="p-anckerLink__link">キャリアアップ制度</a>
-              </li>
-              <li class="p-anckerLink__item">
-                <a href="#career02" class="p-anckerLink__link">研修制度</a>
-              </li>
-            </ul>
-            <ul class="p-anckerLink__items-sp">
-              <li class="p-anckerLink__item">
-                <a href="#career03" class="p-anckerLink__link">福利厚生制度</a>
-              </li>
-              <li class="p-anckerLink__item">
-                <a href="#data" class="p-anckerLink__link">データで見るいこいの里</a>
-              </li>
-            </ul>
+            <!-- <ul class="p-anckerLink__items-sp"> -->
+            <li class="p-anckerLink__item">
+              <a href="#career" class="p-anckerLink__link">キャリアアップ制度</a>
+            </li>
+            <li class="p-anckerLink__item">
+              <a href="#career02" class="p-anckerLink__link">研修制度</a>
+            </li>
+            <!-- </ul> -->
+            <!-- <ul class="p-anckerLink__items-sp"> -->
+            <li class="p-anckerLink__item">
+              <a href="#career03" class="p-anckerLink__link">福利厚生制度</a>
+            </li>
+            <li class="p-anckerLink__item">
+              <a href="#data" class="p-anckerLink__link">データで見るいこいの里</a>
+            </li>
+            <!-- </ul> -->
             <li class="p-anckerLink__item">
               <a href="#reMessage" class="p-anckerLink__link">採用担当者からのメッセージ</a>
             </li>
-            <ul class="p-anckerLink__items-sp">
-              <li class="p-anckerLink__item">
-                <a href="#guidelines" class="p-anckerLink__link">募集要項</a>
-              </li>
-              <li class="p-anckerLink__item">
-                <a href="#process" class="p-anckerLink__link">選考プロセス</a>
-              </li>
-            </ul>
-            <ul class="p-anckerLink__items-sp">
-              <li class="p-anckerLink__item">
-                <a href="#contactBtn" class="p-anckerLink__link">エントリー</a>
-              </li>
-              <li class="p-anckerLink__item">
-                <a href="#faq" class="p-anckerLink__link">よくある質問</a>
-              </li>
-            </ul>
+            <!-- <ul class="p-anckerLink__items-sp"> -->
+            <li class="p-anckerLink__item">
+              <a href="#guidelines" class="p-anckerLink__link">募集要項</a>
+            </li>
+            <li class="p-anckerLink__item">
+              <a href="#process" class="p-anckerLink__link">選考プロセス</a>
+            </li>
+            <!-- </ul> -->
+            <!-- <ul class="p-anckerLink__items-sp"> -->
+            <li class="p-anckerLink__item">
+              <a href="#contactBtn" class="p-anckerLink__link">エントリー</a>
+            </li>
+            <li class="p-anckerLink__item">
+              <a href="#faq" class="p-anckerLink__link">よくある質問</a>
+            </li>
+            <!-- </ul> -->
             <li class="p-anckerLink__item">
               <a href="#company" class="p-anckerLink__link">ウキシログループ概要</a>
             </li>
@@ -208,7 +208,7 @@
               介護の仕事は人の命を扱う仕事です。<br />
               入居者様の健康と尊厳を守ることの重要性を職員全員が大切にしているため、助け合いの輪が広がります。<br />
               また、職場だけにとどまらず、年齢、性別を超えた気が合う仲間との自発的なサークル活動、飲み会、旅行なども活発です。公私を超えた仲間づくりができるのがいこいの里の楽しみの一つです。<br />
-              <span class="listMark-grid">※感染症等の流行を見ながら行っております</span>
+              ※感染症等の流行を見ながら行っております
             </p>
           </div>
         </div>
@@ -364,9 +364,9 @@
         <div class="p-message__bottom delay">
           <p class="pl-80">ですから私たちは</p>
           <ul class="p-message__bottom-list hiragino">
-            <li>・全ての社員が生活と心に豊かさを持てる職場</li>
-            <li>・お客様の笑顔と社員の笑顔が循環する職場</li>
-            <li>・彩りのある思い出が残るサービスを提供できる職場</li>
+            <li>全ての社員が生活と心に豊かさを持てる職場</li>
+            <li>お客様の笑顔と社員の笑顔が循環する職場</li>
+            <li>彩りのある思い出が残るサービスを提供できる職場</li>
           </ul>
           <p class="p-message__bottom-text">
             3点を今後とも追求し、より魅力的な施設、職場を実現して参ります。
@@ -398,7 +398,7 @@
         <div class="p-schedule__bg"></div>
         <div class="p-schedule-prof__box">
           <h3 class="p-schedule-prof__title hiragino sp-only">
-            いこいの里 徳吉で働く菊田さん
+            いこいの里 <br>徳吉で働く菊田さん
           </h3>
           <div class="p-schedule-prof__img delay">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_prof01.png" alt="先輩の1日と働きがい" />
@@ -409,7 +409,7 @@
             </h3>
             <p>
               <strong>勤続年数</strong><span>13年4ヶ月 </span><br />
-              <strong>好きなこと</strong><span>ダーツ、子供(片思い)、うどん、ラーメン</span>
+              <strong>好きなこと</strong><span>ダーツ、子供(片思い)、<br class="sp-only">うどん、ラーメン</span>
             </p>
           </div>
         </div>
@@ -518,7 +518,7 @@
           </div>
         </div>
 
-        <div class="js-staff-acordion hiragino">閉じる</div>
+        <div class="js-staff-acordion hiragino">詳細を見る</div>
       </div>
     </div>
   </section>
@@ -530,7 +530,7 @@
       <div class="p-schedule-prof__wrap">
         <div class="p-schedule__bg"></div>
         <div class="p-schedule-prof__box">
-          <h3 class="p-schedule-prof__title hiragino sp-only">いこいの里 本城弐番館の坂口さん</h3>
+          <h3 class="p-schedule-prof__title hiragino sp-only">いこいの里 <br>本城弐番館の坂口さん</h3>
           <div class="p-schedule-prof__img delay">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_prof02.png" alt="先輩の1日と働きがい" />
           </div>
@@ -538,7 +538,7 @@
             <h3 class="p-schedule-prof__title hiragino pc-only">いこいの里 本城弐番館の坂口さん</h3>
             <p>
               <strong>勤続年数</strong><span>6年 </span><br />
-              <strong>好きなこと</strong><span>アニメ鑑賞・飲酒・カラオケ・音楽鑑賞・読書</span>
+              <strong>好きなこと</strong><span>アニメ鑑賞・飲酒・<br class="sp-only">カラオケ・音楽鑑賞・読書</span>
             </p>
           </div>
         </div>
@@ -643,20 +643,20 @@
           </div>
         </div>
 
-        <div class="js-staff-acordion hiragino">閉じる</div>
+        <div class="js-staff-acordion hiragino">詳細を見る</div>
       </div>
     </div>
   </section>
 
   <!-- 3 -->
-  <section class="p-schedule l-schedule delay">
+  <section class="p-schedule l-schedule delay bottom">
     <div class="p-schedule__inner inner">
       <!-- 先輩紹介 -->
       <div class="p-schedule-prof__wrap">
         <div class="p-schedule__bg"></div>
         <div class="p-schedule-prof__box">
           <h3 class="p-schedule-prof__title hiragino sp-only">
-            いこいの里 伊万里の大古場さん
+            いこいの里 <br>伊万里の大古場さん
           </h3>
           <div class="p-schedule-prof__img delay">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_prof03.png" alt="先輩の1日と働きがい" />
@@ -765,7 +765,7 @@
           </div>
         </div>
 
-        <div class="js-staff-acordion hiragino">閉じる</div>
+        <div class="js-staff-acordion hiragino">詳細を見る</div>
       </div>
     </div>
   </section>
@@ -1131,8 +1131,8 @@
       </div>
       <div class="p-faq__wrap">
         <ul class="p-faq__list p-faq-list delay">
-          <li class="p-faq-list__item delay">
-            <p class="p-faq-list__item-question">
+          <li class="p-faq-list__item">
+            <p class="p-faq-list__item-question js-faq-question">
               <span>Q</span>
               産休・育休・勤務時間の調整は可能ですか？
             </p>
@@ -1142,8 +1142,8 @@
               皆が不安を抱かず働き、休るようにしっかりと話し合いの上、決定します。また、時短勤務や、午後・午前だけの勤務もできるようにできる限り配慮しています。
             </p>
           </li>
-          <li class="p-faq-list__item delay">
-            <p class="p-faq-list__item-question">
+          <li class="p-faq-list__item">
+            <p class="p-faq-list__item-question js-faq-question">
               <span>Q</span>
               通勤時にスタッフが使える駐車場はありますか？
             </p>
@@ -1152,8 +1152,8 @@
               無料で使える駐車場を準備しています。
             </p>
           </li>
-          <li class="p-faq-list__item delay">
-            <p class="p-faq-list__item-question">
+          <li class="p-faq-list__item">
+            <p class="p-faq-list__item-question js-faq-question">
               <span>Q</span>
               子供の発熱など急な用事で休めますか？
             </p>
@@ -1162,8 +1162,8 @@
               大丈夫です。しかし、必ず連絡はしていただくようにお願いしています。
             </p>
           </li>
-          <li class="p-faq-list__item delay">
-            <p class="p-faq-list__item-question">
+          <li class="p-faq-list__item">
+            <p class="p-faq-list__item-question js-faq-question">
               <span>Q</span>
               帰りは何時ごろになりますか？
             </p>
@@ -1172,8 +1172,8 @@
               退社時刻は、シフトによって異なりますが、基本的に残業はほぼありません。
             </p>
           </li>
-          <li class="p-faq-list__item delay">
-            <p class="p-faq-list__item-question">
+          <li class="p-faq-list__item">
+            <p class="p-faq-list__item-question js-faq-question">
               <span>Q</span>
               有給は取りやすい環境ですか？
             </p>
@@ -1182,8 +1182,8 @@
               取りやすいと思います。皆が気持ちよく休んでいただくために、出来るだけ早く責任者にご希望をお知らせください。
             </p>
           </li>
-          <li class="p-faq-list__item delay">
-            <p class="p-faq-list__item-question">
+          <li class="p-faq-list__item">
+            <p class="p-faq-list__item-question js-faq-question">
               <span>Q</span>
               親の介護がありますが、勤務可能ですか？
             </p>
@@ -1192,8 +1192,8 @@
               不安の無いように施設内で話し合い、無理のないように勤務体制を決めています。また、職員のご家族の入居の優遇制度も整備されています。
             </p>
           </li>
-          <li class="p-faq-list__item delay">
-            <p class="p-faq-list__item-question">
+          <li class="p-faq-list__item">
+            <p class="p-faq-list__item-question js-faq-question">
               <span>Q</span>
               ネイル、ピアス、髪の色に関して規則はありますか？
             </p>
@@ -1210,8 +1210,8 @@
   <!-- company -->
   <section class="p-company l-company delay" id="company">
     <div class="p-company__inner inner">
-      <div class="p-faq__title-wrap delay">
-        <h2 class="p-faq__title main-title faq-title" data-title="Company">
+      <div class="p-company__title-wrap delay">
+        <h2 class="p-company__title main-title company-title" data-title="Company">
           <span>会社概要</span>
         </h2>
       </div>
@@ -1227,7 +1227,7 @@
           </dl>
           <dl>
             <dt>電話番号</dt>
-            <dd>093-871-5800</dd>
+            <dd><a href="tel:093-871-5800"><span class="tel">093-871-5800</span></a></dd>
           </dl>
           <dl>
             <dt>FAX</dt>

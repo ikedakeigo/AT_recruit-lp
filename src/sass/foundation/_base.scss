@@ -69,6 +69,13 @@ a:hover {
   }
 }
 
+p {
+  line-height: 1.8;
+  @include mq(md){
+    line-height: 2;
+  }
+}
+
 /*===================================
  * カラー
 ===================================*/
@@ -165,6 +172,7 @@ $color-orange: #ff9648;
   &.message-title {
     &::before {
       font-size: rem(80);
+      font-size: clamp(rem(60) , 5vw, rem(80));
       bottom: 0;
       @include mq(md) {
         font-size: rem(150);
@@ -173,7 +181,7 @@ $color-orange: #ff9648;
   }
   &.schedule-title {
     &::before {
-      font-size: rem(80);
+      font-size: clamp( rem(60) , 5vw, rem(70));
       bottom: 0;
       @include mq(md) {
         font-size: rem(150);
@@ -202,7 +210,7 @@ $color-orange: #ff9648;
 
   &.value-title {
     &::before {
-      font-size: rem(80);
+      font-size: clamp(rem(60) , 5vw, rem(80));
       color: $color-white;
       bottom: 0;
       @include mq(md) {
@@ -259,8 +267,9 @@ $color-orange: #ff9648;
   &.company-title {
     &::before {
       font-size: rem(65);
-      bottom: 0;
+      bottom:  rem(20);
       @include mq(md) {
+        bottom:  rem(20);
         font-size: rem(150);
       }
     }
