@@ -979,10 +979,7 @@
         </h2>
       </div>
       <div class="p-data__wrap">
-        <div class="p-data-img sp-only">
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/data_sp.png" alt="データで見るいこいの里">
-        </div>
-        <ul class="p-data__items pc-only">
+        <ul class="p-data__items">
           <li class="p-data__item delay">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/img/data/data_01.png" alt="データで見るいこいの里" />
           </li>
@@ -997,10 +994,10 @@
           </li>
         </ul>
 
-        <!-- <h3 class="p-data-item__title hiragino delay" id="reMessage">
+        <h3 class="p-data-item__title hiragino delay" id="reMessage">
           採用担当者からのメッセージ
         </h3>
-        <p class="p-data-item__text"></p> -->
+        <p class="p-data-item__text"></p>
       </div>
     </div>
   </section>
@@ -1094,13 +1091,8 @@
         <dl class="p-guidelines__list delay">
           <dt class="p-guidelines__term">福利厚生</dt>
           <dd class="p-guidelines__description">
-            各社会保険<br>
-            制服貸与<br>
-            社宅有<br>
-            退職金制度(規定有)<br />
-            確定拠出年金<br>
-            入居者家族割引<br>
-            社内奨学金制度等
+            各社会保険、制服貸与、社宅有、退職金制度(規定有)、<br />
+            確定拠出年金、入居者家族割引、社内奨学金制度等
           </dd>
         </dl>
       </div>
@@ -1117,7 +1109,7 @@
       </div>
       <div class="p-process__wrap delay">
         <img class="js-processImg pc-only" src="<?php echo get_template_directory_uri(); ?>/assets/img/process/process_01.png" alt="選考プロセス" />
-        <img class="js-processImg sp-only" src="<?php echo get_template_directory_uri(); ?>/assets/img/process/process_01-sp01.png" alt="選考プロセス" />
+        <img class="js-processImg sp-only" src="<?php echo get_template_directory_uri(); ?>/assets/img/process/process_01-sp.png" alt="選考プロセス" />
       </div>
     </div>
   </section>

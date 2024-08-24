@@ -44,10 +44,11 @@ html {
 
 body {
   font-family: $font-family-yu;
-  font-weight: $semi-bold;
+  font-weight: $regular;
   color: $color-black;
   // スムーススクロール
   scroll-behavior: smooth;
+  overflow-x:clip;
 }
 
 a {
@@ -65,6 +66,13 @@ a:hover {
     @include mq("md") {
       opacity: 1;
     }
+  }
+}
+
+p {
+  line-height: 1.8;
+  @include mq(md){
+    line-height: 2;
   }
 }
 
@@ -106,7 +114,7 @@ $color-orange: #ff9648;
 ===================================*/
 .inner {
   max-width: rem(1080);
-  padding: 0 rem(15);
+  padding: 0 rem(35);
   width: 100%;
   margin: 0 auto;
   @include mq(md) {
@@ -137,7 +145,8 @@ $color-orange: #ff9648;
     font-size: clamp(rem(45), 10vw, rem(90));
     // width: 100vw;
     @include mq(md) {
-      left: -5%;
+      // left: -5%;
+      left: 0;
       bottom: -25%;
     }
   }
@@ -163,6 +172,7 @@ $color-orange: #ff9648;
   &.message-title {
     &::before {
       font-size: rem(80);
+      font-size: clamp(rem(60) , 5vw, rem(80));
       bottom: 0;
       @include mq(md) {
         font-size: rem(150);
@@ -171,7 +181,7 @@ $color-orange: #ff9648;
   }
   &.schedule-title {
     &::before {
-      font-size: rem(80);
+      font-size: clamp( rem(60) , 5vw, rem(70));
       bottom: 0;
       @include mq(md) {
         font-size: rem(150);
@@ -200,7 +210,7 @@ $color-orange: #ff9648;
 
   &.value-title {
     &::before {
-      font-size: rem(80);
+      font-size: clamp(rem(60) , 5vw, rem(80));
       color: $color-white;
       bottom: 0;
       @include mq(md) {
@@ -250,6 +260,16 @@ $color-orange: #ff9648;
       font-size: rem(80);
       bottom: 0;
       @include mq(md) {
+        font-size: rem(150);
+      }
+    }
+  }
+  &.company-title {
+    &::before {
+      font-size: rem(65);
+      bottom:  rem(20);
+      @include mq(md) {
+        bottom:  rem(20);
         font-size: rem(150);
       }
     }

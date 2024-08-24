@@ -7,10 +7,10 @@
 
 
 .p-company__inner {
-  margin: 0 auto;
-  @include mq(md){
-    max-width:  rem(690);
-  }
+  // margin: 0 auto;
+  // @include mq(md){
+  //   max-width:  rem(690);
+  // }
 }
 
 .inner {
@@ -61,5 +61,10 @@
     @include mq(md){
       margin-left: rem(20);
     }
+  }
+
+  .tel {
+    font-weight: 600;
+    color: $color-text-blue;
   }
 }
