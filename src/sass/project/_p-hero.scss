@@ -8,9 +8,26 @@
 
 .p-hero__inner {
   position: relative;
+  padding: 0;
 }
 
-.inner {
+
+.p-hero__top-title-wrap {
+
+  text-align: center;
+
+  h3 {
+    font-size:  clamp( rem(14), 3vw, rem(21));
+  }
+
+  h2 {
+    font-size:  clamp( rem(40), 5vw, rem(60));
+    line-height: 1.2;
+  }
+
+  h4 {
+    font-size:  clamp( rem(12), 3vw, rem(14));
+  }
 }
 
 .p-hero__img-wrap {
@@ -18,6 +35,16 @@
   position: relative;
   width: 100%;
   height: 100%;
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, transparent 70%, white 100%);
+  }
   &::after {
     content: "";
     position: absolute;

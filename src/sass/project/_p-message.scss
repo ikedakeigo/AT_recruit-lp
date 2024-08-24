@@ -58,6 +58,7 @@
   margin-bottom: rem(20);
   font-family: $font-family-hiragino;
   font-size: clamp(rem(22), 5vw, rem(26));
+  white-space: nowrap;
   @include mq(md) {
     font-size: rem(38);
     margin-bottom: rem(30);
