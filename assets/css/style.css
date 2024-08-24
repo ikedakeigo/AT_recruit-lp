@@ -1749,6 +1749,7 @@ p {
   }
 }
 .p-schedule__item-title {
+  font-weight: 400;
   font-size: 23px;
   font-size: 1.4375rem;
 }

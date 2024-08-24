@@ -154,6 +154,7 @@
 }
 
 .p-schedule__item-title {
+  font-weight: 400;
   font-size: rem(23);
   @include mq(md) {
     font-size: rem(26);
