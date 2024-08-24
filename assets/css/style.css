@@ -137,6 +137,10 @@ body {
   overflow-x: clip;
 }
 
+h2 {
+  font-weight: 400;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -191,8 +195,8 @@ p {
 .inner {
   max-width: 1080px;
   max-width: 67.5rem;
-  padding: 0 35px;
-  padding: 0 2.1875rem;
+  padding: 0 20px;
+  padding: 0 1.25rem;
   width: 100%;
   margin: 0 auto;
 }
@@ -413,8 +417,8 @@ p {
  * mask
 ===================================*/
 .l-hero {
-  padding-top: 30px;
-  padding-top: 1.875rem;
+  padding-top: 20px;
+  padding-top: 1.25rem;
   margin-bottom: 200px;
   margin-bottom: 12.5rem;
   background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, transparent), color-stop(100%, #e5f5ff), to(transparent));
@@ -972,12 +976,45 @@ p {
 
 .p-hero__inner {
   position: relative;
+  padding: 0;
+}
+
+.p-hero__top-title-wrap {
+  text-align: center;
+}
+
+.p-hero__top-title-wrap h3 {
+  font-size: clamp(14px, 3vw, 21px);
+  font-size: clamp(0.875rem, 3vw, 1.3125rem);
+}
+
+.p-hero__top-title-wrap h2 {
+  font-size: clamp(40px, 5vw, 60px);
+  font-size: clamp(2.5rem, 5vw, 3.75rem);
+  line-height: 1.2;
+}
+
+.p-hero__top-title-wrap h4 {
+  font-size: clamp(12px, 3vw, 14px);
+  font-size: clamp(0.75rem, 3vw, 0.875rem);
 }
 
 .p-hero__img-wrap {
   position: relative;
   width: 100%;
   height: 100%;
+}
+
+.p-hero__img-wrap::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(70%, transparent), to(white));
+  background: linear-gradient(to top, transparent 70%, white 100%);
 }
 
 .p-hero__img-wrap::after {
@@ -1461,6 +1498,7 @@ p {
   font-family: "Hiragino Mincho ProN", "ヒラギノ明朝 ProN", "Hiragino Mincho Pro", serif;
   font-size: clamp(22px, 5vw, 26px);
   font-size: clamp(1.375rem, 5vw, 1.625rem);
+  white-space: nowrap;
 }
 
 @media screen and (min-width: 800px) {
@@ -1664,6 +1702,11 @@ p {
     margin-bottom: 3.75rem;
   }
 }
+.p-schedule__title-wrap p {
+  font-size: 13px;
+  font-size: 0.8125rem;
+}
+
 @media screen and (min-width: 800px) {
   .p-schedule__wrap {
     display: -webkit-box;
@@ -1939,9 +1982,27 @@ p {
     padding-bottom: 3.125rem;
   }
 }
+.p-schedule__first-info {
+  position: relative;
+  height: 12vh;
+}
+
+.p-schedule__first-info strong {
+  font-weight: 700;
+  padding-right: 20px;
+  padding-right: 1.25rem;
+}
+
+.p-schedule__first-info span {
+  position: absolute;
+  left: 0;
+  padding-left: 100px;
+  padding-left: 6.25rem;
+}
+
 .p-schedule-prof__box {
-  margin-bottom: 50px;
-  margin-bottom: 3.125rem;
+  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 
 @media screen and (min-width: 800px) {
@@ -1977,23 +2038,6 @@ p {
     width: 50%;
   }
 }
-.p-schedule-prof__text strong {
-  font-weight: 700;
-  padding-right: 20px;
-  padding-right: 1.25rem;
-}
-
-.p-schedule-prof__text p {
-  position: relative;
-}
-
-.p-schedule-prof__text span {
-  position: absolute;
-  left: 0;
-  padding-left: 100px;
-  padding-left: 6.25rem;
-}
-
 .p-schedule-prof__title {
   font-size: clamp(20px, 5vw, 23px);
   font-size: clamp(1.25rem, 5vw, 1.4375rem);
@@ -2162,6 +2206,17 @@ p {
     font-size: 1.75rem;
   }
 }
+.p-value__sub-title {
+  font-size: clamp(14px, 5vw, 18px);
+  font-size: clamp(0.875rem, 5vw, 1.125rem);
+  word-break: break-all;
+}
+
+@media screen and (min-width: 800px) {
+  .p-value__sub-title {
+    text-align: center;
+  }
+}
 .p-value__wrap {
   margin-bottom: 45px;
   margin-bottom: 2.8125rem;
@@ -2170,8 +2225,8 @@ p {
 .p-value__items {
   background-color: #fff;
   border-radius: 0.9375rem;
-  padding: 15px 10px 20px 10px;
-  padding: 0.9375rem 0.625rem 1.25rem 0.625rem;
+  padding: 15px 15px 20px 15px;
+  padding: 0.9375rem 0.9375rem 1.25rem 0.9375rem;
 }
 
 @media screen and (min-width: 800px) {
@@ -2229,6 +2284,7 @@ p {
 .p-value__head-title {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(70%, rgba(0, 0, 0, 0)), color-stop(70%, rgb(255, 255, 148)));
   background-image: linear-gradient(rgba(0, 0, 0, 0) 70%, rgb(255, 255, 148) 70%);
+  white-space: nowrap;
 }
 
 @media screen and (min-width: 800px) {

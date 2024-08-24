@@ -20,6 +20,15 @@
   }
 }
 
+.p-value__sub-title  {
+
+  font-size: clamp(rem(14), 5vw, rem(18));
+  word-break: break-all;
+  @include mq(md){
+    text-align: center;
+  }
+}
+
 .p-value__wrap {
   margin-bottom: rem(45);
 }
@@ -27,7 +36,7 @@
 .p-value__items {
   background-color: $color-white;
   border-radius: rem(15);
-  padding:  rem(15)  rem(10)  rem(20)  rem(10);
+  padding:  rem(15)  rem(15)  rem(20)  rem(15);
   @include mq(md) {
     border-radius: rem(35);
     display: flex;
@@ -67,6 +76,7 @@
     rgba(0, 0, 0, 0) 70%,
     rgb(255, 255, 148) 70%
   );
+  white-space: nowrap;
   @include mq(md) {
     font-size: rem(22);
   }

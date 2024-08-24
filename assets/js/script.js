@@ -185,8 +185,12 @@ jQuery(function ($) {
             } else if (index === 1) {
                 $bg.css("height", "28%");
             } else if (index === 2) {
-                $bg.css("height", "35%");
-            }
+                $bg.css("height", "23%");
+            } else if (index === 3) {
+              $bg.css("height", "31%");
+            }   else if (index === 4) {
+              $bg.css("height", "25%");
+        }
         }
 
         // ボタンのテキストを動的に変更
