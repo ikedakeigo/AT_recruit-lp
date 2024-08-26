@@ -70,6 +70,14 @@
   @include mq(md){
     padding:  rem(25)0;
   }
+
+  span, strong {
+    display: inline-block;
+    line-height: 1.5;
+  }
+  span {
+    margin-bottom: rem(10);
+  }
 }
 
 .p-career__box + .p-career__box .p-career__box-text {
