@@ -703,7 +703,7 @@
             いこいの里 <br>巨勢の高田さん
           </h3>
           <div class="p-schedule-prof__img delay">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_prof03.png" alt="先輩の1日と働きがい" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff03.png" alt="先輩の1日と働きがい" />
           </div>
           <div class="p-schedule-prof__text">
             <h3 class="p-schedule-prof__title hiragino pc-only">
