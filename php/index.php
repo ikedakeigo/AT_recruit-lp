@@ -457,8 +457,8 @@
           <div class="p-schedule__wrap top" id="schedule-top">
             <h3 class="p-schedule__sfaff-name hiragino">菊田さんの1日</h3>
             <div class="p-schedule__bg-reverse delay"></div>
-            <div class="p-schedule__items">
-              <dl class="p-schedule__item delay">
+            <div class="p-schedule__items delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">9:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
@@ -466,7 +466,7 @@
                   </h3>
                 </dd>
               </dl>
-              <dl class="p-schedule__item delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">10:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
@@ -474,7 +474,7 @@
                   </h3>
                 </dd>
               </dl>
-              <dl class="p-schedule__item delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">11:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
@@ -482,7 +482,7 @@
                   </h3>
                 </dd>
               </dl>
-              <dl class="p-schedule__item delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">12:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
@@ -490,7 +490,7 @@
                   </h3>
                 </dd>
               </dl>
-              <dl class="p-schedule__item delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">13:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
@@ -499,7 +499,7 @@
                   </h3>
                 </dd>
               </dl>
-              <dl class="p-schedule__item delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">15:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
@@ -507,7 +507,7 @@
                   </h3>
                 </dd>
               </dl>
-              <dl class="p-schedule__item delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">17:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
@@ -515,7 +515,7 @@
                   </h3>
                 </dd>
               </dl>
-              <dl class="p-schedule__item delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">18:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
@@ -526,13 +526,16 @@
             </div>
             <div class="p-schedule__images pc-only delay">
               <div class="p-schedule__image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff01_01.png" alt="始業、朝礼、掃除" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff01_01.png" alt="いこいの里 徳吉で働く菊田さん" />
               </div>
               <div class="p-schedule__image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff01_02.png" alt="昼休み" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff01_02.png" alt="いこいの里 徳吉で働く菊田さん" />
               </div>
               <div class="p-schedule__image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff01_03.png" alt="帰宅" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff01_03.png" alt="いこいの里 徳吉で働く菊田さん" />
+              </div>
+              <div class="p-schedule__image">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff01_04.png" alt="いこいの里 徳吉で働く菊田さん" />
               </div>
             </div>
           </div>
@@ -599,8 +602,8 @@
           <div class="p-schedule__wrap top">
             <h3 class="p-schedule__sfaff-name hiragino">西村さんの1日</h3>
             <div class="p-schedule__bg-reverse delay"></div>
-            <div class="p-schedule__items">
-              <dl class="p-schedule__item delay">
+            <div class="p-schedule__items delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">9:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
@@ -608,7 +611,7 @@
                   </h3>
                 </dd>
               </dl>
-              <dl class="p-schedule__item delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">10:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
@@ -617,7 +620,7 @@
                   </h3>
                 </dd>
               </dl>
-              <dl class="p-schedule__item delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">11:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
@@ -627,7 +630,7 @@
                   </h3>
                 </dd>
               </dl>
-              <dl class="p-schedule__item delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">12:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
@@ -636,7 +639,7 @@
                   </h3>
                 </dd>
               </dl>
-              <dl class="p-schedule__item delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">13:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
@@ -645,7 +648,7 @@
                   </h3>
                 </dd>
               </dl>
-              <dl class="p-schedule__item delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">15:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
@@ -654,7 +657,7 @@
                   </h3>
                 </dd>
               </dl>
-              <dl class="p-schedule__item delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">17:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
@@ -663,7 +666,7 @@
                   </h3>
                 </dd>
               </dl>
-              <dl class="p-schedule__item delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">18:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
@@ -675,13 +678,16 @@
             </div>
             <div class="p-schedule__images pc-only delay">
               <div class="p-schedule__image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff02_01.png" alt="始業、朝礼、掃除" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff02_01.png" alt="いこいの里 本城弐番館の西村さん" />
               </div>
               <div class="p-schedule__image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff02_02.png" alt="昼休み" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff02_02.png" alt="いこいの里 本城弐番館の西村さん" />
               </div>
               <div class="p-schedule__image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff02_03.png" alt="帰宅" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff02_03.png" alt="いこいの里 本城弐番館の西村さん" />
+              </div>
+              <div class="p-schedule__image">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff02_04.png" alt="いこいの里 本城弐番館の西村さん" />
               </div>
             </div>
           </div>
@@ -746,8 +752,8 @@
           <div class="p-schedule__wrap top">
             <h3 class="p-schedule__sfaff-name hiragino">高田さんの1日</h3>
             <div class="p-schedule__bg-reverse delay"></div>
-            <div class="p-schedule__items">
-              <dl class="p-schedule__item delay">
+            <div class="p-schedule__items delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">9:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
@@ -756,13 +762,13 @@
                   </h3>
                 </dd>
               </dl>
-              <dl class="p-schedule__item delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">10:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">女性入浴開始</h3>
                 </dd>
               </dl>
-              <dl class="p-schedule__item delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">11:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
@@ -770,13 +776,13 @@
                   </h3>
                 </dd>
               </dl>
-              <dl class="p-schedule__item delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">13:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">休憩</h3>
                 </dd>
               </dl>
-              <dl class="p-schedule__item delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">14:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
@@ -784,7 +790,7 @@
                   </h3>
                 </dd>
               </dl>
-              <dl class="p-schedule__item delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">15:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
@@ -792,15 +798,13 @@
                   </h3>
                 </dd>
               </dl>
-              <dl class="p-schedule__item delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">17:00</dt>
                 <dd>
-                  <h3 class="p-schedule__item-title hiragino">
-                    夕食提供
-                  </h3>
+                  <h3 class="p-schedule__item-title hiragino">夕食提供</h3>
                 </dd>
               </dl>
-              <dl class="p-schedule__item delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">17:30</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
@@ -808,21 +812,19 @@
                   </h3>
                 </dd>
               </dl>
-              <dl class="p-schedule__item delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">18:00</dt>
                 <dd>
-                  <h3 class="p-schedule__item-title hiragino">
-                    退勤
-                  </h3>
+                  <h3 class="p-schedule__item-title hiragino">退勤</h3>
                 </dd>
               </dl>
-              <dl class="p-schedule__item delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">18:30</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">帰宅</h3>
                 </dd>
               </dl>
-              <dl class="p-schedule__item delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">19:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
@@ -831,19 +833,19 @@
                   </h3>
                 </dd>
               </dl>
-              <dl class="p-schedule__item delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">20:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">夕食</h3>
                 </dd>
               </dl>
-              <dl class="p-schedule__item delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">21:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">家事</h3>
                 </dd>
               </dl>
-              <dl class="p-schedule__item delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">22:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">寝かしつけ</h3>
@@ -852,13 +854,16 @@
             </div>
             <div class="p-schedule__images pc-only delay">
               <div class="p-schedule__image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff03_01.png" alt="始業、朝礼、掃除" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff03_01.png" alt="いこいの里 巨勢の高田さん" />
               </div>
               <div class="p-schedule__image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff03_02.png" alt="昼休み" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff03_02.png" alt="いこいの里 巨勢の高田さん" />
               </div>
               <div class="p-schedule__image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff03_03.png" alt="帰宅" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff03_03.png" alt="いこいの里 巨勢の高田さん" />
+              </div>
+              <div class="p-schedule__image">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff03_04.png" alt="いこいの里 巨勢の高田さん" />
               </div>
             </div>
           </div>
@@ -926,10 +931,10 @@
           </div>
           <!-- 一日のスケジュール -->
           <div class="p-schedule__wrap top">
-            <h3 class="p-schedule__sfaff-name hiragino">高田さんの1日</h3>
+            <h3 class="p-schedule__sfaff-name hiragino">田中さんの1日</h3>
             <div class="p-schedule__bg-reverse delay"></div>
-            <div class="p-schedule__items">
-              <dl class="p-schedule__item delay">
+            <div class="p-schedule__items delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">9:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
@@ -939,7 +944,7 @@
                   </h3>
                 </dd>
               </dl>
-              <dl class="p-schedule__item delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">10:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
@@ -947,7 +952,7 @@
                   </h3>
                 </dd>
               </dl>
-              <dl class="p-schedule__item delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">11:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
@@ -955,7 +960,7 @@
                   </h3>
                 </dd>
               </dl>
-              <dl class="p-schedule__item delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">12:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
@@ -963,7 +968,7 @@
                   </h3>
                 </dd>
               </dl>
-              <dl class="p-schedule__item delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">13:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
@@ -972,7 +977,7 @@
                   </h3>
                 </dd>
               </dl>
-              <dl class="p-schedule__item delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">14:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
@@ -981,7 +986,7 @@
                   </h3>
                 </dd>
               </dl>
-              <dl class="p-schedule__item delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">15:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
@@ -989,7 +994,7 @@
                   </h3>
                 </dd>
               </dl>
-              <dl class="p-schedule__item delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">17:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
@@ -997,11 +1002,11 @@
                   </h3>
                 </dd>
               </dl>
-              <dl class="p-schedule__item delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">18:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
-                    (退勤）よくやる終業後のイベントなど<br />
+                    (退勤)よくやる終業後のイベントなど<br />
                     安全に帰宅する。
                   </h3>
                 </dd>
@@ -1009,13 +1014,16 @@
             </div>
             <div class="p-schedule__images pc-only delay">
               <div class="p-schedule__image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff04_01.png" alt="始業、朝礼、掃除" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff04_01.png" alt="いこいの里 中原の田中さん" />
               </div>
               <div class="p-schedule__image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff04_02.png" alt="昼休み" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff04_02.png" alt="いこいの里 中原の田中さん" />
               </div>
               <div class="p-schedule__image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff04_03.png" alt="帰宅" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff04_03.png" alt="いこいの里 中原の田中さん" />
+              </div>
+              <div class="p-schedule__image">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff04_04.png" alt="いこいの里 中原の田中さん" />
               </div>
             </div>
           </div>
@@ -1079,8 +1087,8 @@
           <div class="p-schedule__wrap top">
             <h3 class="p-schedule__sfaff-name hiragino">稲吉さんの1日</h3>
             <div class="p-schedule__bg-reverse delay"></div>
-            <div class="p-schedule__items">
-              <dl class="p-schedule__item delay">
+            <div class="p-schedule__items delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">9:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
@@ -1090,7 +1098,7 @@
                   </h3>
                 </dd>
               </dl>
-              <dl class="p-schedule__item delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">10:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
@@ -1100,7 +1108,7 @@
                   </h3>
                 </dd>
               </dl>
-              <dl class="p-schedule__item delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">11:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
@@ -1108,7 +1116,7 @@
                   </h3>
                 </dd>
               </dl>
-              <dl class="p-schedule__item delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">12:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
@@ -1116,7 +1124,7 @@
                   </h3>
                 </dd>
               </dl>
-              <dl class="p-schedule__item delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">13:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
@@ -1125,7 +1133,7 @@
                   </h3>
                 </dd>
               </dl>
-              <dl class="p-schedule__item delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">14:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
@@ -1133,7 +1141,7 @@
                   </h3>
                 </dd>
               </dl>
-              <dl class="p-schedule__item delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">15:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
@@ -1143,7 +1151,7 @@
                   </h3>
                 </dd>
               </dl>
-              <dl class="p-schedule__item delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">16:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
@@ -1152,15 +1160,15 @@
                   </h3>
                 </dd>
               </dl>
-              <dl class="p-schedule__item delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">17:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
-                    管理者　入居広告発行打合せ
+                    管理者 入居広告発行打合せ
                   </h3>
                 </dd>
               </dl>
-              <dl class="p-schedule__item delay">
+              <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">18:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
@@ -1173,13 +1181,16 @@
             </div>
             <div class="p-schedule__images pc-only delay">
               <div class="p-schedule__image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff05_01.png" alt="始業、朝礼、掃除" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff05_01.png" alt="糸島の稲吉さん" />
               </div>
               <div class="p-schedule__image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff05_02.png" alt="昼休み" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff05_02.png" alt="糸島の稲吉さん" />
               </div>
               <div class="p-schedule__image">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff05_03.png" alt="帰宅" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff05_03.png" alt="糸島の稲吉さん" />
+              </div>
+              <div class="p-schedule__image">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff05_04.png" alt="糸島の稲吉さん" />
               </div>
             </div>
           </div>
