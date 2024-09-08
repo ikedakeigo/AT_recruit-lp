@@ -233,4 +233,28 @@ jQuery(function ($) {
     $(window).resize(function() {
         setAcordionBehavior();
     })
+
+
+      // ページトップに戻るボタンのクリックイベント
+    $('.js-page-top').on('click', function () {
+      $('body,html').animate(
+          {
+              scrollTop: 0
+          },
+          500
+      );
+      return false;
+  });
+
+
+  // スクロールイベントを監視
+  $(window).on('scroll', function () {
+      // スクロール位置が200pxを超えたらボタンを表示、それ未満なら非表示
+      if ($(this).scrollTop() > 200) {
+          $('.js-page-top').fadeIn();
+      } else {
+          $('.js-page-top').fadeOut();
+      }
+  });
+
 });
