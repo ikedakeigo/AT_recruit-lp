@@ -705,6 +705,7 @@ p {
   border-radius: 50%;
   background-color: #739099;
   cursor: pointer;
+  z-index: 9999;
 }
 
 .c-page-top::before {
