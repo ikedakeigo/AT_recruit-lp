@@ -376,7 +376,7 @@
         </div>
 
         <div class="p-message__bottom delay">
-          <p class="pl-80">ですから私たちは</p>
+          <p class="text-center">ですから私たちは</p>
           <ul class="p-message__bottom-list hiragino">
             <li>全ての社員が生活と心に豊かさを持てる職場</li>
             <li>お客様の笑顔と社員の笑顔が循環する職場</li>
@@ -393,7 +393,7 @@
 
   <!-- contactBtn -->
   <section class="c-contactBtn l-contactBtn delay" id="">
-    <a href="#" class="c-contactBtn--black">
+    <a href="/contact" class="c-contactBtn--black">
       <span>エントリーはこちら</span>
     </a>
   </section>
@@ -1564,7 +1564,7 @@
 
   <!-- contactBtn -->
   <section class="c-contactBtn l-contactBtn delay" id="contactBtn">
-    <a href="#" class="c-contactBtn--black">
+    <a href="/contact" class="c-contactBtn--black">
       <span>エントリーはこちら</span>
     </a>
   </section>

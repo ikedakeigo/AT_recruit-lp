@@ -1,0 +1,7 @@
+@use '../foundation' as *;
+
+.l-page-top {
+    position: fixed;
+    right: rem(15);
+    bottom: rem(15);
+}

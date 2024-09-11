@@ -20,35 +20,37 @@
   <link rel="apple-touch-icon" href="" />
   <!-- CSS -->
   <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css" />
+
+  <?php wp_head(); ?>
 </head>
 
 <body>
   <header class="p-header l-header" id="header-link">
     <div class="p-header__inner inner">
       <h1 class="p-header__logo">
-        <a href="#">
+        <a href="/">
           <img src="<?php echo get_template_directory_uri(); ?>/assets/img/common/logo.svg" alt="いこいの里｜採用">
         </a>
       </h1>
       <nav class="p-header__nav">
         <ul class="p-header__nav-list">
           <li class="p-header__nav-item">
-            <a href="#work">私の会社で働く6つの理由</a>
+            <a href="/#work">私の会社で働く6つの理由</a>
           </li>
           <li class="p-header__nav-item">
-            <a href="#message">代表挨拶</a>
+            <a href="/#message">代表挨拶</a>
           </li>
           <li class="p-header__nav-item">
-            <a href="#about">私たちのお仕事</a>
+            <a href="/#about">私たちのお仕事</a>
           </li>
           <li class="p-header__nav-item">
-            <a href="#guidelines">募集要項</a>
+            <a href="/#guidelines">募集要項</a>
           </li>
           <li class="p-header__nav-item">
-            <a href="#company">会社概要</a>
+            <a href="/#company">会社概要</a>
           </li>
           <li class="p-header__nav-item p-header__nav-item--contact">
-            <a href="#contactBtn" target="_blank" rel="noopener">エントリーはこちら</a>
+            <a href="/contact" rel="noopener">エントリーはこちら</a>
           </li>
         </ul>
       </nav>
@@ -68,25 +70,27 @@
         <nav class="p-header__drawer-nav">
           <ul class="p-header__drawer-list">
             <li class="p-header__drawer-item">
-              <a href="#work">私の会社で働く6つの理由</a>
+              <a href="/#work">私の会社で働く6つの理由</a>
             </li>
             <li class="p-header__drawer-item">
-              <a href="#message">代表挨拶</a>
+              <a href="/#message">代表挨拶</a>
             </li>
             <li class="p-header__drawer-item">
-              <a href="#about">私たちのお仕事</a>
+              <a href="/#about">私たちのお仕事</a>
             </li>
             <li class="p-header__drawer-item">
-              <a href="#guidelines">募集要項</a>
+              <a href="/#guidelines">募集要項</a>
             </li>
             <li class="p-header__drawer-item">
-              <a href="#company">会社概要</a>
+              <a href="/#company">会社概要</a>
             </li>
             <li class="p-header__drawer-item p-header__drawer-item--contact">
-              <a href="#contactBtn" target="_blank" rel="noopener">エントリーはこちら</a>
+              <a href="/contact" rel="noopener">エントリーはこちら</a>
             </li>
           </ul>
         </nav>
       </div>
     </div>
   </header>
+
+  <div class="l-page-top c-page-top js-page-top"></div>
