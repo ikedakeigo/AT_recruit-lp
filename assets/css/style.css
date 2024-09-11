@@ -2778,11 +2778,6 @@ p {
     padding: 7.5rem 0;
   }
 }
-.p-contact.confirm,
-.p-contact.complete {
-  height: 100vh;
-}
-
 .p-contact-title {
   text-align: center;
   margin-bottom: 30px;
