@@ -12,8 +12,8 @@
         <h4>採用特設サイト</h4>
       </div>
       <div class="p-hero__img-wrap">
-        <img class="pc-only" src="<?php echo get_template_directory_uri(); ?>/assets/img/hero/mv_new.png" alt="" />
-        <img class=" sp-only" src="<?php echo get_template_directory_uri(); ?>/assets/img/hero/mv_sp_new.png" alt="" />
+        <img class="pc-only" src="<?php echo get_template_directory_uri(); ?>/assets/img/hero/mv_new.jpg" alt="" />
+        <img class=" sp-only" src="<?php echo get_template_directory_uri(); ?>/assets/img/hero/mv_sp_new.jpg" alt="" />
       </div>
       <div class="p-hero__title-wrap delay">
         <h2 class="p-hero__title hiragino">
@@ -441,7 +441,8 @@
                 この会社で働きやりがい
               </h3>
               <p>
-                入居者様の最後の時を迎える際に「心からの感謝の言葉」を頂き、自分自身が後悔や悔いのないお仕事ができたと思えた時にやりがいを感じます。また、自分が頑張れば必ず評価がついてくるため、仕事が面白くなります！
+                入居者様の最後の時を迎える際に「心からの感謝の言葉」を頂き、自分自身が後悔や悔いのないお仕事ができたと思えた時にやりがいを感じます。<br
+                  class="sp-only" />また、自分が頑張れば必ず評価がついてくるため、仕事が面白くなります！
               </p>
             </div>
             <div class="p-schedule-prof-message__text">
@@ -449,7 +450,8 @@
                 当社の入社試験を受ける方へのメッセージ
               </h3>
               <p>
-                当施設は明るく、楽しく、元気な職場です。職員、入居者様が笑顔で過ごせる環境を作っていきたいと思っています。介護職員だから分かる事、学べる事が沢山あります。さらに、いこいの里だから「できる事」「やりたい事」を実現することができます。入社されたら職員一丸となり、入居者様の生活にかかわり、素晴らしい人生のお手伝いを一緒に実現していきましょう。
+                当施設は明るく、楽しく、元気な職場です。職員、入居者様が笑顔で過ごせる環境を作っていきたいと思っています。介護職員だから分かる事、学べる事が沢山あります。さらに、いこいの里だから「できる事」「やりたい事」を実現することができます。<br
+                  class="sp-only" />入社されたら職員一丸となり、入居者様の生活にかかわり、素晴らしい人生のお手伝いを一緒に実現していきましょう。
               </p>
             </div>
           </div>
@@ -462,7 +464,9 @@
                 <dt class="p-schedule__item-time hiragino">9:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
-                    朝礼、申し送り、<br />入居者様とのコミュニケーション、排泄介助
+                    朝礼、申し送り、<br
+                      class="pc-only" />入居者様とのコミュニケーション、<br
+                      class="sp-only" />排泄介助
                   </h3>
                 </dd>
               </dl>
@@ -478,7 +482,7 @@
                 <dt class="p-schedule__item-time hiragino">11:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
-                    入居者様休憩、水分補給、排泄介助
+                    入居者様休憩、水分補給、<br class="sp-only" />排泄介助
                   </h3>
                 </dd>
               </dl>
@@ -494,7 +498,8 @@
                 <dt class="p-schedule__item-time hiragino">13:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
-                    職員と一緒に昼食、<br />レクレーション、趣味活動支援、<br />（火・木・土は男性入浴）
+                    職員と一緒に昼食、<br />レクレーション、<br
+                      class="sp-only" />趣味活動支援、<br />(火・木・土は男性入浴)
                     <br />
                   </h3>
                 </dd>
@@ -511,7 +516,7 @@
                 <dt class="p-schedule__item-time hiragino">17:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
-                    入居者様夕食介助、ナイトケア
+                    入居者様夕食介助、<br class="sp-only" />ナイトケア
                   </h3>
                 </dd>
               </dl>
@@ -607,14 +612,14 @@
                 <dt class="p-schedule__item-time hiragino">9:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
-                    出勤 昨日の出来事、夜間の出来事を把握
+                    出勤 昨日の出来事、<br class="sp-only" />夜間の出来事を把握
                   </h3>
                 </dd>
               </dl>
               <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">10:00</dt>
                 <dd>
-                  <h3 class="p-schedule__item-title hiragino">
+                  <h3 class="p-schedule__item-title wordB hiragino">
                     女性入浴時 利用者様へ声掛け<br />
                     水分補給の声掛けして水分補給
                   </h3>
@@ -634,7 +639,7 @@
                 <dt class="p-schedule__item-time hiragino">12:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
-                    利用者様の食事配膳、食事介助、<br />
+                    利用者様の食事配膳、<br class="sp-only" />食事介助、<br />
                     服薬、口腔ケア
                   </h3>
                 </dd>
@@ -653,7 +658,7 @@
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
                     利用者様の記録を書く、<br />
-                    体調不良者の健康観察、水分補給
+                    体調不良者の健康観察、<br class="sp-only" />水分補給
                   </h3>
                 </dd>
               </dl>
@@ -662,7 +667,7 @@
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
                     他職員と協力して利用者様とご飯づくり、<br />
-                    配線、服薬、口腔ケア、就寝介助
+                    配線、服薬、口腔ケア、<br class="sp-only" />就寝介助
                   </h3>
                 </dd>
               </dl>
@@ -772,7 +777,7 @@
                 <dt class="p-schedule__item-time hiragino">11:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
-                    食準備・口腔体操・マッサージ
+                    食準備・口腔体操・<br class="sp-only" />マッサージ
                   </h3>
                 </dd>
               </dl>
@@ -794,7 +799,7 @@
                 <dt class="p-schedule__item-time hiragino">15:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
-                    おやつ提供・トイレ介助・オムツ交換
+                    おやつ提供・トイレ介助・<br class="sp-only" />オムツ交換
                   </h3>
                 </dd>
               </dl>
@@ -829,7 +834,7 @@
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
                     子供のお風呂<br />
-                    (子供の夕飯は夫が済ませています)
+                    <small>(子供の夕飯は夫が済ませています)</small>
                   </h3>
                 </dd>
               </dl>
@@ -938,7 +943,7 @@
                 <dt class="p-schedule__item-time hiragino">9:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
-                    食事、口腔がおわり利用者様はゆっくり<br />
+                    食事、口腔がおわり利用者様はゆっくり<br class="pc-only" />
                     過ごされている時間です。<br />
                     掃除や洗濯物、記録などをまとめる。<br />
                   </h3>
@@ -948,7 +953,7 @@
                 <dt class="p-schedule__item-time hiragino">10:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
-                    ラジオ体操、お茶の提供、トイレ誘導
+                    ラジオ体操、お茶の提供、<br class="sp-only" />トイレ誘導
                   </h3>
                 </dd>
               </dl>
@@ -964,7 +969,7 @@
                 <dt class="p-schedule__item-time hiragino">12:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
-                    昼食提供、口腔ケア、トイレ誘導
+                    昼食提供、口腔ケア、<br class="sp-only" />トイレ誘導
                   </h3>
                 </dd>
               </dl>
@@ -972,7 +977,7 @@
                 <dt class="p-schedule__item-time hiragino">13:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
-                    食後居室でお休みの利用者様の臥床介助、<br />
+                    食後居室でお休みの利用者様の臥床介助、<br class="pc-only" />
                     バイタル
                   </h3>
                 </dd>
@@ -1005,8 +1010,9 @@
               <dl class="p-schedule__item">
                 <dt class="p-schedule__item-time hiragino">18:00</dt>
                 <dd>
-                  <h3 class="p-schedule__item-title hiragino">
-                    (退勤)よくやる終業後のイベントなど<br />
+                  <h3 class="p-schedule__item-title wordB hiragino">
+                    (退勤)<br
+                      class="sp-only" />よくやる終業後のイベントなど<br />
                     安全に帰宅する。
                   </h3>
                 </dd>
@@ -1071,7 +1077,8 @@
                 この会社で働きやりがい
               </h3>
               <p>
-                生活相談員の知識が無く右も左も分からずスタートして今現在のポジションを頂けた。自身の能力を磨けたことにやりがいを感じている事と、能力給もあるし、個人評価もして頂き収入アップの希望が持てる楽しみがある。
+                生活相談員の知識が無く右も左も分からずスタートして今現在のポジションを頂けた。<br
+                  class="sp-only" />自身の能力を磨けたことにやりがいを感じている事と、能力給もあるし、個人評価もして頂き収入アップの希望が持てる楽しみがある。
               </p>
             </div>
             <div class="p-schedule-prof-message__text">
@@ -1092,8 +1099,8 @@
                 <dt class="p-schedule__item-time hiragino">9:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
-                    仕事スイッチを入れ１日の業務確認<br />
-                    相談員・事務員で打合せ。始業開始<br />
+                    仕事スイッチを入れ<br class="sp-only" />1日の業務確認<br />
+                    相談員・事務員で打合せ。<br class="sp-only" />始業開始<br />
                     業者 入居広告発行打合せ
                   </h3>
                 </dd>
@@ -1103,7 +1110,7 @@
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
                     退院者の調整・送迎<br />
-                    施設到着後、看護師へ引き継ぎ報告<br />
+                    施設到着後、<br class="sp-only" />看護師へ引き継ぎ報告<br />
                     休職者復職書類対応
                   </h3>
                 </dd>
@@ -1120,7 +1127,8 @@
                 <dt class="p-schedule__item-time hiragino">12:00</dt>
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
-                    (ランチタイム）検食後、楽しみのおやつ( *´艸｀)
+                    (ランチタイム)<br
+                      class="sp-only" />検食後、楽しみのおやつ<br class="sp-only" />( *´艸｀)
                   </h3>
                 </dd>
               </dl>
@@ -1146,7 +1154,8 @@
                 <dd>
                   <h3 class="p-schedule__item-title hiragino">
                     担当者会議(プラン更新) <br />
-                    ※時間がある時はおやつ(´～｀)ﾓｸﾞﾓｸﾞtime！ <br />
+                    ※時間がある時はおやつ<br
+                      class="sp-only" />(´～｀)ﾓｸﾞﾓｸﾞtime！ <br />
                     この日は無し(ToT)/~~~
                   </h3>
                 </dd>
@@ -1477,7 +1486,7 @@
         </dl>
         <dl class="p-guidelines__list delay">
           <dt class="p-guidelines__term">
-            勤務地<br class="sp-only" />(募集エリア)
+            勤務地<br class="sp-only" /><small>(募集エリア)</small>
           </dt>
           <dd class="p-guidelines__description">
             北九州市(戸畑区、小倉北区、小倉南区、八幡西区)<br />
@@ -1514,7 +1523,7 @@
           <dt class="p-guidelines__term">雇用形態</dt>
           <dd class="p-guidelines__description">
             正社員、準社員、非常勤<br />
-            準社員および非常勤についての詳細についてはお問い合わせください。
+            準社員および非常勤についての<br class="sp-only">詳細についてはお問い合わせください。
           </dd>
         </dl>
         <dl class="p-guidelines__list delay">
@@ -1701,7 +1710,7 @@
           </dl>
           <dl>
             <dt>本社所在地</dt>
-            <dd>〒804-0053 福岡県北九州市戸畑区牧山2丁目3番5号</dd>
+            <dd>〒804-0053 <br class="sp-only">福岡県北九州市戸畑区牧山2丁目3番5号</dd>
           </dl>
           <dl>
             <dt>電話番号</dt>
@@ -1714,14 +1723,20 @@
           <dl>
             <dt>グループ会社</dt>
             <dd>
-              株式会社ウキシロケアセンター（介護福祉事業）資本金 3.5千万円<br />
-              株式会社いこいの里佐賀（介護福祉事業）資本金 1千万円<br />
-              浮城興産株式会社（総合不動産業）資本金 7千万円<br />
-              株式会社浮城工務店（総合建築業）資本金 3千万円<br />
-              西日本興業協同組合（不動産管理）資本金 3百万円<br />
-              株式会社わーくわーく（障がい者福祉事業）資本金 1千万円<br />
-              株式会社ウキシロホールディングス（介護福祉事業・農業）資本金
-              1千万円
+              株式会社ウキシロケアセンター<br
+                class="sp-only" />（介護福祉事業）資本金 3.5千万円<br />
+              株式会社いこいの里佐賀<br class="sp-only" />（介護福祉事業）資本金
+              1千万円<br />
+              浮城興産株式会社<br class="sp-only" />（総合不動産業）資本金
+              7千万円<br />
+              株式会社浮城工務店<br class="sp-only" />（総合建築業）資本金
+              3千万円<br />
+              西日本興業協同組合<br class="sp-only" />（不動産管理）資本金
+              3百万円<br />
+              株式会社わーくわーく<br
+                class="sp-only" />（障がい者福祉事業）資本金 1千万円<br />
+              株式会社ウキシロホールディングス<br
+                class="sp-only" />（介護福祉事業・農業）資本金 1千万円
             </dd>
           </dl>
           <dl>

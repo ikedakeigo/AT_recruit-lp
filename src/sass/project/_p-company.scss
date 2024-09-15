@@ -52,7 +52,10 @@
   }
 
   dt {
+    font-weight: 600;
+    margin-bottom: rem(5);
     @include mq(md){
+      margin-bottom: rem(0);
       width:  rem(150);
     }
   }
