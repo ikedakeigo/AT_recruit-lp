@@ -937,8 +937,8 @@ p {
 }
 
 .p-header__drawer {
-  padding-top: 100px;
-  padding-top: 6.25rem;
+  padding-top: 50px;
+  padding-top: 3.125rem;
   position: fixed;
   z-index: 900;
   top: 0;
@@ -1786,9 +1786,6 @@ p {
   }
 }
 .p-schedule__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   position: relative;
   padding-bottom: 30px;
   padding-bottom: 1.875rem;
@@ -1801,6 +1798,9 @@ p {
 
 @media screen and (min-width: 800px) {
   .p-schedule__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     padding-bottom: 3.75rem;
     width: 31.25rem;
   }
@@ -1812,7 +1812,6 @@ p {
   content: "";
   position: absolute;
   height: 2px;
-  height: 0.125rem;
   background-color: #000000;
   bottom: 0;
   left: 0;
@@ -1824,30 +1823,28 @@ p {
     width: 31.25rem;
   }
 }
-.p-schedule__item dd {
-  margin-left: 20px;
-  margin-left: 1.25rem;
-}
-
 @media screen and (min-width: 800px) {
   .p-schedule__item dd {
     margin-left: 1.25rem;
   }
 }
 .p-schedule__item-time {
-  font-size: 23px;
-  font-size: 1.4375rem;
+  font-size: 20px;
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+  margin-bottom: 0.625rem;
 }
 
 @media screen and (min-width: 800px) {
   .p-schedule__item-time {
+    margin-bottom: 0rem;
     font-size: 1.625rem;
   }
 }
 .p-schedule__item-title {
   font-weight: 400;
-  font-size: 23px;
-  font-size: 1.4375rem;
+  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 @media screen and (min-width: 800px) {
@@ -1855,6 +1852,10 @@ p {
     font-size: 1.625rem;
   }
 }
+.p-schedule__item-title.wordB {
+  word-break: keep-all;
+}
+
 .p-schedule__images {
   position: relative;
 }
@@ -2018,8 +2019,15 @@ p {
 .p-schedule__first-info {
   position: relative;
   height: 12vh;
+  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
 }
 
+@media screen and (min-width: 800px) {
+  .p-schedule__first-info {
+    margin-bottom: 0rem;
+  }
+}
 .p-schedule__first-info strong {
   font-weight: 700;
   padding-right: 20px;
@@ -2031,6 +2039,7 @@ p {
   left: 0;
   padding-left: 100px;
   padding-left: 6.25rem;
+  word-break: keep-all;
 }
 
 .p-schedule-prof__box {
@@ -2089,8 +2098,8 @@ p {
 .p-schedule-prof-message__box {
   border: 1px solid #aeaeae;
   background-color: #fff;
-  padding: 20px 30px;
-  padding: 1.25rem 1.875rem;
+  padding: 20px 20px;
+  padding: 1.25rem 1.25rem;
 }
 
 @media screen and (min-width: 800px) {
@@ -2114,6 +2123,8 @@ p {
   background-repeat: repeat-y;
   background-size: 100% 3em;
   line-height: 3;
+  letter-spacing: 0.2em;
+  text-align: justify;
 }
 
 .p-schedule-prof-message__title {
@@ -2523,9 +2534,6 @@ p {
   }
 }
 .p-guidelines__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   position: relative;
   margin-bottom: 15px;
   border-bottom: 1px solid #999390;
@@ -2539,6 +2547,9 @@ p {
 
 @media screen and (min-width: 800px) {
   .p-guidelines__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     padding-bottom: 1.875rem;
     padding-top: 1.875rem;
   }
@@ -2557,20 +2568,33 @@ p {
 .p-guidelines__term {
   min-width: 80px;
   min-width: 5rem;
+  margin-bottom: 20px;
+  margin-bottom: 1.25rem;
+  font-weight: 600;
 }
 
 @media screen and (min-width: 800px) {
   .p-guidelines__term {
     width: 11.25rem;
+    margin-bottom: 0rem;
   }
 }
+.p-guidelines__term small {
+  font-size: 12px;
+  font-size: 0.75rem;
+}
+
 .p-guidelines__description {
   min-width: 200px;
   min-width: 12.5rem;
-  padding-left: 30px;
-  padding-left: 1.875rem;
+  word-break: keep-all;
 }
 
+@media screen and (min-width: 800px) {
+  .p-guidelines__description {
+    padding-left: 0.625rem;
+  }
+}
 .p-process__title-wrap {
   margin-bottom: 50px;
   margin-bottom: 3.125rem;
@@ -2745,8 +2769,15 @@ p {
     display: flex;
   }
 }
+.p-company__box dt {
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
+}
+
 @media screen and (min-width: 800px) {
   .p-company__box dt {
+    margin-bottom: 0rem;
     width: 9.375rem;
   }
 }

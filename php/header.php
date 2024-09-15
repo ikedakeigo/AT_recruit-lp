@@ -41,7 +41,7 @@
             <a href="/#message">代表挨拶</a>
           </li>
           <li class="p-header__nav-item">
-            <a href="/#about">私たちのお仕事</a>
+            <a href="/#schedule">先輩の1日と働きがい</a>
           </li>
           <li class="p-header__nav-item">
             <a href="/#guidelines">募集要項</a>
@@ -76,7 +76,7 @@
               <a href="/#message">代表挨拶</a>
             </li>
             <li class="p-header__drawer-item">
-              <a href="/#about">私たちのお仕事</a>
+              <a href="/#schedule">先輩の1日と働きがい</a>
             </li>
             <li class="p-header__drawer-item">
               <a href="/#guidelines">募集要項</a>
