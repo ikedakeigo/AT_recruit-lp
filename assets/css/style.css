@@ -1774,8 +1774,8 @@ p {
 .p-schedule__items {
   position: relative;
   width: 100%;
-  padding: 50px 20px;
-  padding: 3.125rem 1.25rem;
+  padding: 50px 15px;
+  padding: 3.125rem 0.9375rem;
   padding-top: 80px;
   padding-top: 5rem;
 }
@@ -1843,8 +1843,8 @@ p {
 }
 .p-schedule__item-title {
   font-weight: 400;
-  font-size: 20px;
-  font-size: 1.25rem;
+  font-size: 18px;
+  font-size: 1.125rem;
 }
 
 @media screen and (min-width: 800px) {
@@ -2039,7 +2039,6 @@ p {
   left: 0;
   padding-left: 100px;
   padding-left: 6.25rem;
-  word-break: keep-all;
 }
 
 .p-schedule-prof__box {
@@ -2098,8 +2097,8 @@ p {
 .p-schedule-prof-message__box {
   border: 1px solid #aeaeae;
   background-color: #fff;
-  padding: 20px 20px;
-  padding: 1.25rem 1.25rem;
+  padding: 20px 21px;
+  padding: 1.25rem 1.3125rem;
 }
 
 @media screen and (min-width: 800px) {
