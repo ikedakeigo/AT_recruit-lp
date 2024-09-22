@@ -334,6 +334,22 @@
   }
 }
 
+table {
+  &.p-schedule__first-info {
+    position: relative;
+    height: 100%;
+    margin-bottom: rem(30);
+    @include mq(md){
+      margin-bottom: rem(0);
+    }
+  }
+
+  th {
+    display: flex;
+    margin-right: 30px;
+  }
+}
+
 .p-schedule-prof__box {
   margin-bottom: rem(30);
   @include mq(md) {

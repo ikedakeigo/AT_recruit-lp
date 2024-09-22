@@ -22,7 +22,7 @@ endif; ?>
         <h1 class="p-contact-title__heading">エントリーフォーム</h1>
         <p class="p-contact-title__text">
           採用ご希望の方は<br class="sp-only">下記フォームよりお申し込みください。<br class="sp-only">追って採用担当からご連絡差し上げます。<br />
-          当社のプライバシーポリシーは<a href="">こちら</a>。<br />
+          当社のプライバシーポリシーは<a href="/privacy-policy" target="_blank">こちら</a>。<br />
           <br />
           ※印がついている項目は、<br class="sp-only">必須入力項目となります。
         </p>
