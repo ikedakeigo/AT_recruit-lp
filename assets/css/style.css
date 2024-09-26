@@ -2041,6 +2041,25 @@ p {
   padding-left: 6.25rem;
 }
 
+table.p-schedule__first-info {
+  position: relative;
+  height: 100%;
+  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
+}
+
+@media screen and (min-width: 800px) {
+  table.p-schedule__first-info {
+    margin-bottom: 0rem;
+  }
+}
+table th {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 30px;
+}
+
 .p-schedule-prof__box {
   margin-bottom: 30px;
   margin-bottom: 1.875rem;
