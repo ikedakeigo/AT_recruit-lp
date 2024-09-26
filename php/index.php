@@ -49,7 +49,7 @@
             喜び合える社会を創造します
           </p>
           <p class="small-text">
-            私たちは入居者様、そのご家族そして私たち一人ひとりが主人公であり、幸せであるべきと考えています。<br />
+            私たちは入居者様、そのご家族様そして私たち一人ひとりが主人公であり、幸せであるべきと考えています。<br />
             誰かが犠牲になった上での幸せではなく、すべての人が幸せを感じながら、年を重ねていくことを心から喜び合える社会を実現していきたいと考えています。
           </p>
         </div>
@@ -73,9 +73,6 @@
           </li>
           <li class="p-anckerLink__item">
             <a href="#message" class="p-anckerLink__link">代表挨拶</a>
-          </li>
-          <li class="p-anckerLink__item">
-            <a href="#about" class="p-anckerLink__link">私たちのお仕事</a>
           </li>
           <li class="p-anckerLink__item">
             <a href="#schedule" class="p-anckerLink__link">先輩の1日と働きがい</a>
@@ -126,9 +123,6 @@
             <!-- <ul class="p-anckerLink__items-sp"> -->
             <li class="p-anckerLink__item">
               <a href="#message" class="p-anckerLink__link">代表挨拶</a>
-            </li>
-            <li class="p-anckerLink__item">
-              <a href="#about" class="p-anckerLink__link">私たちのお仕事</a>
             </li>
             <!-- </ul> -->
             <!-- <ul> -->
@@ -194,8 +188,8 @@
       </div>
       <div class="p-work__first-info delay">
         <p>
-          全国で16施設、450名(R6.1)と、安定的に成長しながら働きやすい職場作りのために私たちいこいの里では様々な人事制度を整えてきました。<br />
-          会社が不正のない透明性のある経営の実践し、社員が安心して働ける経営こそが、お客様に上質のサービスを提供できると考えているからです。<br />
+          全国で16施設、総職員450名(R6.1)と、安定的に成長しながら働きやすい職場作りのために私たち「いこいの里」では様々な人事制度を整えてきました。<br />
+          会社が不正のない透明性のある経営を実践し、社員が安心して働ける経営こそが、お客様に上質のサービスを提供できると考えているからです。<br />
           そのため、ノルマや「辻つま合わせ」などで無理なことを強要されることはなく、あなたのライフスタイルやキャリアに合わせて安心して働くことができます。
         </p>
       </div>
@@ -239,7 +233,7 @@
             <p>
               人にはそれぞれの人生があります。<br />
               「正しい」人生や介護など存在しません。<br />
-              入居者様やご家族などの状況や価値観を知り、それに安全な介護を合わせて初めて「一人ひとりの正しさ」が見えてきます。<br />
+              入居者様やご家族様などの状況や価値観を知り、それに安全な介護を合わせて初めて「一人ひとりの正しさ」が見えてきます。<br />
               この「一人ひとりの正しさ」を見出すのは現場での業務に従事する者の役目です。<br />
               私たちは、一人ひとりに合った最良の介護をみんなで積極的に提案・追求していきます。<br />
               先輩社員も様々な経験をしながら、自分たちがやりたくてもやれなかった理想の介護を追求し、新しい技術やノウハウを導入しながら一人ひとりの人生に向き合ってくれます。<br />
@@ -265,7 +259,8 @@
               私たちは全国の職員のために、安定的に成長しながら働きやすい職場作りのために人事制度を整えてきました。<br />
               私たちの職場は、スタッフ個人の尊厳を重んじ、健康管理とリフレッシュの時間を確保しています。<br />
               そのため仕事とプライベートが両立して充実できるよう職場環境を整え、今では残業や休日出勤もほとんどありません。<br />
-              また、平日や必要に応じて休暇も取りやく自分のライフスタイルの維持がしやすいため、出産や育児、家族の世話や介護などにも対応しやすい職場です。<br />
+              平日も必要に応じて休暇が取りやすく、自分のライフスタイルも大切にできます。<br />
+              また、家族との時間、出産や育児、介護などにも対応しやすい職場です。<br />
               職員の生活、心の豊かさがあるからこそ、入居者様、そのご家族様への暖かいサービスが提供できると考えてます。
             </p>
           </div>
@@ -284,9 +279,9 @@
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/work/work_4.png" alt="お金＋α のやりがいのある職場" />
             </div>
             <p>
-              前向きに取り組んだ人は学歴、年齢、性別に関係なく評価される職場です。<br />
-              また、家庭の事情などで業務負担を軽くしてほしい場合には働き方を変えることも可能です。<br />
-              そして、また働く環境が整ってくれば活躍していただくようにしています。<br />
+              前向きに取り組んだ方は経験、年齢、性別に関係なく評価される職場です。<br />
+              時間、曜日、出勤日数など働き方を変えることも可能です。<br />
+              そして、再度働く環境が整ってくれば、元の働き方に戻っていただくことにしております。<br />
               お客様や仲間に自分サイズの貢献ができる喜びを感じることができます。<br />
               また、ターミナルケアなど人の人生にチームで関わることで、本当に感動的な瞬間に立ち会うことが出来るのもこの仕事の醍醐味です。<br />
               さようならは寂しいものでもありますが、同時にいただける心からの「ありがとう」の言葉や笑顔、気持ちはこの仕事ならではの喜びです。
@@ -309,10 +304,10 @@
             <p>
               私たちの運営する「いこいの里」はローコスト運営を心がけています。<br />
               そのために経営の効率化などの必要性はありますが、多くの所得層の方が利用できるように仕組み化されています。<br />
-              ニュースで聞くような老老介護、孤独死、介護殺人のような高齢者とそのご家族を襲う悲劇を一つでも減らすことが出来たら、と思っています。<br />
+              ニュースで聞くような老老介護、孤独死、介護殺人のような高齢者とそのご家族様を襲う悲劇を一つでも減らすことを目標にしています。<br />
               人生の晩年を安心の環境で温かい人間関係の中で文化的に送っていただきたい。<br />
               私たちは、「生きる」ということを見つめ、安心の土台の上に幸福を重ねた毎日を当たり前にしていきたいと願っています。<br />
-              確かに身体機能や出来ることは加齢によって制限されることがあります。しかし、最期まで安心して笑顔でいられることをサポートすることは私たちの最高の喜びです。
+              確かに身体機能や出来ることは加齢によって制限されることがありますが、最期まで安心して笑顔でいられることをサポートすることが私たちの最高の喜びです。
             </p>
           </div>
         </div>
@@ -330,11 +325,11 @@
               <img src="<?php echo get_template_directory_uri(); ?>/assets/img/work/work_6.png" alt="充実した研修制度キャリアアップ" />
             </div>
             <p>
-              介護は多岐にわたりニーズがあり、柔軟性やチームワークが求められています。<br />
-              そのため、コミュニケーションや接遇を重視し採用を基準としています。<br />
+              介護は多岐にわたるニーズがあり、柔軟性やチームワークが求められています。<br />
+              そのため、コミュニケーションや接遇を重視した採用を基準としています。<br />
               基本的な知識と技術の習得のための研修制度を整えているので、未経験者でも介護のプロとして成長することが可能です。<br />
-              また、研修や指導、評価の仕組みは介護士が手がけているので中途やブランクがあっても働きやすく、多くのチャンスがあります。<br />
-              介護の基礎知識から実践トレーニング、コミュニケーションスキル・認知症ケア・感染症対策のトレーニングんなど、キャリアアップやあなたの人生の糧の一つとしてもきっとお役に立つはずです。
+              また、研修や指導、評価の仕組みは現場職員が手がけているので中途採用者やブランクがあっても働きやすく、多くのチャンスがあります。<br />
+              介護の基礎知識から実践トレーニング、コミュニケーションスキル・認知症ケア・感染症対策のトレーニングなど、キャリアアップやあなたの人生の糧の一つとしてもきっと役立つはずです。
             </p>
           </div>
         </div>
@@ -363,11 +358,9 @@
             <p>
               私たちは「人としての想いと接遇で家庭の延長線上にある安らぎを、介護のプロとしての知識と技術で家庭では実現できない安心な生活を提供する」というミッションを掲げ、社員一丸となってお客様にご満足いただけるサービスを提供しています。<br />
               <br />
-              ひとことで「働く」と言ってもその目的は人によって様々です。もちろん生活する上でお金は必要です。しかしせっかくご縁あって私たちの仲間としてお勤めいただくのであればお給料だけでない様々なやりがいを持って働いていただきたいと思っています。<br />
+              ひとことで「働く」と言ってもその目的は人によって様々です。もちろん生活する上でお金は必要です。しかし、せっかくご縁があって私たちの仲間としてお勤めいただくのであれば、人生の多くの時間を過ごすであろうお仕事に「お金＋アルファ」のさまざまな喜びを感じながら長く働いていただきたいと思っています。企業の発展と社員の皆さんの幸せが一致する経営を目指しやりがいを持って働いて欲しいと心から願っています。<br />
               <br />
-              私たちは皆さんが人生の多くの時間を過ごすであろうお仕事に「お金＋アルファ」のさまざまな喜びを感じながら長く働いていただきたいと思います。企業の発展と社員の皆さんの幸せが一致する経営を目指しやりがいを持って働いて欲しいと心から願っています。<br />
-              <br />
-              なぜなら、社員自身が幸せでないのに、お客様だけを幸せに導くことは難しいと考えるからです。私たちは入居者様、そのご家族そして私たち一人ひとりが主人公であり、幸せであるべきであると考えています。
+              なぜなら、社員自身が幸せでないのに、お客様だけを幸せに導くことは難しいと考えるからです。私たちは入居者様、そのご家族様そして私たち一人ひとりが主人公であり、幸せであるべきだと考えています。
             </p>
             <p class="end-text pc-only">
               ウキシログループ 代表取締役
@@ -453,6 +446,24 @@
                 当施設は明るく、楽しく、元気な職場です。職員、入居者様が笑顔で過ごせる環境を作っていきたいと思っています。介護職員だから分かる事、学べる事が沢山あります。さらに、いこいの里だから「できる事」「やりたい事」を実現することができます。<br
                   class="sp-only" />入社されたら職員一丸となり、入居者様の生活にかかわり、素晴らしい人生のお手伝いを一緒に実現していきましょう。
               </p>
+            </div>
+          </div>
+          <div class="p-schedule__images sp-only delay">
+            <div class="p-schedule__image">
+              <img
+                src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff01_01.png"
+                alt="いこいの里 徳吉で働く菊田さん" />
+              <img
+                src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff01_02.png"
+                alt="いこいの里 徳吉で働く菊田さん" />
+            </div>
+            <div class="p-schedule__image">
+              <img
+                src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff01_03.png"
+                alt="いこいの里 徳吉で働く菊田さん" />
+              <img
+                src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff01_04.png"
+                alt="いこいの里 徳吉で働く菊田さん" />
             </div>
           </div>
           <!-- 一日のスケジュール -->
@@ -608,6 +619,24 @@
               </p>
             </div>
           </div>
+          <div class="p-schedule__images sp-only delay">
+            <div class="p-schedule__image">
+              <img
+                src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff02_01.png"
+                alt="いこいの里 本城弐番館の西村さん" />
+              <img
+                src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff02_02.png"
+                alt="いこいの里 本城弐番館の西村さん" />
+            </div>
+            <div class="p-schedule__image">
+              <img
+                src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff02_03.png"
+                alt="いこいの里 本城弐番館の西村さん" />
+              <img
+                src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff02_04.png"
+                alt="いこいの里 本城弐番館の西村さん" />
+            </div>
+          </div>
           <!-- 一日のスケジュール -->
           <div class="p-schedule__wrap top">
             <h3 class="p-schedule__sfaff-name hiragino">西村さんの1日</h3>
@@ -756,6 +785,24 @@
                 介護を学びたい方大歓迎！！<br />
                 研修制度も厚いです。私はここの職場で社交性も学ぶことができました。職員同士や上司とも相談しやすい環境ですよ。
               </p>
+            </div>
+          </div>
+          <div class="p-schedule__images sp-only delay">
+            <div class="p-schedule__image">
+              <img
+                src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff03_01.png"
+                alt="いこいの里 巨勢の高田さん" />
+              <img
+                src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff03_02.png"
+                alt="いこいの里 巨勢の高田さん" />
+            </div>
+            <div class="p-schedule__image">
+              <img
+                src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff03_03.png"
+                alt="いこいの里 巨勢の高田さん" />
+              <img
+                src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff03_04.png"
+                alt="いこいの里 巨勢の高田さん" />
             </div>
           </div>
           <!-- 一日のスケジュール -->
@@ -938,6 +985,24 @@
               </p>
             </div>
           </div>
+          <div class="p-schedule__images sp-only delay">
+            <div class="p-schedule__image">
+              <img
+                src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff04_01.png"
+                alt="いこいの里 中原の田中さん" />
+              <img
+                src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff04_02.png"
+                alt="いこいの里 中原の田中さん" />
+            </div>
+            <div class="p-schedule__image">
+              <img
+                src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff04_03.png"
+                alt="いこいの里 中原の田中さん" />
+              <img
+                src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff04_04.png"
+                alt="いこいの里 中原の田中さん" />
+            </div>
+          </div>
           <!-- 一日のスケジュール -->
           <div class="p-schedule__wrap top">
             <h3 class="p-schedule__sfaff-name hiragino">田中さんの1日</h3>
@@ -1091,6 +1156,24 @@
               <p>
                 楽しく仕事が出来る職場環境を目指しています。そして人のお世話が好きな方に集まって頂き、一人で過ごせないお客様のお手伝いに協力をして欲しく、経験が無くても不安にならない指導を行い即戦力として働ける職場です。
               </p>
+            </div>
+          </div>
+          <div class="p-schedule__images sp-only delay">
+            <div class="p-schedule__image">
+              <img
+                src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff05_01.png"
+                alt="糸島の稲吉さん" />
+              <img
+                src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff05_02.png"
+                alt="糸島の稲吉さん" />
+            </div>
+            <div class="p-schedule__image">
+              <img
+                src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff05_03.png"
+                alt="糸島の稲吉さん" />
+              <img
+                src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff05_04.png"
+                alt="糸島の稲吉さん" />
             </div>
           </div>
           <!-- 一日のスケジュール -->
@@ -1275,6 +1358,24 @@
               </p>
             </div>
           </div>
+          <div class="p-schedule__images sp-only delay">
+            <div class="p-schedule__image">
+              <img
+                src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff06_01.png"
+                alt="いこいの里 小波瀬の古川さん" />
+              <img
+                src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff06_02.png"
+                alt="いこいの里 小波瀬の古川さん" />
+            </div>
+            <div class="p-schedule__image">
+              <img
+                src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff06_03.png"
+                alt="いこいの里 小波瀬の古川さん" />
+              <img
+                src="<?php echo get_template_directory_uri(); ?>/assets/img/schedule/schedule_sfaff06_04.png"
+                alt="いこいの里 小波瀬の古川さん" />
+            </div>
+          </div>
           <!-- 一日のスケジュール -->
           <div class="p-schedule__wrap top">
             <h3 class="p-schedule__sfaff-name hiragino">古川さんの1日</h3>
@@ -1448,7 +1549,7 @@
             </div>
             <div class="p-value__text">
               <p>
-                私たちは、施設の入居者様とそのご家族を合わせて「お客様」であると定義しています。<br />
+                私たちは、施設の入居者様とそのご家族様を合わせて「お客様」であると定義しています。<br />
                 「お客様」をプロの視点で入居者一人ひとりを観察し、全てのお客様に満足していただける親切で公平な介護を実践しようとする姿勢が重要です。
               </p>
             </div>
@@ -1479,7 +1580,7 @@
             <div class="p-value__text">
               <p>
                 私たちは、介護というサービス業のプロとして、安全で清潔な身だしなみ、丁寧かつフレンドリーな言葉遣い、明るく元気な笑顔で周りの人を元気づけるように心がけています。<br />
-                親しみを込めて方言を使うこともあっていいのすが、敬意ある丁寧な言葉遣いを大切にしていただきたいと思います。
+                親しみを込めて方言を使うこともあっていいのですが、敬意ある丁寧な言葉遣いを大切にしていただきたいと思います。
               </p>
             </div>
           </div>
@@ -1545,10 +1646,10 @@
           <p>
             今までのいこいの里は、単に職員の生活のための給料アップを考え実行してきました。<br />
             現在は、職員一人一人がやりがいや目標を持ち、キャリアアップできる状況をもっと明確にしたいと考え取り組んでいます。<br />
-            研修や指導・評価の仕組みは介護士が手掛け、実施しています。<br />
+            研修や指導・評価の仕組みは現場職員が手掛け、実施しています。<br />
             中途採用の方でもチャンスはいっぱい。<br />
             <br />
-            介護の基礎知識から管理スキル、経営リスクマネージメントなどのプレゼンテーション能力などしっかりした研修制度により、管理者も夢ではありません。
+            介護の基礎知識からプレゼンテーション能力、管理スキル、リスクマネジメントなどの研修制度により、管理者も夢ではありません。
             あなたの努力は、キャリアアップと共に、給料や手当にも比例します。
           </p>
         </div>
@@ -1580,7 +1681,7 @@
             <span> 福利厚生制度 </span>
           </h3>
           <p class="p-career__box-text">
-            <span>社員に安全な環境で安心して働き、日々リフレッシュした気持ちで出勤してほしい。そうすることで笑顔でお客様に接していただきたい。そんな想いを持って憩いの里では様々な福利厚生制度を導入しています。</span>
+            <span>社員に安全な環境で安心して働き、日々リフレッシュした気持ちで出勤してほしい。そうすることで笑顔でお客様に接していただきたい。そんな想いを持って「いこいの里」では様々な福利厚生制度を導入しています。</span>
             <br>
             <strong>
               各社会保険、年次有給休暇、通勤手当、制服貸与、社宅、退職金制度（規定有）、確定拠出年金、入居者家族割引、社内奨学金制度、マイカー通勤支援
@@ -1767,8 +1868,7 @@
             </p>
             <p class="p-faq-list__item-answer">
               <span>A</span>
-              可能です。
-              皆が不安を抱かず働き、休るようにしっかりと話し合いの上、決定します。また、時短勤務や、午後・午前だけの勤務もできるようにできる限り配慮しています。
+              可能です。皆さんが不安を抱かず働き、休るようにしっかりと話し合いの上、決定します。また、時短勤務や、午後・午前だけの勤務もできるようにできる限り配慮しています。
             </p>
           </li>
           <li class="p-faq-list__item">
@@ -1818,17 +1918,17 @@
             </p>
             <p class="p-faq-list__item-answer">
               <span>A</span>
-              不安の無いように施設内で話し合い、無理のないように勤務体制を決めています。また、職員のご家族の入居の優遇制度も整備されています。
+              不安の無いように施設内で話し合い、無理のないように勤務体制を決めています。また、職員のご家族様の入居の優遇制度も整備されています。
             </p>
           </li>
           <li class="p-faq-list__item">
             <p class="p-faq-list__item-question js-faq-question">
               <span>Q</span>
-              ネイル、ピアス、髪の色に関して規則はありますか？
+              ネイル、髪の色に関して規則はありますか？
             </p>
             <p class="p-faq-list__item-answer">
               <span>A</span>
-              ネイルに関しては派手過ぎなければ、大丈夫です。ピアス、髪の色なども程度にもよりますが大丈夫です。詳しくは面接時にお問い合わせください。
+              ネイル、髪の色に関しては派手過ぎなければ大丈夫です。詳しくは面接時にご相談ください。
             </p>
           </li>
           <li class="p-faq-list__item">

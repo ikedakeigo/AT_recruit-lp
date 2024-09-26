@@ -179,19 +179,36 @@
 .p-schedule__images {
   // width: 30%;
   position: relative;
+  @include mq(md){
+    margin-top: rem(80);
+  }
+  &.sp-only {
+    margin-top:  rem(30);
+    display: flex;
+    justify-content: space-between;
+    @include mq(md){
+      display: none;
+    }
+    .p-schedule__image {
+      width: 48%;
+      img {
+        &:first-child {
+          margin-bottom: rem(10);
+        }
+      }
+    }
+  }
 }
 
 .p-schedule__image {
-  width: 300px;
   @include mq(md){
-    position: absolute;
+    width: 400px;
+    // position: absolute;  // 段差をレイアウト 戻す場合コメントアウト解除
+    &:not(:last-child) {
+      margin-bottom: rem(30);
+    }
   }
-  // &:not(:last-child) {
-  //   margin-bottom: rem(30);
-  //   @include mq(md){
-  //     margin-bottom: rem(150);
-  //   }
-  // }
+
   &:nth-of-type(1) {
     @include mq(md){
       top: 5%;
@@ -199,8 +216,8 @@
     }
   }
   &:nth-of-type(2) {
-    margin-left: rem(-50);
     @include mq(md){
+      // margin-left: rem(-50);
       top: 30%;
       right:  rem(-100);
     }
@@ -213,7 +230,7 @@
     }
   }
   &:nth-of-type(4) {
-    // margin-top: rem(30);
+    // margin-top: rem(30);  // これも
     @include mq(md){
       top: 80%;
       right: rem(-100);
@@ -225,9 +242,6 @@
     height: auto;
   }
 
-  @include mq(md){
-    width: 400px;
-  }
 }
 
 .p-schedule-bottom__img {
@@ -286,7 +300,7 @@
 .p-schedule__wrap.top {
   margin-bottom: rem(50);
   // display: none;
-  margin-top: rem(100);
+  margin-top: rem(50);
   @include mq(md) {
     margin-bottom: rem(70);
     margin-top: rem(150);
