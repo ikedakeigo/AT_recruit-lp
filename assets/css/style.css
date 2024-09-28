@@ -681,6 +681,11 @@ p {
     margin-left: 3.75rem;
   }
 }
+.c-textLink {
+  color: #0098ee;
+  font-weight: bold;
+}
+
 .c-page-top {
   padding-top: 15px;
   padding-top: 0.9375rem;

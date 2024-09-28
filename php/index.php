@@ -1654,12 +1654,18 @@
           </p>
         </div>
         <div class="p-career__item-image">
-          <h3 class="p-career__item-image__title">
+          <!-- <h3 class="p-career__item-image__title">
             <span> キャリアアップイメージ図 </span>
-          </h3>
-          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/career/career_01.png" alt="キャリアアップイメージ図" />
+          </h3> -->
+          <img
+            class="pc-only"
+            src="<?php echo get_template_directory_uri(); ?>/assets/img/career/career_01.png"
+            alt="キャリアアップイメージ図" />
+          <img
+            class="sp-only"
+            src="<?php echo get_template_directory_uri(); ?>/assets/img/career/career_02.png"
+            alt="キャリアアップイメージ図" />
         </div>
-        <span class="listMark-grid">※夜勤4回、諸手当含む</span>
       </div>
       <div class="p-career__wrap bottom delay">
         <div class="p-career__box" id="career02">
@@ -1868,7 +1874,7 @@
             </p>
             <p class="p-faq-list__item-answer">
               <span>A</span>
-              可能です。皆さんが不安を抱かず働き、休るようにしっかりと話し合いの上、決定します。また、時短勤務や、午後・午前だけの勤務もできるようにできる限り配慮しています。
+              可能です。皆さんが不安を抱かず働き、休めるようにしっかりと話し合いの上、決定します。また、時短勤務や、午後・午前だけの勤務もできるようにできる限り配慮しています。
             </p>
           </li>
           <li class="p-faq-list__item">
@@ -1908,7 +1914,7 @@
             </p>
             <p class="p-faq-list__item-answer">
               <span>A</span>
-              取りやすいと思います。皆が気持ちよく休んでいただくために、出来るだけ早く責任者にご希望をお知らせください。
+              取りやすいと思います。皆さんが気持ちよく休んでいただくために、出来るだけ早く責任者にご希望をお知らせください。
             </p>
           </li>
           <li class="p-faq-list__item">
@@ -1928,7 +1934,7 @@
             </p>
             <p class="p-faq-list__item-answer">
               <span>A</span>
-              ネイル、髪の色に関しては派手過ぎなければ大丈夫です。詳しくは面接時にご相談ください。
+              ネイル、髪の色に関しては派手過ぎなければ大丈夫です。詳しくは<a class="c-textLink" href="/contact">こちら</a>からお問い合わせください。
             </p>
           </li>
           <li class="p-faq-list__item">
@@ -1958,7 +1964,7 @@
             </p>
             <p class="p-faq-list__item-answer">
               <span>A</span>
-              入社時に働く施設は選べます。ご希望される事業所にご応募下さい。
+              入社時に働く施設は選べます。ご希望される事業所は、<a class="c-textLink" href="/contact">こちら</a>からご応募ください。
             </p>
           </li>
         </ul>
