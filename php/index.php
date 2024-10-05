@@ -292,14 +292,14 @@
         <!-- 5 -->
         <div class="p-work__item delay">
           <div class="p-work__img pc-only">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/work/work_5.png" alt="社会問題の解決に参加できる" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/work/work_6.png" alt="社会問題の解決に参加できる" />
           </div>
           <div class="p-work__text">
             <h3 class="p-work__item-title title5 hiragino">
               社会問題の解決に参加できる
             </h3>
             <div class="p-work__img sp-only">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/work/work_5.png" alt="社会問題の解決に参加できる" />
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/work/work_6.png" alt="社会問題の解決に参加できる" />
             </div>
             <p>
               私たちの運営する「いこいの里」はローコスト運営を心がけています。<br />
@@ -315,14 +315,14 @@
         <!-- 6 -->
         <div class="p-work__item delay">
           <div class="p-work__img pc-only">
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/work/work_6.png" alt="充実した研修制度キャリアアップ" />
+            <img src="<?php echo get_template_directory_uri(); ?>/assets/img/work/work_6-1.jpg" alt="充実した研修制度キャリアアップ" />
           </div>
           <div class="p-work__text">
             <h3 class="p-work__item-title title6 hiragino">
               充実した研修制度と<br />キャリアアップ
             </h3>
             <div class="p-work__img sp-only">
-              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/work/work_6.png" alt="充実した研修制度キャリアアップ" />
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/work/work_6-1.jpg" alt="充実した研修制度キャリアアップ" />
             </div>
             <p>
               介護は多岐にわたるニーズがあり、柔軟性やチームワークが求められています。<br />

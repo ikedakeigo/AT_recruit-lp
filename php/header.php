@@ -6,15 +6,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="format-detection" content="telephone=no" />
   <title>いこいの里｜採用</title>
-  <meta name="description" content="トップページの説明" />
-  <meta name="keywords" content="キーワード" />
+  <meta name="description" content="北九州・苅田・佐賀のグループホーム・老人ホーム「いこいの里-採用」公式採用ページ" />
+  <meta name="keywords" content="老人ホーム,グループホーム,介護施設,北九州,苅田,佐賀,介護,いこいの里,ウキシロケアセンター" />
   <!-- ogp -->
-  <meta property="og:title" content="いこいの里採用ページ" />
+  <meta property="og:title" content="いこいの里 - 採用ページ" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="サイトのドメイン" />
-  <meta property="og:image" content="OGP IMAGE" />
-  <meta property="og:site_name" content="サイトのドメイン" />
-  <meta property="og:description" content="トップページの説明" />
+  <meta property="og:url" content="https://recruit.ikoino-sato.com/" />
+  <meta property="og:image:width" content="240" />
+  <meta property="og:image:height" content="240" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:site_name" content="いこいの里-採用ページ" />
+  <meta property="og:description" content="北九州・苅田・佐賀のグループホーム・老人ホーム「いこいの里-採用」公式採用ページ" />
   <!-- ファビコン -->
   <link rel="”icon”" href="" />
   <link rel="apple-touch-icon" href="" />
